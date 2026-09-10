@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Aahar-Parampara — Place & Health Issues{% endblock %}
+{% block content %}
+<div class="topbar">
+  <div class="brand">Aahar-Parampara</div>
+  <a href="{{ url_for('home') }}" class="btn-ghost" style="font-size:.8rem; padding:.5rem 1rem;">← Home</a>
+</div>
+
+<span class="eyebrow">Place &amp; Health Issues</span>
+<h1 style="font-size:1.8rem; margin:.5rem 0 .8rem;">Turn the wheel of the six Ritus</h1>
+<p style="color:var(--text-soft);">We'll use this to find a heritage dish that fits your season and body — its story comes first, ingredients and preparation follow.</p>
+
+<form method="POST" action="{{ url_for('result') }}" id="queryForm">
+  <div class="wheel-wrap">
+    <svg viewBox="0 0 400 400" class="wheel-svg" id="rituWheel"></svg>
+  </div>
+  <input type="hidden" name="ritu" id="rituInput" value="">
+
+  <div class="card">
+    <div class="field">
+      <label>Health goal</label>
+      <div class="chip-row" id="goalChips">
+        <button type="button" class="chip" data-goal="cooling">Cooling</button>
+        <button type="button" class="chip" data-goal="digestive">Digestive ease</button>
+        <button type="button" class="chip" data-goal="immunity">Immunity</button>
+        <button type="button" class="chip" data-goal="energy">Energy / warmth</button>
+        <button type="button" class="chip" data-goal="joint">Joint comfort</button>
+      </div>
+      <input type="hidden" name="health_goal" id="healthGoalInput" value="">
+    </div>
+
+    <div class="field">
+      <label for="ingredients">Ingredients you have on hand</label>
+      <input type="text" id="ingredients" name="ingredients" placeholder="e.g. millet, ginger, jaggery, buttermilk">
+    </div>
+
+    <button class="btn-primary" type="submit" style="margin-top:.5rem;">Reverse-engineer my recipe</button>
+  </div>
+</form>
+{% endblock %}

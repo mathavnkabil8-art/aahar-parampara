@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% from "_motif.html" import mandala %}
+{% block title %}Aahar-Parampara — Login{% endblock %}
+{% block content %}
+<div class="login-wrap">
+  <div class="login-card">
+    {{ mandala(size='200', color='#F4C430', klass='motif') }}
+    <div class="brand">Aahar-Parampara</div>
+    <p class="tagline">Every dish here has a story before it has a recipe — rooted in your region, your season, your body.</p>
+    <form method="POST" action="{{ url_for('login') }}">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      </div>
+      <button class="btn-primary" type="submit" style="width:100%; text-align:center; margin-top:.5rem;">Enter the kitchen</button>
+    </form>
+    <a href="{{ url_for('guest') }}" style="display:block; text-align:center; margin-top:1.1rem; color:var(--accent-gold-pale); font-size:.85rem; transition: color 0.3s;">Continue as guest</a>
+  </div>
+</div>
+{% endblock %}

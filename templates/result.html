@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Aahar-Parampara — Your Matches{% endblock %}
+{% block content %}
+<div class="topbar">
+  <div class="brand">Aahar-Parampara</div>
+  <a href="{{ url_for('home') }}" class="btn-ghost" style="font-size:.8rem; padding:.5rem 1rem;">← Home</a>
+</div>
+
+<span class="eyebrow">Recipe reveal</span>
+<h1 style="font-size:1.8rem; margin:.5rem 0 1.2rem;">Dishes matched to your inputs</h1>
+
+{% if not matches %}
+  <p>No matches found — try different ingredients or a different season.</p>
+{% endif %}
+
+{% for m in matches %}
+  {% set dish = m.dish %}
+  <a class="match-card" href="{{ url_for('dish_detail', dish_id=dish.id) }}">
+    <span class="eyebrow">{{ dish.state }} · {{ dish.era_confidence }}</span>
+    <h3>{{ dish.recipe_name }}</h3>
+    <p class="story-snippet">{{ dish.cultural_context[:160] }}{% if dish.cultural_context|length > 160 %}…{% endif %}</p>
+    <ul class="reason-list">
+      {% for reason in m.reasons %}<li>✓ {{ reason }}</li>{% endfor %}
+    </ul>
+    <span class="read-more">Read its full story →</span>
+  </a>
+{% endfor %}
+
+<a href="{{ url_for('query') }}" class="back-link">← Refine your search</a>
+{% endblock %}

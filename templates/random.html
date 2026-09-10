@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Your Random Food — Aahar-Parampara{% endblock %}
+{% block content %}
+<div class="topbar">
+  <div class="brand">Aahar-Parampara</div>
+  <a href="{{ url_for('home') }}" class="btn-ghost" style="font-size:.8rem; padding:.5rem 1rem;">← Home</a>
+</div>
+
+<div id="random-content-container" style="max-width: 600px; margin: 0 auto; text-align: center; padding: 2rem 1rem;">
+  <span class="eyebrow">Your random food</span>
+  <h1 style="font-size:2.2rem; margin:.5rem 0 2.5rem; color: #fff; font-family: 'Rozha One', serif; text-shadow: 0 0 20px rgba(212,175,55,0.2);">A dish found you</h1>
+
+  <div class="match-card no-hover glass-panel" style="text-align: left; margin-bottom: 2.5rem;">
+    <span class="eyebrow">{{ dish.state }} · {{ dish.era_confidence }}</span>
+    <h3 style="font-size: 1.6rem; color: var(--primary-saffron); margin-bottom: 0.8rem; font-family: 'Rozha One', serif;">{{ dish.recipe_name }}</h3>
+    <p class="story-snippet" style="font-size: 1.05rem; line-height: 1.6; color: rgba(255,255,255,0.85);">{{ dish.cultural_context }}</p>
+  </div>
+
+  <p style="margin:1.5rem 0; font-size: 1.1rem; color: var(--accent-gold);">Willing to try it?</p>
+  <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; align-items: stretch;">
+    <a href="{{ url_for('dish_detail', dish_id=dish.id) }}" class="btn-primary" style="flex: 1 1 200px; display: flex; align-items: center; justify-content: center; padding: 1rem;">Explore the Heritage →</a>
+    <a href="{{ url_for('dish_detail', dish_id=dish.id) }}#prep-section" class="btn-primary" style="flex: 1 1 200px; display: flex; align-items: center; justify-content: center; padding: 1rem; background: rgba(10, 15, 26, 0.8); border: 1px solid var(--primary-saffron); color: var(--primary-saffron);">I'm Ready to Cook →</a>
+  </div>
+  
+  <div style="margin-top: 2rem;">
+    <button onclick="refreshRandom()" class="btn-ghost" style="display: inline-flex; align-items: center; gap: 0.5rem; justify-content: center;">
+      <span style="font-size: 1.2rem;">🎲</span> Discover Another Food
+    </button>
+  </div>
+</div>
+
+<script>
+function refreshRandom() {
+  const container = document.getElementById('random-content-container');
+  container.style.opacity = '0.3';
+  container.style.transition = 'opacity 0.3s ease';
+
+  fetch("{{ url_for('random_food') }}")
+    .then(response => response.text())
+    .then(html => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const newContent = doc.getElementById('random-content-container').innerHTML;
+      container.innerHTML = newContent;
+      container.style.opacity = '1';
+    })
+    .catch(err => {
+      console.error(err);
+      container.style.opacity = '1';
+    });
+}
+</script>
+{% endblock %}

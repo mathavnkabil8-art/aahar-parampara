@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% from "_motif.html" import mandala %}
+{% block title %}Aahar-Parampara — Home{% endblock %}
+{% block body_class %}bg-monuments{% endblock %}
+{% block content %}
+<div class="topbar">
+  <div class="brand">Aahar-Parampara</div>
+  <div style="font-size:.85rem; color:var(--text-soft);">Welcome, {{ user_name }}</div>
+</div>
+
+<div class="hero">
+  {{ mandala(size='160', color='#D32F2F', klass='hero-motif') }}
+  <h1>Every dish here has a story before it has a recipe</h1>
+</div>
+
+<!-- Cinematic Heritage Section -->
+<section class="heritage-cinematic">
+  <div class="cinematic-header scroll-anim">
+    <span class="eyebrow">Where Food Becomes Heritage</span>
+    <h2>Across India, food evolved with the land, the seasons and the people who preserved its knowledge.</h2>
+  </div>
+
+  <div class="heritage-map scroll-anim">
+    <svg class="map-lines" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
+      <line x1="400" y1="250" x2="200" y2="75" />
+      <line x1="400" y1="250" x2="600" y2="75" />
+      <line x1="400" y1="250" x2="80" y2="250" />
+      <line x1="400" y1="250" x2="720" y2="250" />
+      <line x1="400" y1="250" x2="240" y2="425" />
+      <line x1="400" y1="250" x2="560" y2="425" />
+    </svg>
+    <div class="map-node center-node">🍲 FOOD</div>
+    <div class="map-node n1">📍 REGION<div class="map-tooltip">Local geography shaped what communities could grow, gather and cook.</div></div>
+    <div class="map-node n2">🌦 CLIMATE<div class="map-tooltip">Seasonal conditions influenced ingredients, preservation and traditional food practices.</div></div>
+    <div class="map-node n3">🌾 INGREDIENTS<div class="map-tooltip">Millets, pulses, greens, spices and local produce formed regional food identities.</div></div>
+    <div class="map-node n4">🔥 TRADITION<div class="map-tooltip">Cooking techniques were passed from generation to generation.</div></div>
+    <div class="map-node n5">👨‍👩‍👧 GENERATIONS<div class="map-tooltip">Food knowledge survived through families and communities.</div></div>
+    <div class="map-node n6">📜 HISTORY<div class="map-tooltip">Every recipe carries a story of where it came from and how it changed.</div></div>
+  </div>
+
+  <div class="heritage-journey scroll-anim">
+    <div class="journey-track"></div>
+    <div class="journey-fill"></div>
+    <div class="journey-steps">
+      <div class="j-step"><span>LAND</span></div>
+      <div class="j-step"><span>CLIMATE</span></div>
+      <div class="j-step"><span>INGREDIENTS</span></div>
+      <div class="j-step"><span>CULINARY TRADITION</span></div>
+      <div class="j-step"><span>HERITAGE</span></div>
+    </div>
+  </div>
+
+  <div class="regional-cards scroll-anim">
+    <div class="r-card"><h4>RAJASTHAN</h4><p>Food shaped by arid landscapes and seasonal scarcity.</p></div>
+    <div class="r-card"><h4>KARNATAKA</h4><p>Millets, pulses and traditional preparation techniques shaped by regional agriculture.</p></div>
+    <div class="r-card"><h4>ODISHA</h4><p>Fermented foods and rice traditions connected with the coastal environment.</p></div>
+    <div class="r-card"><h4>MIZORAM</h4><p>Fermentation, foraged ingredients and community food traditions.</p></div>
+  </div>
+
+  <div class="fading-heritage scroll-anim">
+    <h3 class="fading-title">WHY ARE THESE FOODS DISAPPEARING?</h3>
+    <div class="fading-grid">
+      <div class="f-card">
+        <div class="f-icon">⏳</div>
+        <h4>Traditional Skills</h4>
+        <p>Time-intensive preparation and specialized techniques are harder to pass on.</p>
+      </div>
+      <div class="f-card">
+        <div class="f-icon">🏙️</div>
+        <h4>Changing Lifestyles</h4>
+        <p>Urban routines increasingly favor faster alternatives.</p>
+      </div>
+      <div class="f-card">
+        <div class="f-icon">🌾</div>
+        <h4>Changing Ingredients</h4>
+        <p>Some local ingredients and traditional practices are becoming harder to access.</p>
+      </div>
+    </div>
+    <div class="fading-transition scroll-anim">
+      "WHEN A RECIPE DISAPPEARS,<br>A PIECE OF LOCAL KNOWLEDGE CAN DISAPPEAR WITH IT."
+    </div>
+  </div>
+
+  <div class="mission-section scroll-anim">
+    <h2>Aahar-Parampara uses AI to help rediscover, document and connect India's disappearing culinary traditions.</h2>
+    <p>From forgotten ingredients to forgotten stories — preserving food heritage for the next generation.</p>
+    <a href="{{ url_for('explore_all') }}" class="btn-explore-massive" style="margin-top:2.5rem;">
+      <span class="btn-explore-bg"></span>
+      <span class="btn-explore-glow"></span>
+      <span class="btn-explore-text">EXPLORE THE HERITAGE</span>
+    </a>
+  </div>
+</section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  
+  document.querySelectorAll('.scroll-anim').forEach(el => observer.observe(el));
+});
+</script>
+
+<!-- Featured Foods Gallery -->
+<div class="gallery-section">
+  <div class="gallery-heading">
+    <h2>Glimpses from the Archive</h2>
+    <span class="gallery-hint">Scroll to explore →</span>
+  </div>
+  <div class="gallery-scroll">
+    {% for dish in gallery %}
+    <a class="gallery-card" href="{{ url_for('dish_detail', dish_id=dish.id) }}">
+      <div class="gallery-card-top"><span class="initial">{{ dish.recipe_name[0] }}</span></div>
+      <div class="gallery-card-body">
+        <span class="state-tag">{{ dish.state }}</span>
+        <h3>{{ dish.recipe_name }}</h3>
+        <p>{{ dish.cultural_context[:110] }}{% if dish.cultural_context|length > 110 %}…{% endif %}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- Innovative Explore CTA -->
+<div class="explore-cta-section">
+  <p class="explore-subtitle">Ready to discover your heritage?</p>
+  <div class="explore-btn-wrapper" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+    <a href="{{ url_for('around_you') }}" class="btn-explore-massive" style="border-color: var(--primary-saffron); box-shadow: 0 0 20px rgba(212,175,55,0.15);">
+      <span class="btn-explore-bg"></span>
+      <span class="btn-explore-text">📍 Heritage Around You</span>
+      <span class="btn-explore-glow"></span>
+    </a>
+    <a href="{{ url_for('explore_all') }}" class="btn-explore-massive">
+      <span class="btn-explore-bg"></span>
+      <span class="btn-explore-text">Explore All Foods</span>
+      <span class="btn-explore-glow"></span>
+    </a>
+  </div>
+  <p style="text-align:center; margin-top: 2rem; color: var(--text-soft); font-size: 1.1rem;">
+    Or let fate decide and <a href="{{ url_for('random_food') }}" class="random-link">discover a random dish</a>.
+  </p>
+</div>
+
+<p class="footer-note">Aahar-Parampara — Smart India Hackathon 2026</p>
+{% endblock %}

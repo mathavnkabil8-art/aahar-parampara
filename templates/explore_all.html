@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block body_class %}bg-ancient-food{% endblock %}
+{% block title %}Aahar-Parampara — The Complete Archive{% endblock %}
+{% block content %}
+<div class="topbar">
+  <div class="brand">Aahar-Parampara</div>
+  <div style="font-size:.85rem; color:var(--text-soft);"><a href="{{ url_for('home') }}" style="color:var(--secondary-indigo);">← Back to Home</a></div>
+</div>
+
+<div class="hero" style="padding-bottom: 2rem;">
+  <h1>The Complete Heritage Archive</h1>
+  <p>Explore our full repository of traditional Indian foods, preserving centuries of culinary wisdom, history, and wellness.</p>
+</div>
+
+<div class="filter-panel glass-panel" style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 3rem; padding: 1.5rem 2rem; border-radius: 12px; background: rgba(10, 15, 26, 0.45); backdrop-filter: blur(24px); border: 1px solid rgba(212,175,55,0.3); box-shadow: 0 8px 32px rgba(0,0,0,0.5), inset 0 0 15px rgba(212,175,55,0.05);">
+  <div class="field filter-group" style="flex: 1 1 200px; margin-bottom: 0;">
+    <label for="filter-state">State / Region</label>
+    <select id="filter-state">
+      <option value="all">All Regions</option>
+      {% set states = [] %}
+      {% for d in all_dishes %}
+        {% if d.state not in states %}{% set _ = states.append(d.state) %}{% endif %}
+      {% endfor %}
+      {% for s in states|sort %}
+      <option value="{{ s|lower }}">{{ s }}</option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <div class="field filter-group" style="flex: 1 1 150px; margin-bottom: 0;">
+    <label for="filter-season">Season</label>
+    <select id="filter-season">
+      <option value="all">All Seasons</option>
+      <option value="summer">Summer</option>
+      <option value="winter">Winter</option>
+      <option value="monsoon">Monsoon</option>
+      <option value="spring">Spring</option>
+      <option value="autumn">Autumn</option>
+    </select>
+  </div>
+
+  <div class="field filter-group" style="flex: 1 1 200px; margin-bottom: 0;">
+    <label for="filter-era">Historical Era</label>
+    <select id="filter-era">
+      <option value="all">All Eras</option>
+      <option value="classical">Classical / Ancient</option>
+      <option value="generational">Generational Memory</option>
+      <option value="undated">Undated / Modern</option>
+    </select>
+  </div>
+
+  <div class="field filter-group search-group" style="flex: 2 1 300px; margin-bottom: 0;">
+    <label for="filter-search">Ingredients / Food Type</label>
+    <input type="text" id="filter-search" placeholder="E.g., rice, curry, millet...">
+  </div>
+</div>
+
+<div class="archive-grid" id="archive-grid">
+  {% for dish in all_dishes %}
+  <a class="archive-card" 
+     href="{{ url_for('dish_detail', dish_id=dish.id) }}"
+     data-state="{{ dish.state|lower }}"
+     data-season="{{ dish.environmental_triggers|join(' ')|lower }}"
+     data-era="{{ dish.era_confidence|lower }}"
+     data-search="{{ dish.recipe_name|lower }} {{ dish.input_ingredients|join(' ')|lower }} {{ dish.cultural_context|lower }}"
+     style="transition: opacity 0.3s ease, transform 0.4s ease;">
+    <div class="archive-card-header">
+      <span class="state-tag">{{ dish.state }}</span>
+    </div>
+    <h3>{{ dish.recipe_name }}</h3>
+    <p class="archive-ingredients"><strong>Key Ingredients:</strong> {{ dish.input_ingredients | join(', ') }}</p>
+    <p class="archive-context">{{ dish.cultural_context[:120] }}{% if dish.cultural_context|length > 120 %}…{% endif %}</p>
+  </a>
+  {% endfor %}
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const stateFilter = document.getElementById('filter-state');
+  const seasonFilter = document.getElementById('filter-season');
+  const eraFilter = document.getElementById('filter-era');
+  const searchFilter = document.getElementById('filter-search');
+  const cards = document.querySelectorAll('.archive-card');
+
+  function filterCards() {
+    const stateVal = stateFilter.value;
+    const seasonVal = seasonFilter.value;
+    const eraVal = eraFilter.value;
+    const searchVal = searchFilter.value.toLowerCase().trim();
+
+    cards.forEach(card => {
+      const cState = card.getAttribute('data-state') || '';
+      const cSeason = card.getAttribute('data-season') || '';
+      const cEra = card.getAttribute('data-era') || '';
+      const cSearch = card.getAttribute('data-search') || '';
+
+      let match = true;
+      if (stateVal !== 'all' && cState !== stateVal) match = false;
+      if (seasonVal !== 'all' && !cSeason.includes(seasonVal)) match = false;
+      if (eraVal !== 'all' && !cEra.includes(eraVal)) match = false;
+      
+      // Simple substring search for multiple keywords
+      if (searchVal) {
+        const terms = searchVal.split(' ').filter(t => t.length > 0);
+        for (let term of terms) {
+          if (!cSearch.includes(term)) {
+            match = false;
+            break;
+          }
+        }
+      }
+
+      if (match) {
+        card.style.display = 'block';
+        // Tiny delay to allow display to apply before fading in
+        setTimeout(() => card.style.opacity = '1', 10);
+      } else {
+        card.style.opacity = '0';
+        // Wait for opacity transition before hiding
+        setTimeout(() => {
+          if (card.style.opacity === '0') card.style.display = 'none';
+        }, 300);
+      }
+    });
+  }
+
+  stateFilter.addEventListener('change', filterCards);
+  seasonFilter.addEventListener('change', filterCards);
+  eraFilter.addEventListener('change', filterCards);
+  searchFilter.addEventListener('input', filterCards);
+});
+</script>
+{% endblock %}

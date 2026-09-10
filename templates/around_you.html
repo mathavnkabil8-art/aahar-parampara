@@ -1,0 +1,341 @@
+{% extends "base.html" %}
+{% block title %}Heritage Food Around You — Aahar-Parampara{% endblock %}
+{% block body_class %}bg-monuments{% endblock %}
+{% block content %}
+<div class="topbar">
+  <div class="brand">Aahar-Parampara</div>
+  <a href="{{ url_for('home') }}" class="btn-ghost" style="font-size:.8rem; padding:.5rem 1rem;">← Home</a>
+</div>
+
+<div class="page-container" style="max-width: 800px; margin: 0 auto; padding-top: 2rem;">
+  <div style="text-align: center; margin-bottom: 3rem;">
+    <h1 style="font-size:2.5rem; margin-bottom:1rem; color: #fff; font-family: 'Rozha One', serif; text-shadow: 0 0 20px rgba(212,175,55,0.2);">Heritage Food Around You</h1>
+    <p style="color: var(--text-soft); font-size: 1.1rem;">Discover a traditional food that connects with your place, weather and regional ingredients.</p>
+  </div>
+
+  <!-- Location controls -->
+  <div class="card glass-panel" style="padding: 2rem; margin-bottom: 2rem;">
+    <h3 style="color: var(--primary-saffron); margin-bottom: 1.5rem; font-family: 'Rozha One', serif; font-size: 1.4rem;">Where are you exploring from?</h3>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+      <button id="btn-locate" class="btn-primary" style="flex: 1 1 200px;">📍 Use My Location</button>
+      <div style="flex: 2 1 300px; display: flex; gap: 0.5rem;">
+        <input type="text" id="manual-location" class="dark-input" placeholder="Or enter city/state manually..." style="flex: 1;">
+        <button id="btn-search-loc" class="btn-ghost">Search</button>
+      </div>
+    </div>
+    <div id="loc-status" style="margin-top: 1rem; font-size: 0.9rem; color: var(--primary-crimson); display: none;"></div>
+  </div>
+
+  <!-- Dashboard Container -->
+  <div id="dashboard" style="display: none;">
+    <!-- Live Weather -->
+    <div class="card glass-panel" style="padding: 1.5rem 2rem; margin-bottom: 2rem;">
+      <h4 style="color: var(--accent-gold); text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 1rem;">Live Weather Conditions</h4>
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+        <div style="flex: 1 1 200px;">
+          <h2 id="w-location" style="color: #fff; margin-bottom: 0.5rem;">-</h2>
+          <div style="font-size: 0.9rem; color: var(--text-soft);" id="w-time">-</div>
+        </div>
+        <div style="flex: 1 1 200px; display: flex; gap: 2rem; align-items: center;">
+          <div>
+            <div id="w-icon" style="font-size: 3rem;">🌡️</div>
+          </div>
+          <div>
+            <div id="w-temp" style="font-size: 2rem; font-weight: bold; color: var(--primary-saffron);">-°C</div>
+            <div id="w-cond" style="font-size: 1rem; color: #fff;">-</div>
+          </div>
+        </div>
+        <div style="flex: 1 1 200px; font-size: 0.9rem; color: rgba(255,255,255,0.8); display: flex; flex-direction: column; gap: 0.3rem; justify-content: center;">
+          <div><strong>Feels like:</strong> <span id="w-feels">-</span></div>
+          <div><strong>Humidity:</strong> <span id="w-hum">-</span></div>
+          <div><strong>Precipitation:</strong> <span id="w-precip">-</span></div>
+          <div><strong>Wind:</strong> <span id="w-wind">-</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discovery Controls -->
+    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; justify-content: center;">
+      <button class="btn-ghost mode-btn active" data-mode="best">Best Match</button>
+      <button class="btn-ghost mode-btn" data-mode="region">Regional</button>
+      <button class="btn-ghost mode-btn" data-mode="season">Seasonal</button>
+      <button class="btn-ghost mode-btn" data-mode="weather">Weather Match</button>
+      <button class="btn-ghost mode-btn" data-mode="ingredient">Ingredient Match</button>
+      <button class="btn-ghost mode-btn" data-mode="surprise" style="border-color: var(--primary-saffron);">Surprise Me 🎲</button>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loading-match" style="text-align: center; padding: 3rem; display: none;">
+      <div class="hero-motif" style="width: 60px; height: 60px; margin: 0 auto; filter: none;">
+        <div style="width: 40px; height: 40px; border: 3px solid rgba(212,175,55,0.3); border-top-color: var(--primary-saffron); border-radius: 50%; animation: spinSlow 1s linear infinite;"></div>
+      </div>
+      <p style="margin-top: 1rem; color: var(--primary-saffron);">Analyzing regional heritage...</p>
+    </div>
+
+    <!-- Match Result Card -->
+    <div id="match-result" class="card glass-panel" style="padding: 2.5rem 2rem; margin-bottom: 3rem; position: relative; overflow: hidden; display: none; animation: cardRise 0.8s ease;">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <span class="eyebrow">Your Heritage Food Match</span>
+        <h2 id="r-name" style="font-size: 2.2rem; color: var(--primary-saffron); font-family: 'Rozha One', serif; margin: 0.5rem 0 1rem;">-</h2>
+        <div style="display: inline-block; background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.3); padding: 0.3rem 1rem; border-radius: 30px; font-size: 0.9rem; color: #fff;">
+          <span id="r-state">-</span> <span id="r-era" style="color: var(--text-soft);"></span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+        <!-- Left Col: Score -->
+        <div style="flex: 1 1 250px; background: rgba(10,15,26,0.6); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+          <div style="text-align: center; margin-bottom: 1.5rem;">
+            <div id="r-score" style="font-size: 3rem; font-family: 'Rozha One', serif; color: var(--primary-saffron); text-shadow: var(--glow-saffron);">0%</div>
+            <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-gold);">Heritage Match</div>
+          </div>
+          <div style="font-size: 0.9rem; color: rgba(255,255,255,0.8); display: flex; flex-direction: column; gap: 0.8rem;">
+            <div style="display: flex; justify-content: space-between;"><span>📍 Regional Match</span> <strong id="s-reg">-</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>🌦️ Weather Match</span> <strong id="s-wea">-</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>🌾 Ingredient Match</span> <strong id="s-ing">-</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span>🌱 Seasonal Match</span> <strong id="s-sea">-</strong></div>
+          </div>
+        </div>
+
+        <!-- Right Col: Details -->
+        <div style="flex: 2 1 300px; display: flex; flex-direction: column; justify-content: center;">
+          <h4 style="color: var(--accent-gold); font-family: 'Rozha One', serif; font-size: 1.2rem; margin-bottom: 0.8rem;">Why This Food?</h4>
+          <ul id="r-reasons" style="color: rgba(255,255,255,0.9); line-height: 1.6; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+          </ul>
+
+          <div id="r-ing-box" style="display: none;">
+            <h4 style="color: var(--accent-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Matched Regional Ingredients</h4>
+            <div id="r-ings" style="display: flex; gap: 0.5rem; flex-wrap: wrap;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a id="r-link" href="#" class="btn-primary" style="display: inline-block; padding: 1rem 3rem;">Explore Full Story →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Transparency Section -->
+  <div style="margin-bottom: 4rem; background: rgba(0,0,0,0.3); padding: 2rem; border-radius: 8px; font-size: 0.9rem; color: var(--text-soft); line-height: 1.6;">
+    <h4 style="color: #fff; margin-bottom: 1rem; font-family: 'Rozha One', serif; font-size: 1.2rem;">How this recommendation works</h4>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+      <div><strong>Weather Data</strong><br>→ Current weather from Open-Meteo</div>
+      <div><strong>Heritage Data</strong><br>→ Aahar-Parampara food dataset</div>
+      <div><strong>Ingredient Data</strong><br>→ Regional/traditional ingredient associations in the project</div>
+      <div><strong>Recommendation</strong><br>→ Weather (40%) + Region (25%) + Ingredients (25%) + Season (10%)</div>
+    </div>
+    <p style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+      <em>Note: This recommendation is based on available heritage and environmental data and is not medical or nutritional advice. If existing food data contains traditional health beliefs, they represent folk use and are not clinically verified.</em>
+    </p>
+  </div>
+
+</div>
+
+<script>
+let currentState = "";
+let currentTemp = 25;
+let currentRain = 0;
+let currentMode = "best";
+
+const btnLocate = document.getElementById('btn-locate');
+const btnSearch = document.getElementById('btn-search-loc');
+const locInput = document.getElementById('manual-location');
+const locStatus = document.getElementById('loc-status');
+const dashboard = document.getElementById('dashboard');
+
+// Weather maps
+const wCodes = {
+  0: {i: "☀️", t: "Clear sky"}, 1: {i: "🌤️", t: "Mainly clear"}, 2: {i: "⛅", t: "Partly cloudy"}, 3: {i: "☁️", t: "Overcast"},
+  45: {i: "🌫️", t: "Fog"}, 48: {i: "🌫️", t: "Depositing rime fog"},
+  51: {i: "🌧️", t: "Light Drizzle"}, 53: {i: "🌧️", t: "Moderate Drizzle"}, 55: {i: "🌧️", t: "Dense Drizzle"},
+  61: {i: "🌧️", t: "Slight Rain"}, 63: {i: "🌧️", t: "Moderate Rain"}, 65: {i: "🌧️", t: "Heavy Rain"},
+  71: {i: "❄️", t: "Slight Snow"}, 73: {i: "❄️", t: "Moderate Snow"}, 75: {i: "❄️", t: "Heavy Snow"},
+  95: {i: "⛈️", t: "Thunderstorm"}
+};
+
+btnLocate.addEventListener('click', () => {
+  locStatus.style.display = 'block';
+  locStatus.style.color = '#fff';
+  locStatus.innerText = 'Requesting location...';
+  
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      pos => fetchLocationData(pos.coords.latitude, pos.coords.longitude),
+      err => {
+        locStatus.style.color = 'var(--primary-crimson)';
+        locStatus.innerText = 'Location access denied or unavailable. Please enter manually.';
+      }
+    );
+  } else {
+    locStatus.style.color = 'var(--primary-crimson)';
+    locStatus.innerText = 'Geolocation is not supported by your browser.';
+  }
+});
+
+btnSearch.addEventListener('click', () => {
+  const query = locInput.value.trim();
+  if(!query) return;
+  locStatus.style.display = 'block';
+  locStatus.style.color = '#fff';
+  locStatus.innerText = 'Searching...';
+
+  // Geocode via open-meteo
+  fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(query)}&count=1&language=en&format=json`)
+    .then(r => r.json())
+    .then(data => {
+      if(data.results && data.results.length > 0) {
+        const res = data.results[0];
+        fetchLocationData(res.latitude, res.longitude, res.name, res.admin1 || res.country);
+      } else {
+        locStatus.style.color = 'var(--primary-crimson)';
+        locStatus.innerText = 'City not found. Please try again.';
+      }
+    }).catch(e => {
+      locStatus.style.color = 'var(--primary-crimson)';
+      locStatus.innerText = 'Network error during search.';
+    });
+});
+
+async function fetchLocationData(lat, lon, cityName=null, stateName=null) {
+  locStatus.innerText = 'Fetching live weather...';
+  
+  try {
+    // Reverse geocode if names not provided
+    if(!cityName || !stateName) {
+      const geoRes = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}&localityLanguage=en`);
+      const geoData = await geoRes.json();
+      cityName = geoData.city || geoData.locality || 'Unknown Location';
+      stateName = geoData.principalSubdivision || geoData.countryName || '';
+    }
+
+    // Get Weather
+    const wRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m`);
+    const wData = await wRes.json();
+    const cur = wData.current;
+
+    currentState = stateName;
+    currentTemp = cur.temperature_2m;
+    currentRain = cur.precipitation;
+
+    // Update UI Weather
+    document.getElementById('w-location').innerText = `${cityName}, ${stateName}`;
+    document.getElementById('w-time').innerText = new Date().toLocaleString();
+    document.getElementById('w-temp').innerText = `${cur.temperature_2m}°C`;
+    
+    const wInfo = wCodes[cur.weather_code] || {i: "☁️", t: "Unknown"};
+    document.getElementById('w-icon').innerText = wInfo.i;
+    document.getElementById('w-cond').innerText = wInfo.t;
+    
+    document.getElementById('w-feels').innerText = `${cur.apparent_temperature}°C`;
+    document.getElementById('w-hum').innerText = `${cur.relative_humidity_2m}%`;
+    document.getElementById('w-precip').innerText = `${cur.precipitation}mm`;
+    document.getElementById('w-wind').innerText = `${cur.wind_speed_10m}km/h`;
+
+    locStatus.style.display = 'none';
+    dashboard.style.display = 'block';
+
+    getRecommendation();
+
+  } catch(e) {
+    locStatus.style.color = 'var(--primary-crimson)';
+    locStatus.innerText = 'Error fetching weather data. Operating with limited context.';
+    // Fallback: Just trigger recommendation with state only
+    currentState = stateName || locInput.value.trim();
+    dashboard.style.display = 'block';
+    getRecommendation();
+  }
+}
+
+document.querySelectorAll('.mode-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+    currentMode = e.target.getAttribute('data-mode');
+    getRecommendation();
+  });
+});
+
+function getRecommendation() {
+  const resultDiv = document.getElementById('match-result');
+  const loadingDiv = document.getElementById('loading-match');
+  
+  resultDiv.style.display = 'none';
+  loadingDiv.style.display = 'block';
+
+  fetch("{{ url_for('api_recommend_around_you') }}", {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      state: currentState,
+      temp: currentTemp,
+      rain: currentRain,
+      mode: currentMode
+    })
+  })
+  .then(r => r.json())
+  .then(data => {
+    loadingDiv.style.display = 'none';
+    
+    const dish = data.dish;
+    document.getElementById('r-name').innerText = dish.recipe_name;
+    document.getElementById('r-state').innerText = dish.state;
+    document.getElementById('r-era').innerText = dish.era_confidence ? `· ${dish.era_confidence}` : '';
+    
+    // Animate Score
+    let finalScore = data.score;
+    let scoreEl = document.getElementById('r-score');
+    let c = 0;
+    let i = setInterval(() => {
+      c += 3;
+      if(c >= finalScore) { c = finalScore; clearInterval(i); }
+      scoreEl.innerText = `${c}%`;
+    }, 20);
+
+    document.getElementById('s-reg').innerText = `${data.details.r}/25`;
+    document.getElementById('s-wea').innerText = `${data.details.w}/40`;
+    document.getElementById('s-ing').innerText = `${data.details.i}/25`;
+    document.getElementById('s-sea').innerText = `${data.details.s}/10`;
+
+    // Reasons
+    const ul = document.getElementById('r-reasons');
+    ul.innerHTML = '';
+    data.reasons.forEach(r => {
+      const li = document.createElement('li');
+      li.innerText = r;
+      li.style.marginBottom = '0.5rem';
+      ul.appendChild(li);
+    });
+
+    // Ingredients
+    const ingBox = document.getElementById('r-ing-box');
+    const ings = document.getElementById('r-ings');
+    if(data.matched_ingredients && data.matched_ingredients.length > 0) {
+      ingBox.style.display = 'block';
+      ings.innerHTML = '';
+      data.matched_ingredients.forEach(ing => {
+        const sp = document.createElement('span');
+        sp.innerText = ing;
+        sp.style.background = 'rgba(212,175,55,0.2)';
+        sp.style.border = '1px solid var(--accent-gold)';
+        sp.style.padding = '0.2rem 0.8rem';
+        sp.style.borderRadius = '20px';
+        sp.style.fontSize = '0.85rem';
+        ings.appendChild(sp);
+      });
+    } else {
+      ingBox.style.display = 'none';
+    }
+
+    document.getElementById('r-link').href = `/dish/${dish.id}`;
+    resultDiv.style.display = 'block';
+  })
+  .catch(err => {
+    loadingDiv.style.display = 'none';
+    locStatus.style.display = 'block';
+    locStatus.style.color = 'var(--primary-crimson)';
+    locStatus.innerText = 'Failed to fetch recommendation.';
+  });
+}
+</script>
+{% endblock %}

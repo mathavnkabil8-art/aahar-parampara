@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Rate — Aahar-Parampara{% endblock %}
+{% block content %}
+<div class="topbar">
+  <div class="brand">Aahar-Parampara</div>
+  <a href="{{ url_for('home') }}" class="btn-ghost" style="font-size:.8rem; padding:.5rem 1rem;">← Home</a>
+</div>
+
+<div style="max-width: 600px; margin: 0 auto; text-align: center; padding: 2rem 1rem;">
+  <span class="eyebrow">{{ dish.state }}</span>
+  <h1 style="font-size:2rem; margin:.5rem 0 2rem; color: #fff; font-family: 'Rozha One', serif; text-shadow: 0 0 20px rgba(212,175,55,0.2);">How did {{ dish.recipe_name }} turn out?</h1>
+
+  {% if submitted %}
+    <div class="card" style="padding: 3rem 2rem;">
+      <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem; color: rgba(255,255,255,0.85);">Thanks — your rating and photo have been saved. This helps refine matches for other explorers.</p>
+      <a href="{{ url_for('home') }}" class="btn-primary" style="display: inline-block;">Back to homepage</a>
+    </div>
+  {% else %}
+    <form method="POST" enctype="multipart/form-data" class="card" style="padding: 2.5rem 2rem; text-align: left; max-width: 500px; margin: 0 auto;">
+      <div class="field">
+        <label for="rating">Rating (1–5)</label>
+        <select id="rating" name="rating">
+          <option value="5">5 — Loved it</option>
+          <option value="4">4 — Good</option>
+          <option value="3">3 — Okay</option>
+          <option value="2">2 — Not for me</option>
+          <option value="1">1 — Didn't work out</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="note">Notes (optional)</label>
+        <textarea id="note" name="note" rows="3" placeholder="Any tweaks you made, or how it compared to what you expected"></textarea>
+      </div>
+      <div class="field">
+        <label for="photo">Upload a photo</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <button class="btn-primary" type="submit" style="width: 100%;">Submit rating</button>
+      </div>
+    </form>
+  {% endif %}
+</div>
+{% endblock %}

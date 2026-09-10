@@ -903,4 +903,62 @@ button, .btn-primary, .btn-ghost { word-wrap: break-word; white-space: normal; t
   h1 { font-size: 1.8rem !important; }
   .floating-unroll-guide { padding: 1.5rem; }
 }
+/* --- Enhanced Heritage Map (v2 — fixed sizing) --- */
+.map-node {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  animation: nodeFloat 4s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes nodeFloat {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+  50% { transform: translate(-50%, -50%) translateY(-8px); }
+}
+.map-node:hover { animation-play-state: paused; }
 
+.center-node.pulse-core {
+  width: 140px;
+  height: 60px;
+  justify-content: center;
+  animation: nodeFloat 4s ease-in-out infinite, coreBreathe 2.4s ease-in-out infinite;
+  transform: translate(-50%, -50%) !important;
+}
+@keyframes coreBreathe {
+  0%, 100% { box-shadow: 0 0 30px rgba(212,175,55,0.2), inset 0 0 20px rgba(212,175,55,0.2); }
+  50% { box-shadow: 0 0 45px rgba(212,175,55,0.45), inset 0 0 25px rgba(212,175,55,0.35); }
+}
+.pulse-core::before, .pulse-core::after {
+  content: ""; position: absolute; inset: -12px; border-radius: 14px;
+  border: 1px solid rgba(255, 204, 0, 0.5); pointer-events: none;
+  animation: corePulse 2.4s ease-out infinite;
+}
+.pulse-core::after { animation-delay: 1.2s; }
+@keyframes corePulse {
+  0% { opacity: 0.8; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.7); }
+}
+
+.travel-dot { filter: drop-shadow(0 0 6px var(--accent-gold)); }
+
+.map-info-overlay {
+  position: fixed; inset: 0; background: rgba(5, 8, 16, 0.75);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 200;
+}
+.map-info-overlay.open { opacity: 1; visibility: visible; }
+.map-info-card {
+  background: rgba(10, 15, 26, 0.95); border: 1px solid rgba(212,175,55,0.4);
+  border-radius: 16px; padding: 2.5rem; max-width: 420px; width: 90%;
+  text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 0 40px rgba(212,175,55,0.15);
+  transform: scale(0.9); transition: transform 0.3s ease;
+}
+.map-info-overlay.open .map-info-card { transform: scale(1); }
+.map-info-title { font-family: 'Rozha One', serif; font-size: 1.6rem; color: var(--primary-saffron); margin-bottom: 1rem; text-shadow: var(--glow-saffron); }
+.map-info-text { font-size: 1.05rem; line-height: 1.7; color: var(--text-primary); }
+
+@media (max-width: 768px) {
+  .map-node { animation: none; }
+  .center-node.pulse-core { width: 120px; height: 50px; }
+}

@@ -20,7 +20,7 @@
     <h2>Across India, food evolved with the land, the seasons and the people who preserved its knowledge.</h2>
   </div>
 
-  <div class="heritage-map scroll-anim">
+    <div class="heritage-map scroll-anim">
     <svg class="map-lines" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
       <line x1="400" y1="250" x2="200" y2="75" />
       <line x1="400" y1="250" x2="600" y2="75" />
@@ -28,14 +28,43 @@
       <line x1="400" y1="250" x2="720" y2="250" />
       <line x1="400" y1="250" x2="240" y2="425" />
       <line x1="400" y1="250" x2="560" y2="425" />
+
+      <circle r="5" fill="var(--accent-gold)" class="travel-dot">
+        <animateMotion dur="2.6s" repeatCount="indefinite" path="M200,75 L400,250" />
+      </circle>
+      <circle r="5" fill="var(--accent-gold)" class="travel-dot" style="animation-delay:.3s">
+        <animateMotion dur="2.6s" repeatCount="indefinite" begin="0.3s" path="M600,75 L400,250" />
+      </circle>
+      <circle r="5" fill="var(--accent-gold)" class="travel-dot">
+        <animateMotion dur="2.6s" repeatCount="indefinite" begin="0.6s" path="M80,250 L400,250" />
+      </circle>
+      <circle r="5" fill="var(--accent-gold)" class="travel-dot">
+        <animateMotion dur="2.6s" repeatCount="indefinite" begin="0.9s" path="M720,250 L400,250" />
+      </circle>
+      <circle r="5" fill="var(--accent-gold)" class="travel-dot">
+        <animateMotion dur="2.6s" repeatCount="indefinite" begin="1.2s" path="M240,425 L400,250" />
+      </circle>
+      <circle r="5" fill="var(--accent-gold)" class="travel-dot">
+        <animateMotion dur="2.6s" repeatCount="indefinite" begin="1.5s" path="M560,425 L400,250" />
+      </circle>
     </svg>
-    <div class="map-node center-node">🍲 FOOD</div>
-    <div class="map-node n1">📍 REGION<div class="map-tooltip">Local geography shaped what communities could grow, gather and cook.</div></div>
-    <div class="map-node n2">🌦 CLIMATE<div class="map-tooltip">Seasonal conditions influenced ingredients, preservation and traditional food practices.</div></div>
-    <div class="map-node n3">🌾 INGREDIENTS<div class="map-tooltip">Millets, pulses, greens, spices and local produce formed regional food identities.</div></div>
-    <div class="map-node n4">🔥 TRADITION<div class="map-tooltip">Cooking techniques were passed from generation to generation.</div></div>
-    <div class="map-node n5">👨‍👩‍👧 GENERATIONS<div class="map-tooltip">Food knowledge survived through families and communities.</div></div>
-    <div class="map-node n6">📜 HISTORY<div class="map-tooltip">Every recipe carries a story of where it came from and how it changed.</div></div>
+
+    <div class="map-node center-node pulse-core">🍲 FOOD</div>
+
+    <div class="map-node n1" style="--delay:0s" onclick="openMapInfo(this,'📍 Region','Local geography shaped what communities could grow, gather and cook.')">📍 REGION</div>
+    <div class="map-node n2" style="--delay:.15s" onclick="openMapInfo(this,'🌦 Climate','Seasonal conditions influenced ingredients, preservation and traditional food practices.')">🌦 CLIMATE</div>
+    <div class="map-node n3" style="--delay:.3s" onclick="openMapInfo(this,'🌾 Ingredients','Millets, pulses, greens, spices and local produce formed regional food identities.')">🌾 INGREDIENTS</div>
+    <div class="map-node n4" style="--delay:.45s" onclick="openMapInfo(this,'🔥 Tradition','Cooking techniques were passed from generation to generation.')">🔥 TRADITION</div>
+    <div class="map-node n5" style="--delay:.6s" onclick="openMapInfo(this,'👨‍👩‍👧 Generations','Food knowledge survived through families and communities.')">👨‍👩‍👧 GENERATIONS</div>
+    <div class="map-node n6" style="--delay:.75s" onclick="openMapInfo(this,'📜 History','Every recipe carries a story of where it came from and how it changed.')">📜 HISTORY</div>
+  </div>
+
+  <div class="map-info-overlay" id="mapInfoOverlay" onclick="closeMapInfo(event)">
+    <div class="map-info-card" onclick="event.stopPropagation()">
+      <div class="map-info-title" id="mapInfoTitle"></div>
+      <div class="map-info-text" id="mapInfoText"></div>
+      <button class="btn-ghost" style="margin-top:1.2rem; padding:.5rem 1.4rem; font-size:.8rem;" onclick="closeMapInfo(event)">Close</button>
+    </div>
   </div>
 
   <div class="heritage-journey scroll-anim">

@@ -15,7 +15,12 @@
 
 {% for m in matches %}
   {% set dish = m.dish %}
-  <a class="match-card" href="{{ url_for('dish_detail', dish_id=dish.id) }}">
+   <a class="match-card" href="{{ url_for('dish_detail', dish_id=dish.id) }}">
+    <div style="width:100%; height:160px; border-radius:8px; overflow:hidden; margin-bottom:0.8rem;">
+      <img src="{{ url_for('static', filename=dish.image) }}" alt="{{ dish.recipe_name }}"
+           style="width:100%; height:100%; object-fit:cover;"
+           onerror="this.parentElement.style.display='none'">
+    </div>
     <span class="eyebrow">{{ dish.state }} · {{ dish.era_confidence }}</span>
     <h3>{{ dish.recipe_name }}</h3>
     <p class="story-snippet">{{ dish.cultural_context[:160] }}{% if dish.cultural_context|length > 160 %}…{% endif %}</p>

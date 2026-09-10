@@ -1,0 +1,1465 @@
+{
+  "project_name": "Aahar-Parampara",
+  "note": "target_health_metrics reflect traditional/folk belief, not clinical fact. source_status is community-documented and pending verification for all entries.",
+  "master_dataset": {
+    "Mizoram": [
+      {
+        "recipe_name": "Rawtu / Saktu",
+        "environmental_triggers": [
+          "Torrential Monsoon Cloudbursts",
+          "Continuous High-Humidity Flood Seasons"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to support gut alkalinity",
+          "Traditional anti-parasitic use",
+          "Traditionally used to soothe the stomach lining"
+        ],
+        "input_ingredients": [
+          "Saktu Alkaline Filtrate",
+          "Raw Mountain Pumpkin",
+          "Bird's Eye Chilies",
+          "Mustard Oil"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A premier Agni-Deepana (digestive primer) and systemic anti-parasitic starter. In the 80s and 90s, Mizo households brewed this during high-humidity seasonal transitions to structurally alter internal gut pH levels, drop vascular heat, and shield the digestive tract from monsoonal water-borne infections.",
+        "why_less_common": "Extracting authentic Saktu lye demands a multi-week manual processing and burning discipline. The mass introduction of industrial sodium bicarbonate (baking soda) and fine iodized table salt completely replaced it.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Bahkhra / Nimbu Tenga Stew",
+        "environmental_triggers": [
+          "Thick Morning Hill Fogs",
+          "Sudden Cold Damp Temperature Drops"
+        ],
+        "target_health_metrics": [
+          "Traditionally used to ease chest congestion",
+          "Traditional joint-comfort use",
+          "Traditionally believed to aid circulation"
+        ],
+        "input_ingredients": [
+          "Wild Bahkhra Leaves",
+          "Wild Mountain Ginger",
+          "Native Lemon Extract",
+          "Water"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A powerful vascular primer and targeted pulmonary cleanser. It was the automatic, default home remedy in 80s/90s Mizo homes the moment any family member developed joint stiffness, chronic cough, or chest congestion due to cold, damp hill-valley winds.",
+        "why_less_common": "The vine releases a sharp, sulfurous aroma when crushed that fell out of favor with younger generations. Additionally, the replacement of yard hedges with concrete boundary walls eliminated its natural foraging habitats.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Hmarcha Rawt & Sawhchiar",
+        "environmental_triggers": [
+          "Freezing Dry Highland Winters",
+          "Severe Night Frosts"
+        ],
+        "target_health_metrics": [
+          "Traditionally eaten for warmth",
+          "Traditional energy-sustaining staple",
+          "Traditionally believed to aid circulation in cold"
+        ],
+        "input_ingredients": [
+          "Native Red Sticky Rice",
+          "Free-Range Mountain Meat",
+          "Bird's Eye Chilies",
+          "Wild Garlic Bulbs"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The definitive winter endurance and respiratory shield used across the high-altitude Lushai hills to generate instant internal body heat and prevent hypothermia during freezing, low-oxygen desert winter nights.",
+        "why_less_common": "Cultivating and manually processing low-yield native red sticky rice dropped out of modern schedules due to the easy availability of mass-distributed fine white polished rice varieties.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Tripura": [
+      {
+        "recipe_name": "Awandru & Berma",
+        "environmental_triggers": [
+          "Thick Morning Valley Fogs",
+          "Cold Damp Post-Monsoon Weeks"
+        ],
+        "target_health_metrics": [
+          "Traditionally used to ease chest congestion",
+          "Traditional cold-and-flu comfort food",
+          "Traditionally believed to support recovery"
+        ],
+        "input_ingredients": [
+          "Native Rice Flour Slurry",
+          "Berma (Fermented Fish)",
+          "Fresh Ginger Shoots",
+          "Local Green Chilies"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The quintessential pre-2000s immune shield and vascular primer. It was the automatic, default home remedy in 80s/90s Tripuri homes the moment any family member developed severe chest congestion, running nose, or heavy sinus blocks due to damp, foggy river-valley winds.",
+        "why_less_common": "The unique, intense, pungent aroma of authentic Berma fermentation fell out of favor with younger generations who prefer commercial chili powders and processed oils, making this zero-fat remedy rare in urban setups.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Chakhwi",
+        "environmental_triggers": [
+          "Post-Flood Monsoon Drainage",
+          "High Humid Rainy Seasons"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to support gut alkalinity",
+          "Traditional anti-parasitic use",
+          "Traditionally used to soothe the stomach lining"
+        ],
+        "input_ingredients": [
+          "Chakhwi Alkaline Lye Stock",
+          "Raw Mountain Yams",
+          "Fresh Garlic",
+          "Green Chilies"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A premier Agni-Deepana (digestive tract primer) and systemic anti-parasitic starter. In the 80s and 90s, this was served as a mandatory weekly course during high-humidity seasonal transitions to structurally alter internal gut pH levels and prevent monsoonal water-borne infections.",
+        "why_less_common": "Extracting authentic Chakhwi lye requires a multi-week manual processing, drying, and burning discipline. The convenience of industrial white baking soda and commercial refined table salt completely replaced it.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Godak",
+        "environmental_triggers": [
+          "Sweltering, High-Humidity Mid-Summers",
+          "Intensive Field Labor Days"
+        ],
+        "target_health_metrics": [
+          "Light, low-fat protein source",
+          "Traditionally eaten for cooling",
+          "Traditional field-labor meal"
+        ],
+        "input_ingredients": [
+          "Fresh River Fish",
+          "Green Bamboo Hollow",
+          "Banana Leaves",
+          "Wild Green Chilies"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A pure zero-fat, high-protein steaming technique. It was utilized heavily by agricultural families working in mountain terraces (Jhum fields) during sweltering, humid summer working days to provide dense nutrition without overloading the digestive system with fats.",
+        "why_less_common": "Access to fresh, moisture-rich green cooking bamboo is nearly impossible in urban town settings, and modern kitchens shifted completely to quick non-stick metal frying pans.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Himachal_Pradesh": [
+      {
+        "recipe_name": "Sepu Badi & Madra",
+        "environmental_triggers": [
+          "Freezing Sub-Zero Winters",
+          "Sharp Night Altitude Drops"
+        ],
+        "target_health_metrics": [
+          "Traditionally eaten for warmth",
+          "Slow-digesting winter staple",
+          "Traditional joint-comfort use"
+        ],
+        "input_ingredients": [
+          "Boiled Black Gram Cakes (Sepu Badi)",
+          "Thick Cultured Yogurt",
+          "A2 Cow Ghee",
+          "Cardamom",
+          "Cloves"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "Rooted deeply in the traditional Dham celebratory food system of Mandi and Kangra valleys. In the 80s and 90s, this was a heavy, slow-burning winter endurance food prepared to insulate the body against sudden drops in mountain temperatures.",
+        "why_less_common": "Shaping and boiling Sepu Badi requires a multi-stage, labor-intensive preparation workflow. Modern kitchens shifted completely to quick, store-bought processed lentils or standard fried snacks.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Sidu with Ghee",
+        "environmental_triggers": [
+          "Freezing Alpine Blizzards",
+          "High-Altitude Mountain Mists"
+        ],
+        "target_health_metrics": [
+          "High-calorie winter staple",
+          "Traditional source of B-vitamins",
+          "Traditionally eaten before high-altitude exertion"
+        ],
+        "input_ingredients": [
+          "Wild Sourdough Wheat Crust",
+          "Roasted Poppy Seeds",
+          "Mountain Walnuts",
+          "A2 Cow Ghee"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The quintessential morning endurance bread of the upper Kullu and Shimla highlands. It was engineered specifically to support deep lung respiration, counter low oxygen levels, and maintain body vigor during heavy mountain manual labor.",
+        "why_less_common": "Achieving the correct fermentation density with wild mountain starters requires precise ambient temperature control. Packaged fine flour breads and instant processed breakfast rolls completely replaced it.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Lingri da Achar",
+        "environmental_triggers": [
+          "Wet, Humid Monsoon Transitions",
+          "Chilly Post-Rain Autumn"
+        ],
+        "target_health_metrics": [
+          "Traditional source of plant antioxidants",
+          "Seasonal micronutrient source",
+          "Traditionally believed to aid digestion"
+        ],
+        "input_ingredients": [
+          "Wild Fiddlehead Fern Fronds",
+          "Cold-Pressed Mustard Oil",
+          "Fenugreek Seeds",
+          "Rock Salt"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A seasonal, ultra-high-density immune shield and gut-priming matrix prepared using wild-foraged forest plants. It was used as a natural anti-microbial flush to prepare the body for harsh seasonal transitions.",
+        "why_less_common": "Fiddlehead ferns cannot be cultivated commercially and must be foraged by hand in pristine wilderness. Environmental degradation and a lack of foraging knowledge among younger generations made it rare.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Bihar": [
+      {
+        "recipe_name": "Jau-Chana ka Sattu & Kachri Chutney",
+        "environmental_triggers": [
+          "Peak Dry Summer",
+          "Scorching Desert Winds (Loo conditions)"
+        ],
+        "target_health_metrics": [
+          "Traditional rehydration drink",
+          "Traditionally eaten for cooling",
+          "Traditional digestive aid"
+        ],
+        "input_ingredients": [
+          "Sand-Roasted Barley-Chickpea Flour",
+          "Wild Kachri Gourd",
+          "Raw Garlic",
+          "Cold Water"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The definitive, instant summer survival fuel used across rural Bihar. It was consumed as a liquid or dough mash by field laborers and travelers on punishing 45°C+ summer afternoons to lock in hydration and prevent thermal shock.",
+        "why_less_common": "Packaged wheat flour (Atta) and industrial cold soft drinks marginalized this rustic drink. Additionally, wild Kachri gourds have been entirely replaced by commercial hybrid cucumbers in modern urban markets.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Alsi ki Pinni / Tishi ke Ladoo",
+        "environmental_triggers": [
+          "Freezing Dry Continental Winters",
+          "High Vata Joint-Stiffness Seasons"
+        ],
+        "target_health_metrics": [
+          "Traditional source of omega-3 (flaxseed)",
+          "Traditional source of iron",
+          "Traditionally eaten for winter warmth"
+        ],
+        "input_ingredients": [
+          "Whole Flaxseeds",
+          "Unrefined Sugarcane Jaggery",
+          "A2 Cow Ghee",
+          "Coarse Wheat Flour"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A powerful, high-lipid joint-rebuilding and reproductive health anchor. In the 80s and 90s, this was a mandatory winter therapeutic sweet treat prepared across Bihari homes to protect aging bones from cold dampness and help new mothers with postpartum recovery.",
+        "why_less_common": "Flaxseeds have a distinct earthy aroma and sticky mucilaginous texture that fell out of favor compared to modern refined-sugar pastries and commercial factory-made bakery items.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Dal Pitha",
+        "environmental_triggers": [
+          "High Post-Monsoon Humidity",
+          "Damp Sticky Seasonal Shifts"
+        ],
+        "target_health_metrics": [
+          "Plant-protein staple",
+          "Traditionally believed to aid digestion",
+          "Everyday household protein source"
+        ],
+        "input_ingredients": [
+          "Coarse Rice Flour",
+          "Soaked Chana Dal",
+          "Raw Ginger",
+          "Garlic",
+          "Asafoetida"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A zero-oil, high-protein morning meal cooked during high-humidity post-rain cycles. It was engineered to clear out heavy metabolic sluggishness, flush toxic heat from the liver, and boost low digestive fire (Mandham).",
+        "why_less_common": "Grinding soaked lentils raw on a stone slab requires manual patience and time. Modern kitchens shifted to quick, refined-wheat deep-fried alternatives like Puris or instant processed breakfast packets.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Odisha": [
+      {
+        "recipe_name": "Pakhala Bhata & Badi Chura",
+        "environmental_triggers": [
+          "Scorching Mid-Summer",
+          "Coastal Heatwaves",
+          "High Maritime Humidity"
+        ],
+        "target_health_metrics": [
+          "Fermented probiotic staple",
+          "Traditional rapid-rehydration food",
+          "Traditionally supports gut balance"
+        ],
+        "input_ingredients": [
+          "Fermented Rice",
+          "Torani Water",
+          "Sun-Dried Lentil Badis",
+          "Raw Mustard Oil"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "Rooted deeply in the ancient Jagannath Temple food system and a daily necessity for rural coastal Odisha in the 80s/90s. It was engineered specifically to protect agricultural populations from deadly heat stroke and severe salt depletion during humid maritime summers.",
+        "why_less_common": "A modern, incorrect perception that overnight leftover food is \\\"unhygienic,\\\" combined with the speed of morning processed breakfasts, marginalized this deep hydration staple.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Kanji Sopa / Kanchi",
+        "environmental_triggers": [
+          "Late Monsoon Flood Drainage",
+          "Low-Sunlight Humid Seasons"
+        ],
+        "target_health_metrics": [
+          "Traditional digestive tonic",
+          "Traditional source of trace minerals",
+          "Traditional gut-priming drink"
+        ],
+        "input_ingredients": [
+          "Aged Rice Starch Water",
+          "Ambula (Dried Mango)",
+          "Wild Greens",
+          "Mustard Paste"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A seasonal medicinal broth prepared in rural Odisha during late monsoon cycles when constant rainfall led to damp household air and water-borne parasitic outbreaks.",
+        "why_less_common": "The process of intentionally storing and souring starch waters dropped out of modern culinary habits due to the dominance of instant chemical soup packets and refined seasoning cubes.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Chitau Pitha & Dalma",
+        "environmental_triggers": [
+          "Early Monsoon Humidity Shifts",
+          "High Ambient Insect-Breeding Season"
+        ],
+        "target_health_metrics": [
+          "Traditional source of soluble fiber",
+          "Traditionally believed to support mineral absorption",
+          "Everyday household staple"
+        ],
+        "input_ingredients": [
+          "Fermented Rice-Lentil Batter",
+          "Raw Papaya",
+          "Elephant Apple",
+          "Ginger Shoots"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "Prepared traditionally during the Chitalagi Amavasya festival to invoke immunity and digestive strength before the heavy monsoon rains set in.",
+        "why_less_common": "Baking Chitau Pitha on clay pans requires high temperature control and specific manual dexterity. Modern non-stick frying pans and instant white flour crepes completely sidelined it.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Habisa Dalma",
+        "environmental_triggers": [
+          "Dry Chilly Autumn Transitions",
+          "Windy Vata-Aggravating Months"
+        ],
+        "target_health_metrics": [
+          "Traditionally eaten during fasting periods",
+          "Light, low-oil protein source",
+          "Traditional joint-comfort use"
+        ],
+        "input_ingredients": [
+          "Roasted Green Mung Dal",
+          "Elephant Foot Yam",
+          "Black Peppercorns",
+          "Elephant Apple",
+          "A2 Ghee"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A strict, non-inflammatory dietary protocol practiced by elders during the holy month of Kartika (late autumn). It was engineered to completely flush out heavy metals and accumulated bile from the body before transitioning into winter.",
+        "why_less_common": "The recipe follows incredibly strict Ayurvedic rules (banning standard ingredients like turmeric and oil), making it too restrictive and complex for fast-paced modern kitchens.",
+        "era_confidence": "Classical-referenced (claims pre-modern origin) — needs textual/historical source verification"
+      }
+    ],
+    "Maharashtra": [
+      {
+        "recipe_name": "Ambil",
+        "environmental_triggers": [
+          "Peak Dry Summer",
+          "Punishing Heatwaves (Loo wind conditions)"
+        ],
+        "target_health_metrics": [
+          "Gluten-free rehydration drink",
+          "Traditionally believed to be gentle on digestion",
+          "Traditional electrolyte replenisher"
+        ],
+        "input_ingredients": [
+          "Sorghum Flour",
+          "Cultured Buttermilk",
+          "Raw Garlic",
+          "Cumin Seeds",
+          "Asafoetida"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The quintessential pre-2000s summer endurance fuel for the farming communities of the dry Deccan Plateau (Marathwada and Western Maharashtra). It was consumed uniformly on punishing, dry summer afternoons to shield the brain-stem from heatwaves.",
+        "why_less_common": "Preparing Ambil requires a multi-stage fermentation and boiling discipline. Pre-packed wheat flours and commercial carbonated drinks pushed this slow food entirely out of the modern lifestyle.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Kulith Pithla & Bhakri",
+        "environmental_triggers": [
+          "Chilly, High-Wind Winter Transitions",
+          "High Mountain Dampness"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to support healthy cholesterol",
+          "Traditionally used to support kidney-stone relief (folk belief)",
+          "Traditionally eaten for warmth"
+        ],
+        "input_ingredients": [
+          "Horse Gram Flour",
+          "Kokum Extract",
+          "Ginger Shoots",
+          "Iron Skillet",
+          "Jowar Flour"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A powerful therapeutic winter food native to the Konkan foothills and Western Ghats. It was cooked for family members during cold, damp rainy spells to generate instant internal body heat and systematically prevent kidney stones.",
+        "why_less_common": "Horse gram releases a deeply rustic, sulfurous aroma during cooking that fell out of favor compared to milder, highly commercialized lentils like yellow split toor dal.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Kelya Che Mulye",
+        "environmental_triggers": [
+          "High Post-Monsoon Humidity",
+          "Sudden Coastal Autumn Heat Spikes"
+        ],
+        "target_health_metrics": [
+          "Traditional source of dietary fiber",
+          "Traditional source of potassium",
+          "Traditionally believed to have a mild diuretic effect"
+        ],
+        "input_ingredients": [
+          "Banana Stem Core",
+          "Fresh Coconut",
+          "Green Chilies",
+          "Coconut Oil"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A zero-waste, high-potency vascular toner and renal cleanser eaten in the coastal Konkan belt during heavy seasonal shifts to balance Pitta and flush structural body filters.",
+        "why_less_common": "Preparing a banana stem causes skin staining, sticky hands, and takes immense manual dexterity. Modern households replaced it with fast, ready-cut hybrid supermarket greens like cabbage.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Gurellu / Karale Chutney Pudi",
+        "environmental_triggers": [
+          "Freezing Dry Desert Winds",
+          "High Vata Joint-Stiffness Seasons"
+        ],
+        "target_health_metrics": [
+          "Traditional source of omega-6 fatty acids",
+          "Traditional joint-comfort use",
+          "Traditionally believed to aid circulation"
+        ],
+        "input_ingredients": [
+          "Niger Seeds",
+          "Whole Garlic",
+          "Dry Red Chilies",
+          "Safflower Oil"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A high-lipid, deep joint-lubricating dry spice matrix used in the rocky plateau regions of Maharashtra to protect aging joints from drying out during harsh, dry winter winds.",
+        "why_less_common": "Niger seed cultivation dropped drastically due to the dominance of mass-produced monoculture oilseeds like sunflower and soybean, making the raw ingredient rare in urban grocery stores.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Punjab": [
+      {
+        "recipe_name": "Kali Kanji",
+        "environmental_triggers": [
+          "Sharp Early Spring Shifts",
+          "Cold, Transitioning Climates"
+        ],
+        "target_health_metrics": [
+          "Traditional source of antioxidants (black carrot)",
+          "Traditional liver-support tonic (folk belief)",
+          "Seasonal fermented probiotic drink"
+        ],
+        "input_ingredients": [
+          "Heirloom Black Carrots",
+          "Crushed Yellow Mustard Seeds",
+          "Rock Salt",
+          "Water"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A premier seasonal liver cleanser and blood purifier. It was brewed across the Indus Basin during the sharp transition from freezing winter to early spring to flush out cellular toxins, clear the blood, and boost low digestive fire (Mandham).",
+        "why_less_common": "The unique black heirloom carrot variety dropped out of mass-market cultivation in favor of sweet hybrid orange carrots, causing families to switch to synthetic carbonated drinks.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Bajre di Khichdi",
+        "environmental_triggers": [
+          "Freezing Dry Winter",
+          "Severe Night Temperature Drops"
+        ],
+        "target_health_metrics": [
+          "Traditionally eaten for warmth",
+          "Slow-release energy staple",
+          "Traditional source of iron and zinc"
+        ],
+        "input_ingredients": [
+          "Coarse Hand-Pounded Pearl Millet",
+          "Split Green Mung Dal",
+          "Fresh White Country Butter"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The definitive, slow-burning winter endurance fuel used across rural Punjab. It was consumed uniformly on freezing winter nights to maintain high core body heat, protect bone tissue from cold dampness, and provide long-lasting muscular energy.",
+        "why_less_common": "Processing raw millet by hand requires massive physical effort. The introduction of fast-cooking processed wheat, white rice, and pre-milled fine flours completely replaced this slow-cooked winter staple.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Gandlan da Saag",
+        "environmental_triggers": [
+          "Severe Frosty Winters",
+          "Thick Morning Basin Fogs"
+        ],
+        "target_health_metrics": [
+          "Traditional source of plant compounds (glucosinolates)",
+          "Traditional source of dietary fiber",
+          "Everyday winter household staple"
+        ],
+        "input_ingredients": [
+          "Peeled Mustard Flowering Stems (Gandlan)",
+          "Bathua Greens",
+          "Maize Flour",
+          "A2 Ghee"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A premier structural bone-builder and antioxidant shield. Long before modern \\\"Sarson ka Saag\\\" was made purely with flat mustard leaves, the original winter formulation relied heavily on the tender, juicy flowering stems (Gandlan) of the mustard plant to flush the system.",
+        "why_less_common": "Peeling each individual mustard stem requires immense patience and manual labor. Modern cooking relies on fast pressure-cooking of flat commercial leaves, stripping away the unique texture and nutrient profile of the stalks.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Kerala": [
+      {
+        "recipe_name": "Panja Pulli Kurukku",
+        "environmental_triggers": [
+          "Rainy / High Humidity (Monsoon)"
+        ],
+        "target_health_metrics": [
+          "Traditional source of bioavailable calcium",
+          "Traditional source of iron",
+          "Traditionally given during infant weaning and to elders for bone health"
+        ],
+        "input_ingredients": [
+          "Finger Millet",
+          "Coconut Milk",
+          "Palm Jaggery"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "Classified as a Balapusthi (infant/child vigor) builder, heavily utilized during seasonal transitions in the late-monsoon months to prevent childhood respiratory ailments.",
+        "why_less_common": "The manual extraction process takes up to 2 hours of labor. The 90s boom of instant packaged powder formulas completely wiped it out.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Thalu Toran / Curry",
+        "environmental_triggers": [
+          "Torrential Monsoon",
+          "Low Sunshine"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to reduce oxalates",
+          "Traditional source of dietary fiber",
+          "Traditionally believed to soothe the gut"
+        ],
+        "input_ingredients": [
+          "Wild Taro Stem",
+          "Tamarind",
+          "Black Pepper",
+          "Turmeric"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "Rooted in the Karkidakam (monsoon hardship) diet. When mainstream crops flooded out, communities foraged wild water-adjacent plants to maintain extreme gut alkalinity.",
+        "why_less_common": "Modern concrete drainage and urbanization destroyed the natural, clean wetland ecosystems where wild Taro grew.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Asali Payasam",
+        "environmental_triggers": [
+          "Early Winter",
+          "High Wind Velocity (Vata balancing)"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to support hormonal balance",
+          "Traditional source of iron",
+          "Traditionally given for postpartum recovery"
+        ],
+        "input_ingredients": [
+          "Garden Cress Seeds",
+          "Coconut Cream",
+          "Iron-rich Jaggery"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A restorative postnatal and reproductive health staple. It was traditionally cooked on the 14th day of the lunar cycle or given systematically to women to regulate hormone balances.",
+        "why_less_common": "The strong, slightly bitter, and sulfurous taste profile fell out of favor as heavily processed refined sugars and western desserts dominated the palate.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Chakka Kuru Asthram",
+        "environmental_triggers": [
+          "Post-Harvest Autumn",
+          "Moderate Dryness"
+        ],
+        "target_health_metrics": [
+          "Traditional prebiotic source (resistant starch)",
+          "Traditional source of potassium",
+          "Traditionally believed to support steady energy"
+        ],
+        "input_ingredients": [
+          "Jackfruit Seeds",
+          "Elephant Foot Yam",
+          "Sour Buttermilk",
+          "Cumin"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A low-glycemic, heavy endurance fuel used by agricultural workers during the intense harvesting seasons to prevent sudden blood sugar drops.",
+        "why_less_common": "The mechanical peeling and cleaning of jackfruit seeds and yams cause skin irritation and are highly tedious, making it unpopular for fast-paced modern kitchens.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Vazhapoo Mutta Thoran",
+        "environmental_triggers": [
+          "High Dryness",
+          "Vata-Aggravating Autumn"
+        ],
+        "target_health_metrics": [
+          "Traditional source of iron",
+          "Traditionally believed to support hormonal balance",
+          "Traditional source of antioxidants (tannins)"
+        ],
+        "input_ingredients": [
+          "Banana Flower Florets",
+          "Country Eggs",
+          "Shallots",
+          "Coconut"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A highly targeted hemoglobin-boosting and uterine-toning dish. In the 80s and 90s, it was a weekly mandatory dish for teenage girls and women in Kerala households to naturally regulate menstrual cycles and prevent anemia.",
+        "why_less_common": "Cleaning a banana flower is incredibly tedious, stains the fingers black with sticky sap, and takes at least 30 to 45 minutes of preparation time. Busy modern lifestyles completely sidelined it.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      }
+    ],
+    "Rajasthan": [
+      {
+        "recipe_name": "Bajra Raab",
+        "environmental_triggers": [
+          "Hyper-Thermal Dry Heat",
+          "Severe Heatwaves (Loo season)"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to help regulate body temperature",
+          "Fermented probiotic drink",
+          "Traditional electrolyte replenisher"
+        ],
+        "input_ingredients": [
+          "Pearl Millet Flour",
+          "Sour Buttermilk",
+          "Roasted Cumin",
+          "Black Salt"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A premier Loo-hara (heatstroke-extinguishing) probiotic drink. In the 80s and 90s, desert farmers and laborers drank this before heading out into 45°C+ summer heat to lock in hydration and prevent thermal shock.",
+        "why_less_common": "The growth of commercial refrigeration, synthetic cooling drinks, and ice creams caused urban families to abandon this heavy, traditional fermentation process.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Panchkuta / Ker Sangri Curry",
+        "environmental_triggers": [
+          "Severe Drought",
+          "Complete Water Scarcity",
+          "High Aridity"
+        ],
+        "target_health_metrics": [
+          "Traditional source of trace minerals",
+          "Traditional antimicrobial use (folk belief)",
+          "Naturally long shelf-life without refrigeration"
+        ],
+        "input_ingredients": [
+          "Ker Berries",
+          "Sangri Pods",
+          "Kumatiya Seeds",
+          "Mustard Oil",
+          "Dry Mango"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The ultimate drought-survival and zero-water endurance food. It relies entirely on hyper-local wild desert foraging and traditional sun-drying preservation.",
+        "why_less_common": "The ingredients are highly seasonal, wild-foraged, and require intense physical processing (like soaking Ker in buttermilk for days to remove bitterness), making it rare outside premium heritage restaurants today.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Makki ka Ghat",
+        "environmental_triggers": [
+          "Freezing Dry Winter",
+          "Sudden Night Temperature Drops"
+        ],
+        "target_health_metrics": [
+          "Traditionally eaten for warmth",
+          "Slow-release energy staple",
+          "Traditional joint-comfort use"
+        ],
+        "input_ingredients": [
+          "Coarse Broken Maize",
+          "Cultured Buttermilk",
+          "A2 Cow Ghee"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A heavy, slow-burning winter thermal fuel used in the hilly terrains of Rajasthan to generate internal body heat and provide long-lasting muscular energy during freezing desert nights.",
+        "why_less_common": "The convenience of instant-cooking processed wheat, white rice, and pre-milled fine flours completely replaced this labor-intensive, slow-cooked coarse porridge.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Bejar ki Roti",
+        "environmental_triggers": [
+          "Windy Spring",
+          "Unpredictable Transition Weather"
+        ],
+        "target_health_metrics": [
+          "Traditional plant-protein staple",
+          "Lower glycemic-index grain blend",
+          "Traditional source of bone-supporting minerals"
+        ],
+        "input_ingredients": [
+          "Pearl Millet",
+          "Black Chickpea Flour",
+          "Sorghum Flour"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A highly stable, multi-protein composite bread designed to sustain farming communities during transition months when weather conditions fluctuated wildly.",
+        "why_less_common": "The commercial dominance of monoculture farming and highly refined, easy-to-knead wheat flour (Atta) completely pushed out multi-grain rustic baking.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Tamil_Nadu": [
+      {
+        "recipe_name": "Thoodhuvalai Thuvaiyal",
+        "environmental_triggers": [
+          "Sudden Monsoon Downpours",
+          "Chilly Winter Months"
+        ],
+        "target_health_metrics": [
+          "Traditionally used for chest and throat congestion",
+          "Traditional source of flavonoids",
+          "Traditional immunity-support food"
+        ],
+        "input_ingredients": [
+          "Thoodhuvalai Leaves",
+          "Shallots",
+          "Whole Black Pepper",
+          "Tamarind",
+          "Ghee"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The ultimate respiratory shield and lung-cleanser (Kapha-Samana). It was the automatic, default home remedy in 80s Tamil Nadu homes the moment anyone developed early signs of a chronic cough, asthma flare-up, or chest congestion during seasonal changes.",
+        "why_less_common": "Removing the tiny thorns from each individual leaf requires immense patience and manual labor. Over-the-counter synthetic cough drops and syrups completely replaced this preparation.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Vendhaya Kali",
+        "environmental_triggers": [
+          "Severe Dry Summer Heatwaves",
+          "High Pitta Aggravation"
+        ],
+        "target_health_metrics": [
+          "Traditionally eaten for internal cooling",
+          "Traditionally believed to support stable blood sugar",
+          "Traditionally believed to support hormonal balance"
+        ],
+        "input_ingredients": [
+          "Fenugreek Seeds",
+          "Raw Rice Flour",
+          "Palm Jaggery",
+          "Cold-Pressed Sesame Oil"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "An intense body-temperature regulator and reproductive health anchor. In the 80s and 90s, this was cooked uniformly across Tamil households on scorching summer mornings specifically for women to balance hormones and for manual laborers to prevent dehydration and burning urination.",
+        "why_less_common": "Fenugreek is naturally very bitter. The intense manual labor of continuous stirring combined with a modern aversion to bitter tastes made this dish disappear in favor of sweet, processed breakfast cereals.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Paruthi Paal",
+        "environmental_triggers": [
+          "Dusty Dry Autumn",
+          "High-Pollution Wind Seasons"
+        ],
+        "target_health_metrics": [
+          "Traditional source of essential fats",
+          "Traditionally used for chronic cough",
+          "Traditional strength-building food"
+        ],
+        "input_ingredients": [
+          "Cottonseed Milk",
+          "Raw Rice Flour",
+          "Dry Ginger",
+          "Long Pepper",
+          "Palm Jaggery"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A legendary lung-rejuvenating, triple-nutrient beverage. In the late 20th century, this was the ultimate morning recovery drink given to individuals performing heavy manual labor, or anyone suffering from a dry hacking cough, neurological weakness, or low stamina.",
+        "why_less_common": "Extracting milk from hard cottonseeds is an incredibly tedious, multi-step process. Ready-made tea and commercial milk powders completely took over the morning beverage routine.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Ulundhu Kali",
+        "environmental_triggers": [
+          "Early Winter",
+          "Post-Exhaustion Physical Recovery"
+        ],
+        "target_health_metrics": [
+          "Traditional source of bone-supporting minerals",
+          "Traditional source of plant protein",
+          "Traditional post-exertion recovery food"
+        ],
+        "input_ingredients": [
+          "Whole Black Gram Flour",
+          "Palm Jaggery",
+          "Cold-Pressed Sesame Oil"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "Documented as a critical restorative structural food. In ancient Tamilakam, this was prepared for individuals performing grueling physical combat (like Sillambam or wrestling) and for women during major hormonal shifts to strengthen the spine and pelvis.",
+        "why_less_common": "The intense physical strain required to constantly pad and stir sticky black gram paste led modern kitchens to abandon it for fast, simple breakfast options.",
+        "era_confidence": "Classical-referenced (claims pre-modern origin) — needs textual/historical source verification"
+      },
+      {
+        "recipe_name": "Pazhaya Soru and Pirandai Thuvaiyal",
+        "environmental_triggers": [
+          "Chilly, High-Wind Transitional Seasons"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to stimulate appetite",
+          "Traditional source of calcium"
+        ],
+        "input_ingredients": [
+          "Fermented Rice",
+          "Tamarind-Neutralized Pirandai Paste"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A medicinal combination given to family members suffering from chronic loss of appetite, bloating, or joint pains during changing seasonal shifts.",
+        "why_less_common": "Veldt Grape (Pirandai) contains high amounts of anabolic steroid compounds that heal bone tissue, but it is highly heating. Pairing it with the intensely cooling, smooth texture of fermented rice safely neutralizes its thermal impact while maximizing calcium assimilation.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Pazhaya Soru and Chinna Vengayam",
+        "environmental_triggers": [
+          "Scorching, Blazing Mid-Summer Heat"
+        ],
+        "target_health_metrics": [
+          "Traditional heatstroke-prevention food",
+          "Traditional electrolyte replenisher"
+        ],
+        "input_ingredients": [
+          "Fermented Rice",
+          "Raw Pearl Onions",
+          "Green Chili"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The absolute baseline, universal combination for farmers and construction laborers. It acted as a natural thermal shield for anyone spending hours under the blazing open sun.",
+        "why_less_common": "Raw pearl onions contain high amounts of quercetin (a powerful anti-inflammatory and natural antihistamine). When combined with the live lactic acid bacteria in fermented rice, it creates a powerful defense mechanism that prevents heat strokes and sun allergies.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "   u Karuppatti Kaapi",
+        "environmental_triggers": [
+          "Sudden Temperature Drops",
+          "Chilly, Torrential Rain Spells"
+        ],
+        "target_health_metrics": [
+          "Traditionally used for chest congestion",
+          "Traditionally eaten for warmth",
+          "Traditional digestive aid"
+        ],
+        "input_ingredients": [
+          "Dry Ginger",
+          "Black Peppercorns",
+          "Coriander Seeds",
+          "Palm Jaggery"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The ultimate emergency respiratory shield and metabolic igniter (Kapha-Vata Samana). It was the default herbal wellness brew prepared instantly the moment any family member experienced a sudden chill, running nose, or heavy head cold due to monsoon dampness.",
+        "why_less_common": "The massive commercial boom of instant, highly processed chicory-blended coffee and refined white sugar completely erased this medicinal, caffeine-free beverage from daily household routines.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Goa": [
+      {
+        "recipe_name": "Pez & Suke Bangde",
+        "environmental_triggers": [
+          "Intense Sweltering Coastal Humidity",
+          "Peak Monsoon Field Labor Days"
+        ],
+        "target_health_metrics": [
+          "Traditional electrolyte replenisher",
+          "Lower glycemic-index staple",
+          "Traditional muscle-cramp prevention food (folk belief)"
+        ],
+        "input_ingredients": [
+          "Local Parboiled Red Rice",
+          "Rice Water Extract",
+          "Sun-Dried Mackerel",
+          "Bimli Fruit"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The quintessential daily morning fuel for Goan field workers, farmers, and fishermen in the 80s/90s. It was engineered specifically to protect manual laborers from severe salt depletion, cramping, and heat exhaustion during intensely humid coastal mornings.",
+        "why_less_common": "The modern perception that rice gruel is \\\"poor man\\'s food,\\\" combined with the convenience of fast, wheat-based breakfasts like commercial sliced bread (Pao), pushed this deep-hydration staple out of urban households.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Teppal / Tirphal Uddamethi",
+        "environmental_triggers": [
+          "Torrential Monsoon Downpours",
+          "Continuous High-Humidity Coastal Weeks"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to ease bloating",
+          "Traditional gut-soothing use",
+          "Traditional digestive-enzyme support"
+        ],
+        "input_ingredients": [
+          "Black Gram",
+          "Fenugreek Seeds",
+          "Fresh Grated Coconut",
+          "Fresh Teppal Berries"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A powerful therapeutic and digestive curry cooked during the heavy monsoon months when constant rain and high humidity made the digestive system sluggish (Mandham) and prone to gastric infections.",
+        "why_less_common": "Fresh Teppal berries are seasonal, and their unique, highly pungent, numbing citrus-woody flavor profile dropped out of favor with younger generations who prefer standardized red-chili-heavy gravies.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Sol Kadi",
+        "environmental_triggers": [
+          "Blazing Mid-Summer Coastal Heatwaves",
+          "High Pitta Acid Aggravation"
+        ],
+        "target_health_metrics": [
+          "Traditionally used to settle acid reflux",
+          "Traditional liver-support use (folk belief)",
+          "Traditionally soothing for the stomach"
+        ],
+        "input_ingredients": [
+          "Dried Kokum Skins",
+          "Fresh Raw Coconut Milk",
+          "Hand-Crushed Garlic"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A targeted post-lunch digestive tonic used across Goa to instantly soothe the stomach lining, flush accumulated bile, and counter internal body heat spikes after meals containing heavy or spicy seafood.",
+        "why_less_common": "The tediousness of extracting fresh coconut milk manually led modern consumers to replace it with commercial ready-made pack drinks, or synthetic antacid tablets.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Madhya_Pradesh": [
+      {
+        "recipe_name": "Bafla Bati & Kadhi",
+        "environmental_triggers": [
+          "Freezing Dry Winter",
+          "Sharp Night Temperature Drops"
+        ],
+        "target_health_metrics": [
+          "Traditionally eaten for warmth",
+          "Slow-release energy staple",
+          "Traditional joint-comfort use"
+        ],
+        "input_ingredients": [
+          "Coarse Wheat Flour",
+          "A2 Cow Ghee",
+          "Sour Buttermilk",
+          "Gram Flour"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The definitive agricultural endurance fuel native to the Malwa region. It was consumed uniformly on dry, chilly winter days to maintain core body temperature and provide sustained muscle stamina for field labor.",
+        "why_less_common": "The multi-stage process of boiling, open-fire wood-ash baking, and manual padding takes hours of labor. Modern households shifted completely to fast-cooking pan-baked flatbreads.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Butte ka Kees",
+        "environmental_triggers": [
+          "Early Monsoon Humidity Shifts",
+          "Post-Rain Seasonal Transitions"
+        ],
+        "target_health_metrics": [
+          "Traditional rehydration food",
+          "Traditionally believed to be gentle on the gut",
+          "Easily digestible seasonal staple"
+        ],
+        "input_ingredients": [
+          "Fresh Heirloom Corn Pulp",
+          "Mustard Oil",
+          "Ginger Shoots",
+          "Lime Juice"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A seasonal, ultra-high-density antioxidant breakfast prepared during the high-humidity monsoon harvest weeks. It was used as a natural digestive track primer to clear out metabolic sluggishness caused by changing seasonal winds.",
+        "why_less_common": "Modern commercial sweet corn varieties are low in starch and high in sugars, completely altering the cooking texture. Grating raw cobs manually fell out of favor compared to instant processed breakfast packs.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Thuli / Lapsi",
+        "environmental_triggers": [
+          "Dry Post-Monsoon Transitions",
+          "Windy, Depleting Autumn Months"
+        ],
+        "target_health_metrics": [
+          "Traditionally eaten to rebuild strength",
+          "Traditional source of iron",
+          "Traditional recovery-food staple"
+        ],
+        "input_ingredients": [
+          "Cracked Wheat Grits",
+          "A2 Cow Ghee",
+          "Unrefined Jaggery",
+          "Dry Ginger"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A premier tissue-rebuilding and reproductive health anchor given to the elderly to treat chronic bone fatigue and to new mothers for postpartum spinal recovery and lactation.",
+        "why_less_common": "The long, continuous stirring required to slow-emulsify broken grains with ghee dropped out of modern kitchens in favor of quick, refined-sugar instant desserts.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Kusli / Gujia",
+        "environmental_triggers": [
+          "Long-Distance Travel",
+          "Arid, Water-Scarce Ecosystems"
+        ],
+        "target_health_metrics": [
+          "Naturally long shelf-life travel food",
+          "Traditionally believed to be calming",
+          "High-calorie sustenance for long journeys"
+        ],
+        "input_ingredients": [
+          "Wheat Flour",
+          "Roasted Poppy Seeds",
+          "Charoli Seeds",
+          "A2 Ghee"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "An ancient, waterless food matrix engineered specifically for long-distance travel across the arid Bundelkhand region to prevent muscle wasting and maintain energy under burning suns without spoiling.",
+        "why_less_common": "The intensive mechanical hand dexterity needed to pinch and shape the borders thin without breaking the dry nut stuffing caused it to be replaced by store-bought refined sugar alternatives.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Haryana": [
+      {
+        "recipe_name": "Bajre ki Khichri & Tindi ka Ghee",
+        "environmental_triggers": [
+          "Freezing Dry Winter",
+          "Severe Night Temperature Drops"
+        ],
+        "target_health_metrics": [
+          "Traditionally eaten for warmth",
+          "Slow-release energy staple",
+          "Traditional source of iron and zinc"
+        ],
+        "input_ingredients": [
+          "Coarse Hand-Pounded Pearl Millet",
+          "Split Green Mung Dal",
+          "Fresh White Tindi Ghee"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The definitive, slow-burning winter endurance fuel used across rural Haryana. It was consumed uniformly on freezing winter nights to maintain high core body heat and insulate joints from cold dampness.",
+        "why_less_common": "Manual hand-pounding requires immense physical effort. The introduction of fast-cooking processed grains and fine flours completely replaced this labor-intensive winter staple.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Gaund pak / Gaund ki Pinni",
+        "environmental_triggers": [
+          "Freezing Dry Continental Winds",
+          "High Vata Joint-Stiffness Seasons"
+        ],
+        "target_health_metrics": [
+          "Traditional joint-comfort use",
+          "Traditional source of iron",
+          "Traditionally eaten for winter vigor"
+        ],
+        "input_ingredients": [
+          "Edible Acacia Tree Gum",
+          "A2 Cow Ghee",
+          "Unrefined Jaggery",
+          "Wheat Flour"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A high-lipid, deep joint-lubricating structural food. In the 80s and 90s, this was a mandatory winter therapeutic treat given to wrestlers for joint repair and to women for postpartum spinal recovery and pelvic strengthening.",
+        "why_less_common": "Edible tree gum requires specific frying techniques, and its intensely rich, sticky profile fell out of favor compared to refined-sugar modern bakery confectionery.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Maraa Sattu & Kachri Chutney",
+        "environmental_triggers": [
+          "Peak Dry Summer",
+          "Punishing Desert Winds (Loo conditions)"
+        ],
+        "target_health_metrics": [
+          "Traditional rehydration drink",
+          "Traditional liver-support use (folk belief)",
+          "Traditional digestive aid"
+        ],
+        "input_ingredients": [
+          "Sand-Roasted Barley Flour",
+          "Wild Kachri Gourd",
+          "Raw Garlic",
+          "Cumin Seeds"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A specialized zero-water, instant-hydration fuel used during the blistering, dry summer harvesting season to prevent heatstroke (Loo) and muscle breakdown.",
+        "why_less_common": "Wild Kachri gourds have been replaced by commercial hybrid cucumbers in modern markets, and the practice of manual sand-roasting barley dropped completely out of urban workflows.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "West_Bengal": [
+      {
+        "recipe_name": "Panta Bhat & Aloo Bortha",
+        "environmental_triggers": [
+          "Scorching Mid-Summer",
+          "Coastal Heatwaves",
+          "High Maritime Humidity"
+        ],
+        "target_health_metrics": [
+          "Fermented probiotic staple",
+          "Traditional rapid-rehydration food",
+          "Traditionally supports gut balance"
+        ],
+        "input_ingredients": [
+          "Fermented Rice",
+          "Amani Starch Water",
+          "Raw Mustard Oil",
+          "Green Chilies",
+          "Raw Onions"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The absolute baseline summer endurance fuel for agricultural communities across rural Bengal. It was consumed uniformly on sweltering, humid summer mornings to protect the body from heat exhaustion, severe salt depletion, and heat stroke (Loo).",
+        "why_less_common": "A modern, incorrect perception that overnight leftover fermented food is \\\"unhygienic,\\\" combined with the speed of morning processed breakfasts, marginalized this deep hydration staple.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Shukto",
+        "environmental_triggers": [
+          "Windy Spring",
+          "Pre-Summer High-Heat Transitions"
+        ],
+        "target_health_metrics": [
+          "Traditional liver-support use (folk belief)",
+          "Traditional digestive tonic",
+          "Traditionally eaten to reduce fever discomfort"
+        ],
+        "input_ingredients": [
+          "Bitter Gourd",
+          "Radhuni Seeds",
+          "Ginger Shoots",
+          "Green Papaya",
+          "Mustard Paste"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A powerful medicinal starter dish designed to stimulate liver filters and balance Pitta during the intense transition from spring to summer. It acted as a systemic defense mechanism against seasonal viral outbreaks like smallpox and chickenpox.",
+        "why_less_common": "The complex, multi-vegetable prep work and unique, slightly bitter flavor profile dropped out of favor with younger generations who prefer sweeter, standardized commercial gravies.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Neem Begun",
+        "environmental_triggers": [
+          "Early Spring Shifts",
+          "Pollen Season",
+          "Sudden High-Humidity Influx"
+        ],
+        "target_health_metrics": [
+          "Traditional blood-purifying use (folk belief)",
+          "Traditional immunity-support food",
+          "Traditional gut-cleansing use"
+        ],
+        "input_ingredients": [
+          "Fresh Tender Neem Leaves",
+          "Brinjal",
+          "Cold-Pressed Mustard Oil",
+          "Turmeric"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A seasonal, high-potency immune shield prepared strictly during the spring harvest weeks when shifting seasonal winds and rising humidity caused rapid airborne viral transmission.",
+        "why_less_common": "Foraging fresh, tender spring neem leaves requires immediate access to backyard trees, which completely disappeared from urban concrete apartment complexes.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Gima Keerai / Gime Shaker Chorchori",
+        "environmental_triggers": [
+          "Intense Pre-Monsoon Scorching Heat",
+          "High Pitta Acid Aggravation"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to have a mild diuretic effect",
+          "Traditional source of trace minerals",
+          "Traditionally eaten for cooling"
+        ],
+        "input_ingredients": [
+          "Foraged Gima Leaves",
+          "Radhuni Seeds",
+          "Native Potatoes",
+          "Mustard Oil"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A rare, high-mineral detoxifying dish cooked during the dry, scorching summer weeks to physically flush out environmental toxins from the kidneys and improve failing vision.",
+        "why_less_common": "Gima is an uncultivated seasonal weed. Concrete lining of riverbanks, urban pond pollution, and heavy weedicide use in modern farming have made it nearly extinct in urban landscapes.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Assam": [
+      {
+        "recipe_name": "Kola Khar & Bhimkol Masiyal",
+        "environmental_triggers": [
+          "Post-Flood Epidemic Seasons",
+          "High Humid Monsoon Transitions"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to support gut alkalinity",
+          "Traditional anti-parasitic use",
+          "Traditionally used to soothe the stomach lining"
+        ],
+        "input_ingredients": [
+          "Kola Khar Liquid",
+          "Raw Papaya",
+          "Black Gram",
+          "Cold-Pressed Mustard Oil"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A premier Agni-Deepana (digestive tract primer) and anti-parasitic starter. In the 80s and 90s, this was served as the mandatory first course of a heavy lunch during transition seasons to structurally alter internal gut pH levels and prevent water-borne infections.",
+        "why_less_common": "Creating authentic Kola Khar requires a multi-week drying and burning process. The convenience of industrial white baking soda and commercial table salt completely replaced it.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Bhedai Lota-r Chutney",
+        "environmental_triggers": [
+          "Thick Morning River Fogs",
+          "Cold Damp Post-Monsoon Weeks"
+        ],
+        "target_health_metrics": [
+          "Traditionally used to ease chest congestion",
+          "Traditional joint-comfort use",
+          "Traditionally believed to aid circulation"
+        ],
+        "input_ingredients": [
+          "Bhedai Lota Leaves",
+          "Raw Garlic",
+          "Green Chilies",
+          "Raw Mustard Oil"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A powerful vascular primer and targeted pulmonary cleanser. It was the automatic, default home remedy in 80s/90s Assamese households the moment any family member developed joint stiffness or severe chest congestion due to cold, damp river-valley winds.",
+        "why_less_common": "The vine has a strong, distinctive pungent odor that fell out of favor with the younger generation. Additionally, urbanization cleared out the backyard hedges where it grew wild.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Sungat Diya Maas",
+        "environmental_triggers": [
+          "Sweltering, High-Humidity Mid-Summers",
+          "Intensive Field Labor Days"
+        ],
+        "target_health_metrics": [
+          "Light, low-fat protein source",
+          "Traditionally eaten for cooling",
+          "Traditional field-labor meal"
+        ],
+        "input_ingredients": [
+          "Fresh River Fish",
+          "Raw Turmeric",
+          "Green Chilies",
+          "Green Bamboo Hollow"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A pure zero-oil, high-protein steaming technique. It was utilized heavily by agricultural families working in the paddy fields during sweltering, humid summer days to provide dense nutrition without overloading the digestive system with fats.",
+        "why_less_common": "Access to fresh, moisture-rich green cooking bamboo is nearly impossible in urban concrete landscapes, and modern kitchens shifted to quick non-stick metal frying pans.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Doron Bon-or Jhol",
+        "environmental_triggers": [
+          "Transition to Winter",
+          "Sudden Night Temperature Drops"
+        ],
+        "target_health_metrics": [
+          "Traditionally used for sinus discomfort",
+          "Traditional immunity-support food",
+          "Traditional post-illness recovery food"
+        ],
+        "input_ingredients": [
+          "Doron Bon Leaves/Flowers",
+          "Ginger Shoots",
+          "Black Peppercorns",
+          "Water"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A legendary pediatric and geriatric recovery broth. In the late 20th century, this thin, medicinal soup was brewed instantly when a family member suffered from a viral fever, chronic sinusitis, or post-fever physical exhaustion.",
+        "why_less_common": "Doron Bon is an uncultivated field weed. The spraying of chemical weedicides in open fields and the immediate reliance on over-the-counter paracetamol and synthetic cough syrups erased this practice.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      }
+    ],
+    "Gujarat": [
+      {
+        "recipe_name": "Bajra no Rotlo & Ringan no Oro",
+        "environmental_triggers": [
+          "Freezing Dry Winter",
+          "Sharp Night Temperature Drops"
+        ],
+        "target_health_metrics": [
+          "Traditionally eaten for warmth",
+          "Slow-release energy staple",
+          "Traditional source of gut-friendly fiber"
+        ],
+        "input_ingredients": [
+          "Pearl Millet Flour",
+          "Roasted Smoked Eggplant",
+          "Cultured Yogurt",
+          "A2 Ghee"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "The definitive winter endurance and joint-lubricating pair for farming communities. It was consumed uniformly on dry, freezing winter nights to maintain high core body heat and prevent joint stiffness.",
+        "why_less_common": "Shaping Rotlo by hand takes a long time to learn, and clay-pan cooking was replaced by rapid non-stick steel pans and refined, easy-to-knead wheat flour.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Ghaun na Popta",
+        "environmental_triggers": [
+          "Windy Spring",
+          "Pre-Summer Harvesting Season"
+        ],
+        "target_health_metrics": [
+          "Traditional source of chlorophyll-rich greens",
+          "Traditional spring-tonic food",
+          "Traditional source of vitamin E"
+        ],
+        "input_ingredients": [
+          "Tender Green Wheat Stalks",
+          "Raw Groundnut Oil",
+          "Rock Salt"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A seasonal, ultra-high-density antioxidant treat prepared during the spring harvest weeks. It was used as a natural blood purifier and cellular rejuvenator during the transition from winter to summer.",
+        "why_less_common": "Modern mechanical combine harvesters reap only dry, fully mature golden wheat crops. Harvesting tender green wheat requires manual field selection, which modern industrial farming eliminated.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Sev Khamani",
+        "environmental_triggers": [
+          "High Post-Monsoon Humidity",
+          "Sluggish Digestive Seasons"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to ease bloating",
+          "Lean plant-protein source",
+          "Traditional digestive aid"
+        ],
+        "input_ingredients": [
+          "Fermented Chana Dal",
+          "Heavy Raw Ginger",
+          "Asafoetida",
+          "Mustard Seeds"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A premier Agni-Deepana (digestive fire igniter) morning protein meal. In the 80s and 90s, this was brewed to clear out heavy metabolic sluggishness and chronic stomach gas caused by high-humidity post-rain cycles.",
+        "why_less_common": "Modern commercial sweet varieties covered in heavily processed fine flour Sev and synthetic sugar syrup completely ruined the medicinal, ginger-heavy, savory profile of the original home recipe.",
+        "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+      },
+      {
+        "recipe_name": "Galka nu Shaak",
+        "environmental_triggers": [
+          "Scorching, Blazing Mid-Summer Heatwaves"
+        ],
+        "target_health_metrics": [
+          "Traditional rehydration food",
+          "Traditionally believed to have a mild diuretic effect",
+          "Traditionally eaten for cooling"
+        ],
+        "input_ingredients": [
+          "Fresh Sponge Gourd",
+          "Turmeric",
+          "Coriander Powder",
+          "Mustard Seeds"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A powerful, zero-water daily therapeutic stew. Cooked on intense, scorching summer afternoons to immediately lower brain-stem heat and flush toxic heat filters from the kidneys.",
+        "why_less_common": "Modern supermarket transport logistics cause sponge gourds to lose their soft water content, making them woody and hard. Urban consumers shifted to buying standardized hybrid vegetables like potatoes.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ],
+    "Karnataka": [
+      {
+        "recipe_name": "Halasina Hannina Kadubu",
+        "environmental_triggers": [
+          "Torrential Monsoon Downpours",
+          "Continuous High-Humidity Flood Seasons"
+        ],
+        "target_health_metrics": [
+          "Traditional source of slow-release natural sugars",
+          "Traditionally believed to support digestion",
+          "Traditional leaf-steamed micronutrient dish"
+        ],
+        "input_ingredients": [
+          "Ripe Jackfruit Flesh",
+          "Red Rice Grit",
+          "Muttuga Leaves"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "Rooted deeply in the Malnad (Western Ghats rainforest) landscape. Prepared systematically during peak, heavy monsoon blockades when fresh agriculture fields flooded out, and communities relied on high-energy, stored jungle biomass.",
+        "why_less_common": "Processing raw jackfruits is incredibly messy, sticky, and time-consuming. Modern urban households completely dropped it for quick, white-flour wheat items or instant breakfast mixes.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Hurali Kattu & Saaru",
+        "environmental_triggers": [
+          "Freezing Dry Winter",
+          "High Cold Atmospheric Humidity"
+        ],
+        "target_health_metrics": [
+          "Traditionally believed to support healthy cholesterol",
+          "Traditionally used to support kidney-stone relief (folk belief)",
+          "Traditional anti-swelling use (folk belief)"
+        ],
+        "input_ingredients": [
+          "Horse Gram Liquid Extract",
+          "Field Garlic",
+          "Black Peppercorns",
+          "Tamarind"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A premier Medho-hara (systemic fat-scraping and artery-clearing) dietary protocol used across inland Karnataka. Eaten uniformly by manual agricultural workers during chilly, damp winter months to prevent joint calcification and dissolve kidney stones.",
+        "why_less_common": "Horse gram releases a highly rustic, sulfurous, and earthy aroma during boiling that fell out of favor with modern consumers compared to milder commercial lentils like yellow toor dal.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Agase Soppina Chutney",
+        "environmental_triggers": [
+          "Dusty Post-Monsoon Winds",
+          "High Internal Body-Heat Spikes"
+        ],
+        "target_health_metrics": [
+          "Traditional source of plant compounds",
+          "Traditional women's health use (folk belief)",
+          "Traditional source of iron for hemoglobin"
+        ],
+        "input_ingredients": [
+          "Agase Leaves",
+          "Black Chickpeas",
+          "Groundnut Oil",
+          "Tamarind"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A powerful nerve-toning and tissue-building daily condiment native to the dry Bayaluseeme (North Karnataka plains). It was cooked for the elderly and lactating mothers to reverse neural fatigue and clear internal toxic heat.",
+        "why_less_common": "Agase trees are no longer cultivated near urban borders, and the leaf cannot be kept fresh for long transport logistics. Over-the-counter multivitamin tablets completely replaced this seasonal practice.",
+        "era_confidence": "Undated — era not specified, needs research"
+      },
+      {
+        "recipe_name": "Tambuli / Brahmi Tambli",
+        "environmental_triggers": [
+          "Intense Pre-Monsoon Scorching Heat",
+          "High Pitta Acid Aggravation"
+        ],
+        "target_health_metrics": [
+          "Traditional cognitive-support herb (folk belief)",
+          "Traditionally eaten for internal cooling",
+          "Traditionally believed to calm the mind"
+        ],
+        "input_ingredients": [
+          "Raw Brahmi Leaves",
+          "Fresh Coconut",
+          "Black Peppercorns",
+          "Churned Buttermilk"
+        ],
+        "source_status": "community-documented — verification pending",
+        "cultural_context": "A highly specialized, non-heated gastrointestinal and cognitive balancing fluid used extensively in the coastal and hilly regions of Karnataka during transition months to prevent acute acidity spikes.",
+        "why_less_common": "Commercial packaged pasteurized curd lacks the wild lactic cultures of country buttermilk, and urban consumers lost access to uncultivated fresh lawn weeds like raw Brahmi.",
+        "era_confidence": "Undated — era not specified, needs research"
+      }
+    ]
+  }
+}

@@ -155,4 +155,15 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 
 <p class="footer-note">Aahar-Parampara — Smart India Hackathon 2026</p>
+<script>
+function openMapInfo(el, title, text) {
+  document.getElementById('mapInfoTitle').textContent = title;
+  document.getElementById('mapInfoText').textContent = text;
+  const overlay = document.getElementById('mapInfoOverlay');
+  overlay.classList.add('open');
+}
+function closeMapInfo(e) {
+  document.getElementById('mapInfoOverlay').classList.remove('open');
+}
+</script>
 {% endblock %}

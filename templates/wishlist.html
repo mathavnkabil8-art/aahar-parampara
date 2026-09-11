@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block body_class %}bg-ancient-food{% endblock %}
+{% block title %}Aahar-Parampara - Wishlist{% endblock %}
+{% block content %}
+<div class="topbar">
+  <div class="brand">Aahar-Parampara</div>
+  <div style="font-size:.85rem; color:var(--text-soft);"><a href="{{ url_for('home') }}" style="color:var(--secondary-indigo);">? Back to Home</a></div>
+</div>
+
+<div class="hero" style="padding-bottom: 2rem;">
+  <h1>Your Wishlist</h1>
+  <p>Foods you have saved to explore or prepare later.</p>
+</div>
+
+{% if dishes %}
+<div class="archive-grid">
+  {% for dish in dishes %}
+  <a class="archive-card" 
+     href="{{ url_for('dish_detail', dish_id=dish.id) }}"
+     style="transition: opacity 0.3s ease, transform 0.4s ease;">
+    <div class="archive-card-header">
+      <span class="state-tag">{{ dish.state }}</span>
+    </div>
+    <h3>{{ dish.recipe_name }}</h3>
+    <p class="archive-ingredients"><strong>Key Ingredients:</strong> {{ dish.input_ingredients | join(', ') }}</p>
+    <p class="archive-context">{{ dish.cultural_context[:120] }}{% if dish.cultural_context|length > 120 %}?{% endif %}</p>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<div style="text-align: center; margin-top: 4rem;">
+  <p>Your wishlist is currently empty.</p>
+  <a href="{{ url_for('explore_all') }}" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Explore Foods</a>
+</div>
+{% endif %}
+
+{% endblock %}

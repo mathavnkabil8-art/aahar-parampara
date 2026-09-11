@@ -12,10 +12,20 @@ from models import db, User, Wishlist, ViewHistory, Rating
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "dev-only-change-me")
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL", "sqlite:///aahar.db")
+
+db_url = os.environ.get("DATABASE_URL")
+if not db_url:
+    if os.environ.get("VERCEL") or os.environ.get("AWS_EXECUTION_ENV"):
+        db_url = "sqlite:////tmp/aahar.db"
+    else:
+        db_url = "sqlite:///aahar.db"
+
+app.config['SQLALCHEMY_DATABASE_URI'] = db_url
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
+with app.app_context():
+    db.create_all()
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -25,9 +35,18 @@ login_manager.login_view = 'login'
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-UPLOAD_DIR = Path(__file__).parent / "uploads"
-UPLOAD_DIR.mkdir(exist_ok=True)
-RATINGS_PATH = Path(__file__).parent / "data" / "ratings.json"
+is_serverless = bool(os.environ.get("VERCEL") or os.environ.get("AWS_EXECUTION_ENV"))
+
+if is_serverless:
+    UPLOAD_DIR = Path("/tmp/uploads")
+    RATINGS_PATH = Path("/tmp/ratings.json")
+else:
+    UPLOAD_DIR = Path(__file__).parent / "uploads"
+    RATINGS_PATH = Path(__file__).parent / "data" / "ratings.json"
+
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+if not is_serverless and not RATINGS_PATH.parent.exists():
+    RATINGS_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 def _load_ratings():
     if RATINGS_PATH.exists():
@@ -230,6 +249,4 @@ def rate(dish_id):
     return render_template("rate.html", dish=dish, submitted=False)
 
 if __name__ == "__main__":
-    with app.app_context():
-        db.create_all()
     app.run(debug=True, port=5000)

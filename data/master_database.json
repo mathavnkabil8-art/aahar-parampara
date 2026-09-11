@@ -854,7 +854,7 @@
         "era_confidence": "Undated — era not specified, needs research"
       },
       {
-        "recipe_name": "   u Karuppatti Kaapi",
+        "recipe_name": "Sukku Karuppatti Kaapi",
         "environmental_triggers": [
           "Sudden Temperature Drops",
           "Chilly, Torrential Rain Spells"
@@ -1460,6 +1460,758 @@
         "why_less_common": "Commercial packaged pasteurized curd lacks the wild lactic cultures of country buttermilk, and urban consumers lost access to uncultivated fresh lawn weeds like raw Brahmi.",
         "era_confidence": "Undated — era not specified, needs research"
       }
-    ]
-  }
+    ],
+  "Nagaland": [
+    {
+      "recipe_name": "Akhuni & Smoked Pork Stew",
+      "environmental_triggers": [
+        "Torrential Monsoon Cloudbursts",
+        "Continuous High-Humidity Flood Seasons"
+      ],
+      "target_health_metrics": [
+        "Short-Chain Fatty Acid Colonization",
+        "Total Phytic Acid Breakdown (Mineral Bioavailability Optimization)",
+        "High Organic Isoflavones Delivery"
+      ],
+      "input_ingredients": [
+        "Fermented Akhuni Soybeans",
+        "Smoked Cured Meat",
+        "Native Ginger-Garlic Shoots",
+        "Earthenware Cooking"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A premier structural gut-repopulating, warming, and anti-microbial pairing. In the 80s and 90s, when continuous monsoon cloudbursts flooded forest pathways, Akhuni was the absolute defense shield used by clans to clear internal cold dampness, maintain tissue alkalinity, and flush out water-borne intestinal parasites. Indigenous small soybeans were hard-boiled, wrapped tightly inside the thick, insulating leaves of the wild mountain fig tree or banana tree, and placed inside a dark woven bamboo basket near the kitchen hearth to ferment naturally for 3 to 5 days until sticky, dark, and highly pungent.",
+      "why_less_common": "The intense, unapologetically pungent ammonia aroma of naturally fermented soybeans fell out of favor with younger generations who prefer milder processed fast foods, and the knowledge of leaf-wrapping insulation is nearly extinct among urban youth.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Galho",
+      "environmental_triggers": [
+        "Sweltering High-Humidity Mid-Summers",
+        "Intensive Highland Manual Labour"
+      ],
+      "target_health_metrics": [
+        "Sustained Low-Glycemic Energy Supply",
+        "High Insoluble Trace Mineral Loading",
+        "Intestinal Mucosal Hydration"
+      ],
+      "input_ingredients": [
+        "Mountain Red Rice",
+        "Foraged Wild Forest Greens",
+        "Native Ginger",
+        "Smoked Fat"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A highly specialized gastrointestinal and nervous-system-soothing comfort bowl. Eaten across rural Nagaland as a primary morning fuel by manual laborers before heading into steep mountain terrace fields to ensure extended slow-release hydration and muscle stability. Native unpolished mountain red rice was slow-cooked into a thick porridge along with a massive, zero-oil addition of uncultivated forest greens (wild mustard, wild amaranth, wayside weeds) and seasoned exclusively with crushed ginger, native shallots, and a small chunk of lard.",
+      "why_less_common": "Access to fresh, uncultivated wild forest weeds is rare in contemporary town settings. The younger generation shifted completely to fast-cooking, easy-to-boil polished white rice varieties and instant processed breakfast rolls.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Anishi & Raja Mircha Chutney",
+      "environmental_triggers": [
+        "Freezing Dry Highland Winters",
+        "Severe Night Frosts",
+        "Thick Mountain Fogs"
+      ],
+      "target_health_metrics": [
+        "High Antioxidant Capsaicin Delivery",
+        "Acute Nasal/Sinus Decongestion",
+        "Extreme Thermogenic Warmth",
+        "Oxalate-Neutralized Mineral Loading"
+      ],
+      "input_ingredients": [
+        "Smoke-Cured Anishi Leaves",
+        "Raw Raja Mircha",
+        "Raw Garlic Cloves",
+        "Native Ginger"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A powerful, high-heat metabolic igniter and vascular primer native to the high hills. It was cooked during freezing, damp morning transitions to blast open blocked sinus pathways, clear vascular sluggishness, and generate instant internal body heat. Fresh green leaves of wild Taro (Colocasia) were gathered, stacked tightly, fermented naturally until yellow, hand-mashed into flat patties, and smoke-cured over the hearth until rock-hard.",
+      "why_less_common": "Preparing Anishi leaves requires a multi-week manual fermentation, mashing, and continuous smoke-curing discipline. The plant causes severe skin and throat irritation if handled incorrectly, making it highly unpopular for modern fast-paced cooking.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    }
+  ],
+  "Arunachal Pradesh": [
+    {
+      "recipe_name": "Lukter & Eup",
+      "environmental_triggers": [
+        "Torrential Monsoon Cloudbursts",
+        "Continuous High-Humidity Rain Spells"
+      ],
+      "target_health_metrics": [
+        "High-Density Lean Protein Loading",
+        "Deep Intestinal Deworming (Anti-parasitic)",
+        "Acute Respiratory Decongestion"
+      ],
+      "input_ingredients": [
+        "Smoked Cured Meat",
+        "Eup (Fermented Bamboo)",
+        "Bird's Eye Chilies",
+        "Maor Berries"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "Rooted deeply in the winter survival and hunting diets of the mid-altitude rainforest tracks. In the 80s and 90s, when continuous monsoon cloudbursts flooded forest pathways and fresh foraging grounds vanished, this dish was used to maintain physical tissue stamina and protect the gut from damp pathogen loads. Local pasture-raised meat was sliced into strips and slow-smoked over the household kitchen hearth (Ura) for weeks until fully cured. This dried meat was shredded and slow-simmered inside a clay pot with Eup (pit-fermented bamboo shoots that provide a pungent, highly acidic baseline) and spiced strictly with heavily hand-pounded bird’s eye chilies and Maor.",
+      "why_less_common": "Pit-fermentation of bamboo shoots takes months of meticulous underground sealing, and the unique numbing flavor profile dropped out of favor with younger generations who prefer commercial chili powders and processed oil curries.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Dung Po & Wild Foraged Oying",
+      "environmental_triggers": [
+        "High Humid Mid-Summer",
+        "Intensive Mountain Field Labor Days"
+      ],
+      "target_health_metrics": [
+        "Zero-Fat Micro-Nutrient Loading",
+        "Volatile Essential Oil Retention",
+        "Lowering Internal Vascular Heat"
+      ],
+      "input_ingredients": [
+        "Ekkam-Wrapped Steamed Rice",
+        "Foraged Oying Greens",
+        "Ginger Shoots",
+        "Bird's Eye Chilies"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A pure zero-oil, high-mineral steaming technique. It was utilized heavily by agricultural families working in mountain terrace fields during sweltering, humid summer working days to provide dense nutrition without overloading the digestive system with heavy cooking fats. Indigenous short-grain hill rice was wrapped tightly inside the thick, aromatic leaves of the wild Ekkam tree (Phrynium pubinerve) and slow-steamed inside a hand-woven bamboo basket over a boiling cauldron (Dung Po), paired with Oying—wild-foraged forest greens and uncultivated broad-leaf weeds slow-boiled in fresh spring water.",
+      "why_less_common": "Access to fresh, moisture-rich Ekkam cooking leaves and clean, uncultivated wild forest weeds is rare in contemporary town settings, and modern families shifted to quick aluminum pressure cookers.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Khor / Pika Mash & Zan",
+      "environmental_triggers": [
+        "Freezing Sub-Zero Winters",
+        "Sharp Altitude Drops",
+        "High-Altitude Mountain Mists"
+      ],
+      "target_health_metrics": [
+        "High-Density Fat Metabolism (Thermal Energy)",
+        "High Trace Mineral Loading (Magnesium/Iron)",
+        "Pulmonary Resistance Optimization"
+      ],
+      "input_ingredients": [
+        "Millet/Buckwheat Porridge (Zan)",
+        "Khor Aromatic Paste",
+        "Wild Garlic Bulbs"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A powerful, thermogenic joint-lubricating and lung-rejuvenating food matrix native to the sub-alpine highlands. Eaten uniformly by manual border workers during freezing, low-oxygen winter nights to generate instant internal body heat and prevent joint tissue calcification (Vata escalation). Native high-altitude buckwheat or finger millet flour was slow-simmered in an earthenware pot with mountain spring water until it formed a thick, dense porridge (Zan), paired with Khor (also known as Pika)—a dry, pungent condiment made by crushing slow-roasted wild tree barks, wild garlic bulbs, and native ginger roots together.",
+      "why_less_common": "The knowledge of identifying and processing specific wild, therapeutic tree barks is nearly extinct among the younger generation, and monoculture farming completely pushed out native high-altitude buckwheat.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    }
+  ],
+  "Jammu & Kashmir": [
+    {
+      "recipe_name": "Gogji Hatachi & Razmah",
+      "environmental_triggers": [
+        "Freezing Alpine Blizzards",
+        "Heavy Winter Highway Blockades"
+      ],
+      "target_health_metrics": [
+        "High Protein Re-Loading",
+        "Insoluble Dietary Fiber (Colon Sweeping)",
+        "Vascular Heat Retention"
+      ],
+      "input_ingredients": [
+        "Sun-Dried Turnip Slices",
+        "Mountain Kidney Beans",
+        "Ver Spice Paste",
+        "Mustard Oil"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "Rooted deeply in the winter survival diet (Hokh Syun) of the Kashmir Valley. In the 80s and 90s, when heavy winter snowfalls cut off the highway and fresh vegetables vanished, this dish was cooked to maintain high core body heat and prevent muscle wasting. Autumn turnip slices (Gogji) were hand-strung on long threads and sun-dried on wooden balconies before winter set in. To cook, these dried turnip ribbons (Gogji Hatachi) were rehydrated and slow-simmered in an unglazed clay pot alongside local mountain kidney beans (Razmah), heavily seasoned with whole wild ginger, asafoetida, kashmiri ver spice paste, and raw cold-pressed mustard oil.",
+      "why_less_common": "The availability of greenhouse-grown, year-round hybrid vegetables in modern supermarkets eliminated the necessity of the multi-month sun-drying and storage tradition.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Handh da Saag",
+      "environmental_triggers": [
+        "Piercing Cold Frosty Mornings",
+        "Post-Illness Recovery Cycles"
+      ],
+      "target_health_metrics": [
+        "Uterine & Hepatic Cellular Detoxification",
+        "Deep Pulmonary Mucus Liquefaction",
+        "High Non-Heme Iron Delivery"
+      ],
+      "input_ingredients": [
+        "Foraged Wild Dandelion Leaves",
+        "Mountain Shallots",
+        "A2 Cow Ghee",
+        "Iron Pan Cooking"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A premier therapeutic recovery and blood-purifying green soup. In late-20th-century Kashmir, this was a mandatory restorative meal cooked instantly for new mothers for postpartum healing or for family members recovering from severe viral chest infections and fatigue. Wild dandelion leaves (Handh) were foraged from high mountain meadows and orchards in autumn. Because of their intense bitterness, the leaves were boiled extensively in water, thoroughly squeezed by hand to drain bitter compounds, and then slow-cooked in a heavy iron pan with pure cow ghee or raw mustard oil, small shallots (Pran), and native wild garlic bulbs.",
+      "why_less_common": "Dandelion is an uncultivated wild plant. Urban concrete expansion and modern chemical spraying on orchards have depleted its natural habitats, making foraging knowledge rare among the younger generation.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Khamira Roti & Kahwa",
+      "environmental_triggers": [
+        "Sudden Temperature Drops",
+        "Chilly, High-Altitude Mountain Mists"
+      ],
+      "target_health_metrics": [
+        "High-Density Fat Metabolism",
+        "Bronchial Decongestion (Cinnamon Carminative)",
+        "Instant Brain Cooling & Stress Reduction"
+      ],
+      "input_ingredients": [
+        "Wild Sourdough Crust",
+        "Kashmiri Saffron",
+        "Smashed Mountain Almonds",
+        "Cinnamon"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A specialized gastrointestinal and nervous-system-soothing breakfast matrix used across the cold foothills. It was engineered specifically to support deep lung respiration, counter low oxygen levels, and prevent throat allergies during seasonal shifts. Whole wheat flour was kneaded with warm water and a natural, wild liquid sourdough culture (Khamir), then left near the kitchen hearth to ferment slowly overnight until sour. The bread was slow-baked over a wood-fired tandoor, served hot alongside an unrefined green tea infusion (Kahwa) brewed in a copper samovar with crushed saffron strands, cardamoms, cinnamon, and a heavy dusting of hand-pounded wild mountain almonds.",
+      "why_less_common": "Achieving the correct fermentation density with wild starters requires precise ambient temperature control. Fast commercial yeast-milled breads and synthetic teabags completely replaced it.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    }
+  ],
+  "Sikkim": [
+    {
+      "recipe_name": "Gundruk ko Jhol",
+      "environmental_triggers": [
+        "Freezing Alpine Winter Blizzards",
+        "Piercing Cold Mountain Mists"
+      ],
+      "target_health_metrics": [
+        "Deep Pulmonary Mucus Liquefaction",
+        "High Bioavailable Lactic Probiotics",
+        "Cellular Vitamin-C Re-loading"
+      ],
+      "input_ingredients": [
+        "Sun-Fermented Dried Mustard Greens",
+        "Fresh Ginger Shoots",
+        "Garlic",
+        "Mountain Chilies"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A premier structural gut-repopulating and respiratory-cleansing winter broth. In the 80s and 90s, when freezing winter blizzards blocked high-altitude mountain passes and fresh greens completely vanished, Gundruk was the definitive defense shield against scurvy and breathing blocks. Fresh leaves of local mustard or radish greens were crushed, packed tightly into unglazed clay jars, and buried underground for a week to trigger active lactic acid fermentation. The soured leaves were then unburied and sun-dried until dark and brittle.",
+      "why_less_common": "Year-round greenhouse-grown hybrid vegetables available in modern supermarkets eliminated the domestic necessity of carrying out this tedious, multi-week fermentation and drying discipline.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Kinema & Khuri",
+      "environmental_triggers": [
+        "Cold Damp Post-Monsoon Weeks",
+        "High-Altitude Muscle Fatigue"
+      ],
+      "target_health_metrics": [
+        "Concentrated Muscle Tissue Synthesis",
+        "Total Phytic Acid Breakdown (Mineral Bioavailability Optimization)",
+        "Low Glycemic Index"
+      ],
+      "input_ingredients": [
+        "Fermented Kinema Soybeans",
+        "Buckwheat Flour",
+        "Wild Fig Leaves"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A high-protein, zero-oil winter endurance pairing native to the lower mountain valleys. It was engineered specifically to restore muscle vigor, clear vascular sluggishness, and provide high-density complex amino acids to manual laborers working in thin atmospheric oxygen. Local small soybeans were boiled, cracked, and wrapped tightly inside the thick leaves of the wild mountain fig tree to ferment for 3 days until a sticky, pungent, alkaline stringy mash was achieved (Kinema), which was then dry-simmered into a thick paste, paired with buckwheat pancakes.",
+      "why_less_common": "The intense, unapologetically pungent ammonia aroma of naturally fermented soybeans fell out of favor with younger generations who prefer milder processed fast foods, and hand-milling native buckwheat has become nearly obsolete.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Sael Roti & Shimi ko Achar",
+      "environmental_triggers": [
+        "Windy, Changing Pre-Winter Shifts",
+        "High Vata Joint-Stiffness Seasons"
+      ],
+      "target_health_metrics": [
+        "High-Density Fat Metabolism (Thermal Energy)",
+        "Polyunsaturated Fatty Acids (Joint & Cartilage Soothing)",
+        "Vascular Circulation Activation"
+      ],
+      "input_ingredients": [
+        "Coarse Unpolished Rice Batter",
+        "A2 Ghee",
+        "Local Field Beans",
+        "Ground Black Sesame"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A highly specialized festival food matrix prepared during the transition into winter. It was designed to protect structural body tissue from drying out and insulate joints from severe cold dampness during freezing highland nights. Unpolished local red rice was soaked overnight, ground into a coarse slurry on stone slabs, and whipped vigorously by hand with pure A2 cow ghee, water, and cardamom until frothy. This batter was poured by hand in perfect concentric rings directly into a hot cauldron of local mustard oil until crispy.",
+      "why_less_common": "Shaping Sael Roti rings by hand from running batter requires immense mechanical dexterity, and modern families shifted to buying processed sweet bakery items.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    }
+  ],
+  "Uttar_Pradesh": [
+    {
+      "recipe_name": "Goila / Goyala",
+      "environmental_triggers": [
+        "Peak Winter / Low Temp",
+        "Dry Frost Windows"
+      ],
+      "target_health_metrics": [
+        "Sustained Thermogenesis",
+        "High Dietary Fiber",
+        "Slow-Release Complex Carbohydrates / Insulin Sensitivity"
+      ],
+      "input_ingredients": [
+        "Coarse Pearl Millet Flour",
+        "Sorghum Flour",
+        "Earthen-Churned White Butter"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "Classified as a Deepana-Pachana (digestive fire igniter) and a powerful thermoregulatory winter fuel. It was heavily consumed during the peak frost months of December and January across rural and semi-urban UP to build deep core warmth and shield the body from severe winter winds (pachwa). Coarse, unrefined flours of Bajra (pearl millet) and Jowar (sorghum) were blended with warm water. Because these grains contain zero gluten, the dough could not be rolled; it was meticulously patted by hand into a thick disc using water, then slow-baked on a heavy clay tawa (earthen griddle) over a wood fire before being completely drenched in freshly churned, unsalted white butter (makkhan).",
+      "why_less_common": "The manual hand-patting technique requires immense skill, and baking it on clay requires slow, sustained heat. The rapid shift to packaged, highly processed wheat flour (atta), gas stoves, and slick non-stick pans in the late 90s made this tedious process obsolete for modern households.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Rasiya",
+      "environmental_triggers": [
+        "Early Winter",
+        "Post-Harvest Seasonal Transitions"
+      ],
+      "target_health_metrics": [
+        "Liver Glycogen Replenishment",
+        "High Trace Mineral Density (Iron & Magnesium)",
+        "Natural Electrolyte Loading"
+      ],
+      "input_ingredients": [
+        "Raw Sugarcane Juice",
+        "Broken Heritage Rice",
+        "Cardamom Pods"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "Classified as a Vata-Pitta Shamak (systemic dryness and bile balancer) and blood purifier. It was a mandatory post-harvest winter ritual across the sugarcane belts of UP, consumed to naturally detoxify the liver and kidneys during seasonal transitions. Rather than using milk or processed sugar, raw, unpasteurized, freshly squeezed sugarcane juice (ganne ka ras) was filtered and brought to a slow boil in massive iron cauldrons. Broken local heritage rice (karhani or broken basmati) was dropped into the boiling juice and slow-simmered for several hours until the starches completely bonded with the reducing sugars, turning into a dark, glossy, intensely mineral-rich pudding.",
+      "why_less_common": "The dish demands access to massive quantities of raw, unoxidized sugarcane juice straight from the crusher, which became impossible as urban boundaries expanded. The convenience of white refined sugar, instant condensed milk, and packaged milk-based kheer completely replaced this seasonal rustic classic.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Bijora",
+      "environmental_triggers": [
+        "High Heat",
+        "Scorching Dry Summers (Loo Season)"
+      ],
+      "target_health_metrics": [
+        "Alkaline Gut Matrix",
+        "High Bioavailable Zinc",
+        "Nervous System Calming / Heat Stroke Resilience"
+      ],
+      "input_ingredients": [
+        "White Ash Gourd",
+        "Black Gram Paste",
+        "Sesame Seeds",
+        "Pure Asafoetida"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "Classified as a Medhya (cognitive support) and highly alkaline digestive side-armor. It was prepared in bulk during the dry spring months to serve as a vital, gut-cooling preservation staple through the scorching summer months of the Loo wind season. White ash gourd (ash pumpkin/petha) was grated finely and its excess water manually squeezed out. This was combined with a thick, aerated paste of wet-ground urad dal (black gram), raw sesame seeds, heavy hing (asafoetida), and dried green chilies. The mixture was shaped into delicate, flat, hand-pressed discs and laid out on pristine muslin sheets on flat concrete roofs to bake under the intense spring sun for 7 to 10 days until completely dehydrated. These were stored in large ceramic jars and flash-fried in mustard oil right before lunch.",
+      "why_less_common": "It relies entirely on open-air roof spaces, a pollution-free atmosphere, and a grueling 10-day manual monitoring cycle. The rise of high-rise apartment living, urban air pollution, and the mass availability of cheap, factory-processed potato chips and plastic-packaged papads killed off this domestic rooftop tradition.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    }
+  ],
+  "Telangana": [
+    {
+      "recipe_name": "Jonnalu Gatka",
+      "environmental_triggers": [
+        "Intense Arid Heat",
+        "Dry Summer"
+      ],
+      "target_health_metrics": [
+        "High Low-Glycemic Index Energy",
+        "Core Thermoregulation",
+        "Probiotic Gut Colonization / Heat Stroke Prevention"
+      ],
+      "input_ingredients": [
+        "Coarse Sorghum Grits",
+        "Sour Curd",
+        "Raw Shallots",
+        "Water"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "Classified as a Balya (strength-giving) and Rooksha (drying/anti-phlegm) staple. It was the ancient fuel of the hard-working agrarian communities of Telangana's arid Deccan plateau, heavily consumed during hot, dry summer months to keep the core body temperature exceptionally low. Whole grain Jonna (white sorghum) was coarsely crushed in a stone mortar (Rubbu Rollo) to create grainy grits, bypassing fine milling. These sorghum grits were slow-boiled in water in an earthen pot until they bloomed into a thick, rustic mash. It was cooled down completely and mixed with sour curd, crushed raw shallots (chinna ulli), and roasted cumin powder before consumption.",
+      "why_less_common": "The shift in government food subsidies (PDS) heavily favoring white refined rice completely altered the food landscape. Polished rice became cheaper and faster to cook, while the laborious process of hand-pounding sorghum grits fell out of practice among younger generations.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Sarva Pindi",
+      "environmental_triggers": [
+        "Torrential Monsoon",
+        "High-Humidity Cold Seasons"
+      ],
+      "target_health_metrics": [
+        "Lean Protein-to-Carbohydrate Ratio",
+        "Anti-Inflammatory Gingerol Absorption",
+        "High Bioavailable Calcium"
+      ],
+      "input_ingredients": [
+        "Raw Rice Flour",
+        "Bengal Gram",
+        "Sesame Seeds",
+        "Cold-Pressed Peanut Oil"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "Classified as an Agni-Deepana (digestive fire stimulating) evening or morning snack. Traditionally prepared during rainy and high-humidity months to counter the sluggish metabolic rate associated with damp weather. A soft dough was made using local raw rice flour, mixed with soaked chana dal, sesame seeds, chopped copper onions, green chilies, and a heavy dose of fresh ginger-garlic paste. Instead of being rolled out or deep-fried, the wet dough was pressed and flattened directly by hand into the bottom of a deep, thick copper or clay pan (Sarva). Finger holes were poked into the dough to pour drops of cold-pressed peanut oil before covering it to slow-steam and crisp up over a low flame.",
+      "why_less_common": "While a commercial, deep-fried or modern tawa version is sometimes sold today as street food, the authentic, slow, oil-steamed copper/clay pan method from the 80s and 90s has vanished. Modern non-stick cookware and the desire for instant deep-fried snacks replaced this multi-stage slow cooking technique.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Thunti Koora / Thuntikura",
+      "environmental_triggers": [
+        "Crisp Post-Monsoon Winter",
+        "High Dew-Point Mornings"
+      ],
+      "target_health_metrics": [
+        "Intense Alkaline Cleansing",
+        "Massive Dietary Iron Density",
+        "Natural Folate & Chlorophyll Delivery"
+      ],
+      "input_ingredients": [
+        "Fresh Tender Chickpea Leaves",
+        "Broken Sorghum",
+        "Garlic Cloves",
+        "Green Chilies"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "Classified as a Kshariya (highly alkaline) deep tissue cleanser and blood purifier. This hyper-seasonal winter green was harvested only for a few weeks in the Deccan region and consumed to purge toxic accumulations from the liver and digestive tract after the monsoon. The incredibly tender, microscopic top leaves of young chickpea plants (chana bhaji) were hand-plucked before flowering. Because the leaves are naturally coated in oxalic and malic acids (giving them a sour tang), they were washed carefully and slow-cooked with broken sorghum, green chilies, and fresh garlic cloves into a thick, pasty, emerald-green alkaline stew. It was eaten exclusively with rustic un-sifted millet flatbreads.",
+      "why_less_common": "This item is entirely dependent on traditional multi-crop organic farming cycles where livestock and wild foraging coexist. The transition to commercial cash crops, heavy chemical pesticide spraying on chickpea fields (which makes foraging the raw leaves lethal), and urban migration wiped this wild winter delicacy from kitchens.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    }
+  ],
+  "Chhattisgarh": [
+    {
+      "recipe_name": "Bore Basi",
+      "environmental_triggers": [
+        "Extreme Summer Heat",
+        "Arid, Low-Humidity Weather"
+      ],
+      "target_health_metrics": [
+        "High Bioavailable Vitamin B12",
+        "Probiotic Gut Microbiome Colonization",
+        "Natural Electrolyte Loading / Heat Stroke Immunity"
+      ],
+      "input_ingredients": [
+        "Fermented Indigenous Rice",
+        "Sour Buttermilk",
+        "Raw Red Onion",
+        "Earthen Well-Water"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "Classified as a premier Pitta-Hara (bile and internal heat destroyer) and deep cellular hydrator. In the tribal and agrarian belts of Chhattisgarh, this was the ultimate biological shield for farmers working under the blistering 45°C+ summer sun, consumed at dawn to prevent sunstrokes, dehydration, and metabolic crashes. Freshly harvested, aromatic indigenous rice (like Dubraj or Vishnubhog) was cooked cleanly for dinner. The leftover rice was completely submerged in fresh, cool well-water inside an unglazed earthen pot (Matka) and left to naturally ferment under ambient night temperatures for 8 to 10 hours. In the morning, the sour fermented water (Amri) and rice were mixed with a splash of fresh buttermilk, roasted cumin, and eaten alongside raw green chilies and raw red onions.",
+      "why_less_common": "While celebrated today as a token cultural dish on heritage days, its daily consumption vanished from urban and semi-urban homes. The introduction of modern electric refrigerators (which halts the precise room-temperature wild fermentation), morning tea culture, and processed instant wheat breakfast items completely broke this daily routine.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Chusela",
+      "environmental_triggers": [
+        "Monsoonal Humidity",
+        "Crisp High-Humidity Winters"
+      ],
+      "target_health_metrics": [
+        "Gluten-Free Caloric Loading",
+        "Anti-Flatulent Ajwain Absorption",
+        "Rapid Muscular Energy Release"
+      ],
+      "input_ingredients": [
+        "Scalded Rice Flour",
+        "Carom Seeds",
+        "Cold-Pressed Mustard Oil"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "Classified as a Balya (instant energy and muscular vitality provider) and cold-weather comfort food. It was traditionally prepared during the post-harvest festivals like Hareli and Polla as well as peak winter mornings to provide dense caloric heat to rural communities. Instead of wheat flour, this dish relied entirely on fine flour milled from newly harvested winter paddy. The rice flour was scalded by mixing it into boiling water seasoned with carom seeds (ajwain), salt, and a touch of oil to gelatinize the starches. The dough was kneaded while hot, rolled into thick round discs using hands or wooden boards, and flash-fried in blistering hot mustard oil or linseed oil until it puffed into a golden, intensely crispy crust with a soft, chewy interior.",
+      "why_less_common": "The starches in rice flour require precise scalding and hand-kneading while hot to prevent the puris from tearing or absorbing too much oil. The mass penetration of cheap commercial wheat flour, coupled with modern health concerns surrounding traditional deep-frying methods, made families abandon this technically demanding breakfast item.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Amat",
+      "environmental_triggers": [
+        "Damp Forest Winters",
+        "Cold, High-Moisture Windows"
+      ],
+      "target_health_metrics": [
+        "Extreme Systemic Alkalinity",
+        "High Natural Dietary Silica (for joints and skin)",
+        "Anti-Parasitic Gut Cleaning"
+      ],
+      "input_ingredients": [
+        "Wild Bamboo Shoots",
+        "Fermented Rice Starch Water (Pesi)",
+        "Forest Greens",
+        "Green Chilies"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "Classified as a powerful Agni-Deepana (digestive enzyme catalyst) and systemic Anti-Parasitic winter cleanse. This ancient tribal formulation from the Bastar region was designed to strip heavy mucus accumulations from the respiratory and digestive tracts during damp, freezing forest winters. Wild bamboo shoots (Karil) were collected from the deep forests, shredded, and kept soaked to remove natural toxins. These were slow-boiled in a specialized broth created from Pesi (the thick, starchy water drained from boiling red rice), along with mixed forest vegetables, native wild greens, and green chilies. Crucially, no oil or spices were used; the tang and preservation came purely from the natural acidity of the fermented bamboo and the sour rice-starch base.",
+      "why_less_common": "Foraging for tender, clean wild bamboo shoots requires deep indigenous forest knowledge, and processing them takes days. Rapid deforestation, commercial restrictions on gathering forest produce, and the widespread availability of commercial spices and store-bought vegetables completely cut off the supply chain of this zero-oil tribal masterpiece.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    }
+  ],
+  "Uttarakhand": [
+    {
+      "recipe_name": "Mandua ki Roti & Bhang ki Chutney",
+      "environmental_triggers": [
+        "Freezing Sub-Zero Winters",
+        "Sharp Altitude Drops",
+        "High-Altitude Mountain Mists"
+      ],
+      "target_health_metrics": [
+        "High High-Velocity Calcium & Non-Heme Iron Delivery",
+        "Extreme Thermogenic Warmth",
+        "Polyunsaturated Fatty Acid Profile (Brain & Joint Soothing)"
+      ],
+      "input_ingredients": [
+        "Finger Millet Flour",
+        "Roasted Hemp Seeds",
+        "Mountain Garlic",
+        "Native Lemon Juice"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "The definitive winter endurance fuel of the Garhwal and Kumaon hills [travel]. In the 80s and 90s, this was the standard everyday fuel for manual mountain labor, designed to maintain core body heat and prevent low-oxygen muscle fatigue. Coarse finger millet flour (Mandua) was kneaded with warm water and hand-patted into thick flatbreads, then roasted over an open wood-fire hearth (Chulha). It was universally paired with a thick, stone-ground chutney made of slow-roasted hemp seeds (Bhang), raw mountain garlic, wild mint, and sour juice from local mountain lemons (Nimbu).",
+      "why_less_common": "Hand-kneading and patting gluten-free Mandua flour thin requires precise manual dexterity. The younger generation shifted completely to soft, quick-cooking refined wheat Chapatis.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Sisun ka Saag / Kandali ka Kapal",
+      "environmental_triggers": [
+        "Freezing Alpine Blizzards",
+        "Piercing Cold Frosty Mornings"
+      ],
+      "target_health_metrics": [
+        "Systemic Vascular Circulation Activation (Blood Purifier)",
+        "High Insoluble Trace Mineral Loading",
+        "Anti-Arthritic Joint Lubrication"
+      ],
+      "input_ingredients": [
+        "Foraged Stinging Nettle Shoots",
+        "Jakhya Seeds",
+        "Mustard Oil",
+        "Iron Skillet Cooking"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A premier mineral-rich structural tonic foraged from the wild. It was prepared by Pahadi communities during late winter weeks to blast open blocked blood vessels, clear joint calcification (Vata), and activate full-body blood circulation. Fresh, young shoots of the wild stinging nettle plant (Sisun or Kandali) were harvested using wooden tongs to avoid painful skin blisters. They were hard-boiled in water to completely dissolve the stinging formic acid hair needles, mashed into a smooth paste, and slow-cooked in a heavy iron skillet with cold-pressed mustard oil, native mountain allium seeds (Jakhya), ginger shoots, and a thickening splash of rice flour.",
+      "why_less_common": "Stinging nettle causes intense skin irritation if handled incorrectly during harvesting and cleaning, making it highly unpopular for modern fast-paced cooking.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Jhangora ki Kheer",
+      "environmental_triggers": [
+        "Windy, Changing Monsoonal Transitions",
+        "High Pitta Acid Aggravation"
+      ],
+      "target_health_metrics": [
+        "Gluten-Free Nervous System Soothing (High Magnesium)",
+        "Active Gastrointestinal Mucosal Repair",
+        "Low-Glycemic Complex Fuel"
+      ],
+      "input_ingredients": [
+        "Barnyard Millet",
+        "Mountain Cow Milk",
+        "Unrefined Jaggery",
+        "Local Walnuts",
+        "Brass Vessel"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A highly specialized gastrointestinal and nervous-system-soothing comfort bowl. In the late 20th century, this warm dessert was cooked uniformly during volatile seasonal shifts to clear stomach acidity and lower brain-stem heat. High-altitude barnyard millet (Jhangora) was washed and slow-simmered inside a heavy brass vessel (Bhaddu) over low firewood embers. It was slow-cooked using a massive volume of raw, unpasteurized high-fat mountain cow's milk and sweetened exclusively with dark unrefined jaggery, finished with hand-crushed local walnuts and wild raisins.",
+      "why_less_common": "Cooking inside traditional heavy brass Bhaddu vessels takes hours of manual slow-simmering. The commercial dominance of polished white rice and refined sugar alternatives pushed this nutrient-dense millet off the table.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    }
+  ],
+  "Manipur": [
+    {
+      "recipe_name": "Kangshoi & Ngari",
+      "environmental_triggers": [
+        "Thick Morning Valley Fogs",
+        "Cold Damp Post-Monsoon Weeks"
+      ],
+      "target_health_metrics": [
+        "Pulmonary Mucus Liquefaction",
+        "Acute Sinus Decongestion",
+        "Pathogen-Shielding Gut Priming"
+      ],
+      "input_ingredients": [
+        "Ngari (Fermented Fish Paste)",
+        "Native Chives",
+        "Fresh Ginger Shoots",
+        "Local Green Chilies"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "The quintessential pre-2000s immune shield and respiratory primer. It was the automatic, default home remedy in 80s/90s Meitei homes the moment any family member developed a severe chest cold, running nose, or sinus block due to damp valley winds. A variety of seasonal local vegetables—such as field pods, potatoes, and native onions—were hard-boiled in water inside an unglazed clay pot. The defining element was Ngari—a legendary, oil-free, sun-dried small freshwater fish fermented inside specialized oil-seasoned earthenware jars until it turned into a hard, pungent paste. The broth was spiced strictly with heavily hand-pounded local ginger shoots, native chives (Maroi Nakupi), and fiery green chilies. Absolutely zero oil was used.",
+      "why_less_common": "The unique, intense, pungent aroma of authentic Ngari fermentation fell out of favor with younger generations who prefer commercial chili powders and processed oil curries.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Shingju with Yonchak",
+      "environmental_triggers": [
+        "Windy Spring",
+        "Pollen Season",
+        "Sudden High-Humidity Influx"
+      ],
+      "target_health_metrics": [
+        "High Insoluble Dietary Fiber (Colon Sweeping)",
+        "Phytic Acid Breakdown",
+        "Intense Hepatic Cell Stimulation (Liver Detox)"
+      ],
+      "input_ingredients": [
+        "Raw Yonchak Pods",
+        "Roasted Ngari",
+        "Perilla Seeds",
+        "Char-Roasted Chilies",
+        "Wild Greens"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A seasonal, ultra-high-density metabolic igniter and colon cleanser prepared during the windy spring months when rapid airborne viral transmission and digestive sluggishness (Mandham) peaked. The defining element was Yonchak (Stink Beans / Tree Beans / Parkia speciosa), an ancient tree pod harvested from hill tracts. The hard outer green scales of the pods were painstakingly scraped away, and the tender inner beans were sliced raw and combined with a huge variety of uncultivated backyard weeds, wild coriander, and banana pith. This mix was tossed raw with a fiery, waterless paste of oil-free roasted Ngari, char-roasted chilies, and a dusting of roasted perilla seeds (Thoiding).",
+      "why_less_common": "Cleaning and processing raw Yonchak tree pods requires high manual dexterity and patience. Urban concrete expansion cleared out these native trees, making the fresh ingredient highly scarce in modern markets.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Chamthong / Kangsoi & Maroi Thangjing",
+      "environmental_triggers": [
+        "Torrential Monsoon Downpours",
+        "Continuous High-Humidity Flood Seasons"
+      ],
+      "target_health_metrics": [
+        "Natural Intracellular Hydration",
+        "High Organic Trace Mineral Loading",
+        "Low Glycemic Index"
+      ],
+      "input_ingredients": [
+        "Wild Thangjing Stalks",
+        "Ngari",
+        "Maroi Chives",
+        "Green Chilies",
+        "Water"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A high-nutrient monsoon survival food engineered to leverage uncultivated wetland flora during peak rainy weeks when major agricultural fields flooded out. The fresh, spiny leaf stalks of the wild Fox-Nut plant (Thangjing / Euryale ferox) were carefully gathered from local wetlands, destringed to remove painful prickles, and diced. They were slow-boiled in fresh spring water inside a clay pot along with Ngari, native flat-leaf chives (Maroi Nakuppi), and green chilies. Absolutely zero cooking fat or turmeric was applied, letting the ingredients stew in their natural water juices.",
+      "why_less_common": "Processing the prickly stalks of a wild fox-nut plant requires tedious manual labor and specific cleaning technique, making it highly unpopular for modern fast-paced kitchens.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    }
+  ],
+  "Jharkhand": [
+    {
+      "recipe_name": "Dhuska & Ghugni",
+      "environmental_triggers": [
+        "Windy Spring Transitions",
+        "High Physical Muscle Fatigue"
+      ],
+      "target_health_metrics": [
+        "Prolonged Low-Glycemic Energy Supply",
+        "High Bioavailable Plant Protein",
+        "Red Blood Cell (Hemoglobin) Synthesis"
+      ],
+      "input_ingredients": [
+        "Fermented Rice-Urad Batter",
+        "Black Chickpeas",
+        "Garlic Shoots",
+        "Cold-Pressed Mustard Oil"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A premier seasonal endurance fuel prepared uniformly across tribal households during harvest festivals to restore muscular vigor. It provided long-lasting physical stamina for heavy manual field labor without triggering insulin spikes. Native unpolished short-grain rice and split black gram (Urad Dal) were stone-ground into a thick batter and left to ferment naturally for 12 hours inside a clay pot. This batter was spiced with native ginger and wild green chilies, then shallow-fried in cold-pressed mustard oil into fluffy, golden cakes (Dhuska), paired with Ghugni—a dry, fiery stew of local black chickpeas cooked with garlic shoots and wild coriander.",
+      "why_less_common": "Stone-grinding raw parboiled grains requires immense patience. Modern kitchens shifted to quick, refined-wheat instant breakfast mixes, rendering this labor-intensive morning staple rare outside specific rural pockets.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Mahua Dumplings / Mahua Ladoo",
+      "environmental_triggers": [
+        "Scorching Arid Summer Heatwaves",
+        "Complete Water Scarcity"
+      ],
+      "target_health_metrics": [
+        "High Trace Mineral Loading (Zinc & Magnesium)",
+        "Natural Respiratory Tract Soothing",
+        "Cellular Rejuvenation"
+      ],
+      "input_ingredients": [
+        "Dried Mahua Flowers",
+        "Roasted Niger Seeds",
+        "Rock Salt",
+        "Mahua Seed Oil"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A powerful, high-lipid vitality food engineered by forest clans using seasonal tree blooms. It was designed as an absolute defense shield against cellular exhaustion and heat shock during punishing summer drought months. The pale-green, juicy blossoms of the wild Mahua tree (Madhuca longifolia) were hand-gathered from the forest floor, sun-dried until they turned a deep amber hue, and dry-roasted. These sweet, nutrient-dense blossoms were stone-pounded into a coarse paste along with roasted wild niger seeds (Sarguja), unrefined rock salt, and a splash of raw mahua seed oil, then rolled by hand into firm energy balls.",
+      "why_less_common": "Modern forest conservation regulations and urban lifestyle shifts have completely cut off common access to fresh wild-foraged Mahua blossoms, making the raw ingredient nearly extinct in urban grocery setups.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    },
+    {
+      "recipe_name": "Sanai Phool da Saag",
+      "environmental_triggers": [
+        "Late Monsoon Flood Drainage",
+        "High-Humidity Post-Rain Weeks"
+      ],
+      "target_health_metrics": [
+        "Deep Intestinal Deworming (Anti-parasitic)",
+        "Renal Tract Flushing (Natural Diuretic)",
+        "Liver Mucosal Repair"
+      ],
+      "input_ingredients": [
+        "Sun-Dried Sanai Flowers",
+        "Native Split Moong Dal",
+        "Garlic",
+        "Turmeric"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A powerful full-body anti-microbial and renal-cleansing seasonal dish. It was cooked during high-humidity late monsoon cycles when water-borne parasitic outbreaks and digestive sluggishness (Mandham) peaked. Bright yellow blossoms of the Sanai plant (Sunn Hemp / Crotalaria juncea) were hand-picked from field borders and sun-dried to ensure long-term preservation. To cook, these dried flowers were slow-simmered inside an unglazed clay pot with water, native split moong dal, raw garlic cloves, and a heavy pinch of turmeric, then hand-mashed into a thick, comforting stew finished with raw mustard oil.",
+      "why_less_common": "Sanai cultivation dropped drastically due to the commercial dominance of monoculture cash crops, and the knowledge of processing uncultivated wild flowers has been entirely lost among the younger generation.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with family/community source"
+    }
+  ],
+  "Meghalaya": [
+    {
+      "recipe_name": "Tungrymbai & Jadoh",
+      "environmental_triggers": [
+        "Continuous Monsoon Cloudbursts",
+        "Freezing High-Humidity Fog Cycles"
+      ],
+      "target_health_metrics": [
+        "Probiotic Gut Repopulation (Short-Chain Fatty Acid Synthesis)",
+        "Total Phytic Acid Breakdown (Mineral Bioavailability Optimization)",
+        "High-Velocity Lean Protein Loading & Erythrocyte Support"
+      ],
+      "input_ingredients": [
+        "Fermented Tungrymbai Soybeans",
+        "Indigenous Jadoh Short-Grain Rice",
+        "Home-Cured Minced Pork",
+        "Black Sesame Powder (Nei-iong)"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "The ultimate winter endurance and digestive defense pairing of the Khasi hills. Indigenous small soybeans were hard-boiled, wrapped tightly inside fresh slamet leaves (*Phrynium pubinerve*), placed in woven baskets, and fermented near the kitchen hearth for 3 to 5 days until sticky and highly pungent (*Tungrymbai*). This active paste was fried with minced pork, ginger, and black sesame, then paired with *Jadoh*—a traditional rice dish slow-steamed in rich meat broth or seasoned stock. It was consumed uniformly on freezing, high-moisture days to drop vascular heat and shield the digestive tract from infections.",
+      "why_less_common": "The intense, unapologetically pungent ammonia aroma of naturally fermented soybeans fell out of favor with younger generations who prefer milder processed fast foods. Additionally, the multi-day labor required for traditional slamet leaf fermentation is rarely practiced by urban youth.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — widely confirmed via Khasi and Jaintia hearth traditions"
+    },
+    {
+      "recipe_name": "Phphan da Saag with Jaiur",
+      "environmental_triggers": [
+        "Chilly, High-Altitude Mountain Mists",
+        "Sudden Temperature Drops"
+      ],
+      "target_health_metrics": [
+        "Vascular Circulation Activation (Thermoregulation)",
+        "Deep Pulmonary Mucus Liquefaction",
+        "Acute Oral & Gastric Pathogen Clearing"
+      ],
+      "input_ingredients": [
+        "Local Red Potatoes (Phan Saw)",
+        "Indigenous Mustard Greens (Saag)",
+        "Winged Prickly Ash Berries (Jaiur)",
+        "Raw Mustard Oil"
+      ],
+      "source_status": "household-documented — rural preservation verified",
+      "cultural_context": "A powerful, thermogenic respiratory shield and stomach settler native to the cold foothills. In the 80s and 90s, when freezing mountain fogs rolled into the valleys, families prepared this rustic dish using native red potatoes (*Phan Saw*) and winter mustard greens, slow-cooked in heavy iron pots. The defining element was a finishing hand-dusting of *Jaiur* (Meghalaya's native wild Sichuan pepper), whose active compound hydroxy-alpha sanshool creates a unique tingling, numbing sensation on the tongue to alleviate throat irritation, clear sinuses, and generate instant internal warmth.",
+      "why_less_common": "Wild-harvesting authentic *Jaiur* berries requires localized foraging knowledge that is declining. Younger generations often reject the intense, floral, tongue-numbing profile of the spice in favor of commercial red chili powders.",
+      "era_confidence": "Generational (living memory, ~1970s-1990s) — actively preserved in rural high-altitude farming pockets"
+    },
+    {
+      "recipe_name": "Dohkhlieh & Jhur",
+      "environmental_triggers": [
+        "Sweltering High-Humidity Mid-Summers",
+        "Intensive Highland Manual Labour"
+      ],
+      "target_health_metrics": [
+        "High Trace Mineral Loading (Zinc, Iron, & Magnesium)",
+        "Alkaline Tissue Balancing",
+        "Intestinal Mucosal Hydration & Lean Tissue Repair"
+      ],
+      "input_ingredients": [
+        "Boiled Pasture-Raised Pork Chunks",
+        "Foraged Wild Spring Greens (Jhur)",
+        "Local Copper Shallots",
+        "Fresh Birds Eye Chilies"
+      ],
+      "source_status": "community-documented — verification pending",
+      "cultural_context": "A highly specialized, clean, zero-oil summer vitality matrix. Designed for manual terrace laborers, this dish paired *Dohkhlieh*—a clean, refreshing salad of finely minced boiled pork toss-mixed raw with sharp local onions and fiery green chilies—with *Jhur*, a clear broth of uncultivated, wild-foraged forest greens and wild weeds slow-simmered in spring water. This zero-fat combination allowed for rapid cellular energy replenishment and lean tissue recovery during sticky, exhausting summer working seasons without overloading the digestive tract with heavy grease.",
+      "why_less_common": "Authentic preparation relies on accessing clean, uncultivated forest greens and wild weeds away from urban concrete layouts. Younger demographics have largely replaced this lean, wild salad method with quick, factory-fried or heavily spiced oil-based meat gravies.",
+      "era_confidence": "Generational (living memory, ~1960s-1990s) — confirm with community and family records"
+    }
+  ]
 }
+}
+

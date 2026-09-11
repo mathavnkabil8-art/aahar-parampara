@@ -1,18 +1,31 @@
 {% extends "base.html" %}
 {% from "_motif.html" import mandala %}
-{% block title %}Aahar-Parampara — Login{% endblock %}
+{% block title %}Aahar-Parampara - Login{% endblock %}
 {% block content %}
 <div class="login-wrap">
   <div class="login-card">
     {{ mandala(size='200', color='#F4C430', klass='motif') }}
     <div class="brand">Aahar-Parampara</div>
-    <p class="tagline">Every dish here has a story before it has a recipe — rooted in your region, your season, your body.</p>
+    <p class="tagline">Every dish here has a story before it has a recipe - rooted in your region, your season, your body.</p>
+    
+    {% if error %}
+    <p style="color: #ff6b6b; text-align: center; margin-bottom: 1rem;">{{ error }}</p>
+    {% endif %}
+
     <form method="POST" action="{{ url_for('login') }}">
       <div class="field">
-        <label for="name">Name</label>
+        <label for="name">Name / Username</label>
         <input type="text" id="name" name="name" placeholder="Enter your name">
       </div>
-      <button class="btn-primary" type="submit" style="width:100%; text-align:center; margin-top:.5rem;">Enter the kitchen</button>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+      </div>
+      
+      <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+        <button class="btn-primary" type="submit" name="action" value="login" style="flex: 1; text-align:center;">Login</button>
+        <button class="btn-ghost" type="submit" name="action" value="register" style="flex: 1; text-align:center;">Register</button>
+      </div>
     </form>
     <a href="{{ url_for('guest') }}" style="display:block; text-align:center; margin-top:1.1rem; color:var(--accent-gold-pale); font-size:.85rem; transition: color 0.3s;">Continue as guest</a>
   </div>

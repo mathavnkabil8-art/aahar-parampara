@@ -3,8 +3,14 @@
 {% block title %}Aahar-Parampara — Home{% endblock %}
 {% block body_class %}bg-monuments{% endblock %}
 {% block content %}
-<div class="topbar">
-  <div class="brand">Aahar-Parampara</div>
+<div class="topbar" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: rgba(10, 15, 26, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(212,175,55,0.15); position: sticky; top: 0; z-index: 1000;">
+  <div class="brand" style="font-size: 1.5rem; font-weight: bold; color: var(--accent-gold);">Aahar-Parampara</div>
+  <div class="nav-links" style="display: flex; gap: 1.5rem; font-size: 0.9rem;">
+    <a href="{{ url_for('home') }}" style="color: #fff; text-decoration: none; transition: color 0.3s;">Home</a>
+    <a href="{{ url_for('explore_all') }}" style="color: #fff; text-decoration: none; transition: color 0.3s;">Explore All</a>
+    <a href="{{ url_for('around_you') }}" style="color: #fff; text-decoration: none; transition: color 0.3s;">Around You</a>
+    <a href="{{ url_for('random_food') }}" style="color: #fff; text-decoration: none; transition: color 0.3s;">Random</a>
+  </div>
   <div style="font-size:.85rem; color:var(--text-soft); display: flex; align-items: center; gap: 1rem;">
     Welcome, {{ user_name }}
     {% if current_user.is_authenticated %}
@@ -20,6 +26,10 @@
 <div class="hero">
   {{ mandala(size='160', color='#D32F2F', klass='hero-motif') }}
   <h1>Every dish here has a story before it has a recipe</h1>
+  <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
+    <a href="{{ url_for('around_you') }}" class="btn-ghost" style="font-size: 0.9rem; padding: 0.6rem 1.2rem;">📍 Heritage Around You</a>
+    <a href="{{ url_for('explore_all') }}" class="btn-primary" style="font-size: 0.9rem; padding: 0.6rem 1.2rem;">Explore All Foods</a>
+  </div>
 </div>
 
 <!-- Cinematic Heritage Section -->
@@ -152,20 +162,8 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- Innovative Explore CTA -->
 <div class="explore-cta-section">
   <p class="explore-subtitle">Ready to discover your heritage?</p>
-  <div class="explore-btn-wrapper" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-    <a href="{{ url_for('around_you') }}" class="btn-explore-massive" style="border-color: var(--primary-saffron); box-shadow: 0 0 20px rgba(212,175,55,0.15);">
-      <span class="btn-explore-bg"></span>
-      <span class="btn-explore-text">📍 Heritage Around You</span>
-      <span class="btn-explore-glow"></span>
-    </a>
-    <a href="{{ url_for('explore_all') }}" class="btn-explore-massive">
-      <span class="btn-explore-bg"></span>
-      <span class="btn-explore-text">Explore All Foods</span>
-      <span class="btn-explore-glow"></span>
-    </a>
-  </div>
-  <p style="text-align:center; margin-top: 2rem; color: var(--text-soft); font-size: 1.1rem;">
-    Or let fate decide and <a href="{{ url_for('random_food') }}" class="random-link">discover a random dish</a>.
+  <p style="text-align:center; margin-top: 1rem; color: var(--text-soft); font-size: 1.1rem;">
+    Let fate decide and <a href="{{ url_for('random_food') }}" class="random-link">discover a random dish</a>.
   </p>
 </div>
 

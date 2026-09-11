@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goila / Goyala — Aahar-Parampara</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="bg-ancient-food">
+<div class="page">
+  
+<div class="topbar">
+  <div class="brand">Aahar-Parampara</div>
+  <a href="javascript:void(0)" onclick="goBack()" class="btn-ghost" style="font-size:.8rem; padding:.5rem 1rem;">← Back</a>
+</div>
+
+<div class="page-container" id="discovery-container" style="max-width: 800px; margin: 0 auto; transition: all 0.8s ease;">
+  <!-- FOOD DETAILS -->
+  <div style="text-align: center; margin-bottom: 2rem;">
+    <span class="eyebrow">Uttar Pradesh · Generational (living memory, ~1960s-1990s) — confirm with family/community source</span>
+    <h1 style="font-size:2.5rem; margin:.4rem 0 0.5rem; color: #fff; text-shadow: 0 0 20px rgba(212,175,55,0.3);">Goila / Goyala</h1>
+      <div style="text-align:center; margin-bottom:2rem;">
+    <img src="/static/img/dishes/Uttar_Pradesh-0.jpg" alt="Goila / Goyala"
+         style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.5); border:1px solid rgba(212,175,55,0.25);"
+         onerror="this.style.display='none'">
+  </div>
+
+  <div style="text-align: center; margin-bottom: 1.5rem;">
+    <div class="tag-row" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 1.5rem;">
+      <span class="tag">Coarse Pearl Millet Flour</span><span class="tag">Sorghum Flour</span><span class="tag">Earthen-Churned White Butter</span>
+    </div>
+    
+    <style>
+    @keyframes pulse-glow {
+      0% { box-shadow: 0 0 5px rgba(212,175,55,0.1); }
+      50% { box-shadow: 0 0 15px rgba(212,175,55,0.3); }
+      100% { box-shadow: 0 0 5px rgba(212,175,55,0.1); }
+    }
+    .insight-trigger {
+      display: block; width: 100%; max-width: 450px; margin: 1.5rem auto 1.5rem auto;
+      padding: 1.5rem; background: rgba(10, 15, 26, 0.7);
+      border: 1px solid rgba(212,175,55,0.25); border-radius: 12px;
+      cursor: pointer; text-align: center; transition: all 0.4s ease;
+      animation: pulse-glow 3s infinite; position: relative; overflow: hidden;
+    }
+    .insight-trigger:hover {
+      background: rgba(15, 20, 35, 0.85); border-color: rgba(212,175,55,0.5); transform: translateY(-2px);
+    }
+    .insight-trigger::before {
+      content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(212,175,55,0.15), transparent);
+      transition: all 0.6s ease;
+    }
+    .insight-trigger:hover::before { left: 100%; transition: all 0.8s ease; }
+    .insight-heading { font-family: 'Rozha One', serif; font-size: 1.2rem; color: var(--accent-gold); letter-spacing: 2px; margin-bottom: 0.5rem; }
+    .insight-subtext { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-bottom: 0.8rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .insight-cta { font-size: 0.75rem; letter-spacing: 2px; color: var(--primary-saffron); text-transform: uppercase; }
+    
+    #insight-content-container {
+      display: none; max-width: 600px; margin: 0 auto 2rem auto;
+      border: 1px solid rgba(212,175,55,0.3);
+      background: linear-gradient(135deg, rgba(10,15,26,0.9), rgba(5,8,15,0.95));
+      border-radius: 12px; padding: 2.5rem; text-align: left;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.8); position: relative; overflow: hidden;
+    }
+    .insight-light-sweep {
+      position: absolute; top: 0; left: 0; width: 100%; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+      transform: translateX(-100%);
+    }
+    .insight-content-animating .insight-light-sweep { animation: border-sweep 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+    @keyframes border-sweep { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+    
+    .insight-item { opacity: 0; transform: translateY(20px); margin-bottom: 1.5rem; }
+    .insight-item-title { font-family: 'Rozha One', serif; font-size: 1.1rem; color: var(--accent-gold); margin-bottom: 0.4rem; letter-spacing: 1px; }
+    .insight-item-text { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1rem; line-height: 1.7; color: rgba(255,255,255,0.9); }
+    .insight-close { display: block; text-align: center; margin-top: 2rem; font-size: 0.85rem; color: rgba(255,255,255,0.5); cursor: pointer; letter-spacing: 1px; text-transform: uppercase; }
+    .insight-close:hover { color: var(--accent-gold); }
+    </style>
+
+    <div class="insight-trigger" id="insight-trigger" onclick="openInsight()">
+      <div class="insight-heading">✦ DISCOVER THE HIDDEN HERITAGE</div>
+      <div class="insight-subtext">Cultural knowledge preserved beyond the recipe</div>
+      <div class="insight-cta">↓ TAP TO REVEAL</div>
+    </div>
+
+    <div id="insight-content-container">
+      <div class="insight-light-sweep"></div>
+      
+      
+      <div class="insight-item">
+        <div class="insight-item-title">Cultural Context</div>
+        <div class="insight-item-text">Classified as a Deepana-Pachana (digestive fire igniter) and a powerful thermoregulatory winter fuel. It was heavily consumed during the peak frost months of December and January across rural and semi-urban UP to build deep core warmth and shield the body from severe winter winds (pachwa). Coarse, unrefined flours of Bajra (pearl millet) and Jowar (sorghum) were blended with warm water. Because these grains contain zero gluten, the dough could not be rolled; it was meticulously patted by hand into a thick disc using water, then slow-baked on a heavy clay tawa (earthen griddle) over a wood fire before being completely drenched in freshly churned, unsalted white butter (makkhan).</div>
+      </div>
+      
+      
+      
+      <div class="insight-item">
+        <div class="insight-item-title">Environmental Triggers</div>
+        <div class="insight-item-text">Peak Winter / Low Temp, Dry Frost Windows</div>
+      </div>
+      
+      
+      
+      <div class="insight-item">
+        <div class="insight-item-title">Traditional Significance</div>
+        <div class="insight-item-text">Sustained Thermogenesis, High Dietary Fiber, Slow-Release Complex Carbohydrates / Insulin Sensitivity</div>
+      </div>
+      
+      
+      
+      <div class="insight-item">
+        <div class="insight-item-title">Why It Is Less Common</div>
+        <div class="insight-item-text">The manual hand-patting technique requires immense skill, and baking it on clay requires slow, sustained heat. The rapid shift to packaged, highly processed wheat flour (atta), gas stoves, and slick non-stick pans in the late 90s made this tedious process obsolete for modern households.</div>
+      </div>
+      
+      
+      <div class="insight-close" onclick="closeInsight()">⮝ Close Insight</div>
+    </div>
+  </div>
+
+  <!-- UNROLL THE HERITAGE / HISTORY -->
+  <div class="rotulus-container" id="dishScroll" role="button" tabindex="0">
+    <!-- Closed State -->
+    <div class="rotulus-closed" onclick="openRotulus()">
+      <div class="rotulus-bind"></div>
+      <span class="shimmer-text" style="font-family:'Rozha One', serif; font-size:1.6rem; letter-spacing:1px;">Unroll the History</span>
+      <div class="rotulus-bind"></div>
+    </div>
+
+    <!-- Scroll Ends (3D Cylinders) -->
+    <div class="scroll-end left"></div>
+    <div class="scroll-end right"></div>
+
+    <!-- Open Parchment -->
+    <div class="rotulus-parchment">
+      <div class="light-sweep"></div>
+      <div class="rotulus-inner">
+        <div class="dust-overlay"></div>
+        <div class="scroll-content">
+          
+          <!-- MANUSCRIPT-STYLE HERITAGE CONTENT -->
+          
+          <div class="reveal-section">
+            <h4 class="shimmer-heading">THE STORY</h4>
+            <div class="ornament-separator">──── ✦ ────</div>
+            <p style="font-size: 1.1rem; line-height: 1.8;">Classified as a Deepana-Pachana (digestive fire igniter) and a powerful thermoregulatory winter fuel. It was heavily consumed during the peak frost months of December and January across rural and semi-urban UP to build deep core warmth and shield the body from severe winter winds (pachwa). Coarse, unrefined flours of Bajra (pearl millet) and Jowar (sorghum) were blended with warm water. Because these grains contain zero gluten, the dough could not be rolled; it was meticulously patted by hand into a thick disc using water, then slow-baked on a heavy clay tawa (earthen griddle) over a wood fire before being completely drenched in freshly churned, unsalted white butter (makkhan).</p>
+          </div>
+          
+
+          <div class="reveal-section">
+            <h4 class="shimmer-heading">ORIGIN & ERA</h4>
+            <div class="ornament-separator">──── ✦ ────</div>
+            <p style="text-align: center; font-size: 1.1rem; color: var(--primary-saffron);"><strong>Generational (living memory, ~1960s-1990s) — confirm with family/community source</strong></p>
+          </div>
+
+          
+          <div class="reveal-section">
+            <h4 class="shimmer-heading">TRADITIONAL OCCASIONS</h4>
+            <div class="ornament-separator">──── ✦ ────</div>
+            <p style="text-align: center; font-size: 1.1rem;">Historically prepared and consumed during: <br><span style="color: var(--primary-saffron);">Peak Winter / Low Temp, Dry Frost Windows</span></p>
+          </div>
+          
+
+          
+          <div class="reveal-section">
+            <h4 class="shimmer-heading">TRADITIONAL SIGNIFICANCE</h4>
+            <div class="ornament-separator">──── ✦ ────</div>
+            <ul style="padding-left: 1.5rem; font-size: 1.05rem; line-height: 1.6;">
+              
+              <li style="margin-bottom: 0.5rem;">Sustained Thermogenesis</li>
+              
+              <li style="margin-bottom: 0.5rem;">High Dietary Fiber</li>
+              
+              <li style="margin-bottom: 0.5rem;">Slow-Release Complex Carbohydrates / Insulin Sensitivity</li>
+              
+            </ul>
+            <p style="font-size: 0.8rem; color: rgba(0,0,0,0.5); margin-top: 1rem; font-style: italic; text-align: center;">Note: Traditional belief / folk use — not clinically verified.</p>
+          </div>
+          
+
+          
+          <div class="reveal-section">
+            <h4 class="shimmer-heading">THE FADING MEMORY</h4>
+            <div class="ornament-separator">──── ✦ ────</div>
+            <p style="font-size: 1.05rem; line-height: 1.7;">The manual hand-patting technique requires immense skill, and baking it on clay requires slow, sustained heat. The rapid shift to packaged, highly processed wheat flour (atta), gas stoves, and slick non-stick pans in the late 90s made this tedious process obsolete for modern households.</p>
+          </div>
+          
+
+          <!-- READY TO COOK THIS HERITAGE? -->
+          <div class="reveal-section" style="text-align: center; margin-top: 4rem; padding-top: 3rem; border-top: 1px dashed rgba(212,175,55,0.3);">
+            <h4 style="color: var(--accent-gold); font-size: 1.5rem; font-family: 'Rozha One', serif; margin-bottom: 1.5rem;">Ready to Cook This Heritage?</h4>
+            <button onclick="revealPreparation()" class="btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem; background: rgba(10, 15, 26, 0.8); border: 1px solid var(--primary-saffron); color: var(--primary-saffron); box-shadow: 0 0 20px rgba(212,175,55,0.2);">🍲 Reveal Traditional Preparation</button>
+            <br><br>
+            <button onclick="closeRotulus(event)" class="btn-ghost" style="font-size: 0.85rem; padding: 0.5rem 1.5rem; border: 1px solid rgba(212,175,55,0.3); border-radius: 4px;">Roll Manuscript ⮝</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STEP 3: PREPARATION REVEAL -->
+<div id="prep-section" style="display: none; opacity: 0; max-width: 800px; margin: 0 auto; padding-bottom: 5rem; transition: opacity 1.5s ease-in;">
+  
+  <div style="text-align: center; margin-bottom: 3rem;">
+    <h2 style="font-family: 'Rozha One', serif; font-size: 2.5rem; color: var(--primary-saffron); text-shadow: 0 0 30px rgba(212,175,55,0.4);">Traditional Preparation</h2>
+    <div class="ornament-separator">──── ✦ ────</div>
+  </div>
+
+  
+    <!-- ABOUT THIS FOOD -->
+    
+    <div class="prep-block glass-panel" style="margin-bottom: 2rem; padding: 2rem;">
+      <h4 style="color: var(--accent-gold); letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 1rem;">✨ ABOUT THIS FOOD</h4>
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+        
+          <span style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.9rem; border: 1px solid rgba(255,255,255,0.1);">Classified as a Deepana-Pachana (digestive fire igniter) and a powerful thermoregulatory winter fuel.</span>
+        
+      </div>
+    </div>
+    
+
+    <!-- INGREDIENTS -->
+    
+    <div class="prep-block glass-panel" style="margin-bottom: 2rem; padding: 2rem;">
+      <h4 style="color: var(--accent-gold); letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 1rem;">🥘 KITCHEN INGREDIENTS</h4>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+        
+          <div style="background: rgba(10,15,26,0.5); padding: 0.8rem; border-left: 2px solid var(--primary-saffron); font-size: 0.95rem;">Coarse whole wheat flour (or broken wheat flour): ½ cup (60 g)</div>
+        
+          <div style="background: rgba(10,15,26,0.5); padding: 0.8rem; border-left: 2px solid var(--primary-saffron); font-size: 0.95rem;">Warm water: 3–4 tbsp (45–60 ml)</div>
+        
+          <div style="background: rgba(10,15,26,0.5); padding: 0.8rem; border-left: 2px solid var(--primary-saffron); font-size: 0.95rem;">Salt: ⅛ tsp</div>
+        
+          <div style="background: rgba(10,15,26,0.5); padding: 0.8rem; border-left: 2px solid var(--primary-saffron); font-size: 0.95rem;">Ghee or oil: ½ tsp (for cooking)</div>
+        
+      </div>
+    </div>
+    
+
+    <!-- PREPARATION STEPS -->
+    
+    <div class="prep-block" style="margin-bottom: 3rem;">
+      <h4 style="color: var(--accent-gold); letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 1.5rem; text-align: center;">📜 PREPARATION STEPS</h4>
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        
+        <div class="prep-step-card glass-panel" style="display: flex; gap: 1.5rem; padding: 2rem; align-items: flex-start; border-radius: 12px; background: rgba(10,15,26,0.6);">
+          <div style="font-family: 'Rozha One', serif; font-size: 3rem; color: rgba(212,175,55,0.4); line-height: 0.8;">01</div>
+          <div style="font-size: 1.1rem; line-height: 1.6; color: #fff;">In a bowl, mix coarse flour + salt.</div>
+        </div>
+        
+        <div class="prep-step-card glass-panel" style="display: flex; gap: 1.5rem; padding: 2rem; align-items: flex-start; border-radius: 12px; background: rgba(10,15,26,0.6);">
+          <div style="font-family: 'Rozha One', serif; font-size: 3rem; color: rgba(212,175,55,0.4); line-height: 0.8;">02</div>
+          <div style="font-size: 1.1rem; line-height: 1.6; color: #fff;">Add warm water 1 tbsp at a time; knead into firm, slightly rough dough (5 minutes).</div>
+        </div>
+        
+        <div class="prep-step-card glass-panel" style="display: flex; gap: 1.5rem; padding: 2rem; align-items: flex-start; border-radius: 12px; background: rgba(10,15,26,0.6);">
+          <div style="font-family: 'Rozha One', serif; font-size: 3rem; color: rgba(212,175,55,0.4); line-height: 0.8;">03</div>
+          <div style="font-size: 1.1rem; line-height: 1.6; color: #fff;">Cover; rest 30 minutes to hydrate coarse grains.</div>
+        </div>
+        
+      </div>
+    </div>
+    
+
+    <!-- COOKING -->
+    
+    <div class="prep-block glass-panel" style="margin-bottom: 3rem; padding: 2.5rem; background: rgba(40, 15, 15, 0.4); border: 1px solid rgba(220, 53, 69, 0.3);">
+      <h4 style="color: #ff6b6b; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 1.5rem;">🔥 TRADITIONAL COOKING</h4>
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <span style="color: #ff6b6b; font-size: 1.2rem;">•</span>
+            <span style="font-size: 1.05rem; line-height: 1.6;">Divide dough into 1 ball.</span>
+          </div>
+        
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <span style="color: #ff6b6b; font-size: 1.2rem;">•</span>
+            <span style="font-size: 1.05rem; line-height: 1.6;">On lightly floured surface, pat with fingers into 6–7 inch round, slightly thick (do not roll).</span>
+          </div>
+        
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <span style="color: #ff6b6b; font-size: 1.2rem;">•</span>
+            <span style="font-size: 1.05rem; line-height: 1.6;">Heat tawa on medium flame 1 minute.</span>
+          </div>
+        
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <span style="color: #ff6b6b; font-size: 1.2rem;">•</span>
+            <span style="font-size: 1.05rem; line-height: 1.6;">Place flatbread on tawa; cook 1 minute until light spots appear.</span>
+          </div>
+        
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <span style="color: #ff6b6b; font-size: 1.2rem;">•</span>
+            <span style="font-size: 1.05rem; line-height: 1.6;">Flip; cook 45 seconds.</span>
+          </div>
+        
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <span style="color: #ff6b6b; font-size: 1.2rem;">•</span>
+            <span style="font-size: 1.05rem; line-height: 1.6;">Optional: Hold over open flame 10–15 seconds per side for puffing.</span>
+          </div>
+        
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <span style="color: #ff6b6b; font-size: 1.2rem;">•</span>
+            <span style="font-size: 1.05rem; line-height: 1.6;">Brush with ½ tsp ghee.</span>
+          </div>
+        
+      </div>
+    </div>
+    
+
+    <!-- SERVING -->
+    
+    <div class="prep-block glass-panel" style="margin-bottom: 2rem; padding: 2rem;">
+      <h4 style="color: var(--accent-gold); letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 1rem;">🍽 SERVING</h4>
+      <ul style="padding-left: 1.5rem; line-height: 1.8;">
+        
+          <li>Quantity: 1 large flatbread</li>
+        
+          <li>Texture: thick, rustic, hand-patted flatbread.</li>
+        
+          <li>Accompaniments: Winter saag, jaggery, or ghee</li>
+        
+      </ul>
+    </div>
+    
+
+    <!-- TIPS -->
+    
+    <div class="prep-block glass-panel" style="margin-bottom: 2rem; padding: 2rem;">
+      <h4 style="color: var(--accent-gold); letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 1rem;">💡 TIPS & SUBSTITUTIONS</h4>
+      <ul style="padding-left: 1.5rem; line-height: 1.8;">
+        
+          <li>Tips &amp; Substitutions</li>
+        
+          <li>If dough cracks, wet hands slightly while patting.</li>
+        
+          <li>Substitute bajra flour for variation.</li>
+        
+      </ul>
+    </div>
+    
+
+    <!-- SAFETY -->
+    
+    <div class="prep-block glass-panel" style="margin-bottom: 2rem; padding: 1.5rem; border-left: 4px solid var(--accent-gold);">
+      <h4 style="color: var(--accent-gold); letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 0.5rem;">⚠ TRADITIONAL NOTES / SAFETY</h4>
+      
+        <p style="margin-bottom: 0.5rem; font-size: 0.9rem;">Safety: Ensure tawa is evenly heated to avoid burning.</p>
+      
+    </div>
+    
+
+  
+
+  <div style="margin-top: 4rem; text-align: center;">
+    <a href="/rate/Uttar_Pradesh-0" class="btn-primary" style="display: inline-block; margin-bottom: 1.5rem;">Made it? Rate & upload a photo</a>
+    <br>
+    <a href="javascript:void(0)" onclick="closePreparation()" class="btn-ghost" style="font-size:.8rem;">← Back to Heritage</a>
+  </div>
+</div>
+
+<div class="floating-heritage-guide glass-panel visible" id="stickyGuide">
+  <div class="guide-title">✦ AAHAR-PARAMPARA</div>
+  <p>Every traditional food carries more than a recipe — it carries a story.</p>
+  <ul>
+    <li>🜲 Discover its heritage</li>
+    <li>📜 Explore its history</li>
+    <li>✦ Unroll the story</li>
+  </ul>
+  <button class="btn-primary" onclick="openRotulus(); window.scrollTo({top: document.getElementById('dishScroll').offsetTop, behavior: 'smooth'});">UNROLL THE HERITAGE →</button>
+</div>
+
+<style>
+/* Glowing transition overlay */
+#gold-flash {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  background: radial-gradient(circle, rgba(212,175,55,0.4) 0%, rgba(10,15,26,1) 100%);
+  pointer-events: none; opacity: 0; z-index: 9999; transition: opacity 1s ease;
+}
+</style>
+<div id="gold-flash"></div>
+
+<script>
+function goBack() {
+  if (window.history.length > 1) {
+    window.history.back();
+  } else {
+    window.location.href = "/home";
+  }
+}
+
+function openInsight() {
+  const trigger = document.getElementById('insight-trigger');
+  const container = document.getElementById('insight-content-container');
+  
+  // Smoothly expand
+  trigger.style.display = 'none';
+  container.style.display = 'block';
+  container.style.opacity = '0';
+  container.style.transform = 'scale(0.98)';
+  
+  setTimeout(() => {
+    container.style.transition = 'all 0.5s ease-out';
+    container.style.opacity = '1';
+    container.style.transform = 'scale(1)';
+    container.classList.add('insight-content-animating');
+    
+    // Stagger items
+    const items = container.querySelectorAll('.insight-item');
+    items.forEach((item, idx) => {
+      item.style.transition = 'all 0.6s ease-out';
+      item.style.transitionDelay = `${0.2 + (idx * 0.15)}s`;
+      item.style.opacity = '1';
+      item.style.transform = 'translateY(0)';
+    });
+  }, 50);
+}
+
+function closeInsight() {
+  const trigger = document.getElementById('insight-trigger');
+  const container = document.getElementById('insight-content-container');
+  
+  container.style.transition = 'all 0.4s ease-in';
+  container.style.opacity = '0';
+  container.style.transform = 'scale(0.98)';
+  
+  const items = container.querySelectorAll('.insight-item');
+  items.forEach((item) => {
+    item.style.transition = 'none';
+    item.style.opacity = '0';
+    item.style.transform = 'translateY(20px)';
+  });
+  
+  setTimeout(() => {
+    container.style.display = 'none';
+    container.classList.remove('insight-content-animating');
+    trigger.style.display = 'block';
+  }, 400);
+}
+
+function closeRotulus(e) {
+  if (e) e.stopPropagation();
+  const container = document.getElementById('dishScroll');
+  container.classList.remove('is-open');
+
+  const stickyGuide = document.getElementById('stickyGuide');
+  if(stickyGuide) stickyGuide.style.display = 'block';
+
+  // Restore the scroll button so no empty space occurs when rolled up
+  const closedState = document.querySelector('.rotulus-closed');
+  if(closedState) closedState.style.display = 'flex';
+
+  document.querySelectorAll('.scroll-content .reveal-section').forEach(el => {
+    el.classList.remove('visible');
+  });
+
+  setTimeout(() => {
+    window.scrollTo({ top: document.getElementById('dishScroll').offsetTop - 100, behavior: 'smooth' });
+  }, 100);
+}
+
+function openRotulus() {
+  const container = document.getElementById('dishScroll');
+  if(container.classList.contains('is-open')) return;
+  container.classList.add('is-open');
+  
+  // Hide sticky guide
+  const stickyGuide = document.getElementById('stickyGuide');
+  if(stickyGuide) stickyGuide.style.display = 'none';
+
+  // Fix the empty blank space caused by rotulus-closed
+  setTimeout(() => {
+     const closedState = document.querySelector('.rotulus-closed');
+     if(closedState) closedState.style.display = 'none';
+  }, 600);
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  setTimeout(() => {
+    document.querySelectorAll('.scroll-content .reveal-section').forEach((el, index) => {
+      el.style.transitionDelay = `${index * 0.15}s`;
+      observer.observe(el);
+    });
+  }, 800);
+}
+
+function revealPreparation() {
+  // Step 1: Cinematic Gold Flash
+  const flash = document.getElementById('gold-flash');
+  flash.style.opacity = '1';
+  
+  setTimeout(() => {
+    // Step 2: Hide Discovery & Heritage (Rotulus)
+    document.getElementById('discovery-container').style.display = 'none';
+    
+    // Step 3: Show Prep Section
+    const prep = document.getElementById('prep-section');
+    prep.style.display = 'block';
+    
+    // Scroll to top instantly before revealing
+    window.scrollTo(0, 0);
+    
+    // Step 4: Fade in Prep Section and fade out flash
+    setTimeout(() => {
+      prep.style.opacity = '1';
+      flash.style.opacity = '0';
+      
+      // Step 5: Animate prep blocks one by one
+      const blocks = document.querySelectorAll('.prep-block');
+      blocks.forEach((block, index) => {
+        block.style.opacity = '0';
+        block.style.transform = 'translateY(30px)';
+        block.style.transition = 'all 0.6s ease';
+        
+        setTimeout(() => {
+          block.style.opacity = '1';
+          block.style.transform = 'translateY(0)';
+        }, 300 + (index * 150));
+      });
+      
+    }, 100);
+    
+  }, 1000); // Wait for flash to peak
+}
+
+function closePreparation() {
+  const flash = document.getElementById('gold-flash');
+  flash.style.opacity = '1';
+  
+  setTimeout(() => {
+    document.getElementById('prep-section').style.display = 'none';
+    document.getElementById('discovery-container').style.display = 'block';
+    window.scrollTo(0, 0);
+    
+    setTimeout(() => {
+      flash.style.opacity = '0';
+    }, 100);
+  }, 800);
+}
+
+// Support direct link to prep section via random flow "Ready to cook"
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash === '#prep-section') {
+    document.getElementById('discovery-container').style.display = 'none';
+    const stickyGuide = document.getElementById('stickyGuide');
+    if(stickyGuide) stickyGuide.style.display = 'none';
+    
+    const prep = document.getElementById('prep-section');
+    prep.style.display = 'block';
+    prep.style.opacity = '1';
+    document.querySelectorAll('.prep-block').forEach(block => {
+      block.style.opacity = '1';
+      block.style.transform = 'none';
+    });
+  }
+});
+</script>
+
+</div>
+<script src="/static/js/wheel.js" defer></script>
+<script src="/static/js/reveal.js" defer></script>
+</body>
+</html>

@@ -27,9 +27,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 if "aivencloud" in db_url:
     app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
         'connect_args': {
-            'ssl': {
-                'ca': '/etc/ssl/certs/ca-certificates.crt'
-            }
+            'ssl': {}
         }
     }
 

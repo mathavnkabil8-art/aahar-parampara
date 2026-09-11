@@ -62,8 +62,7 @@ def load_dataset():
             entry = dict(dish)
             entry["state"] = state.replace("_", " ")
             entry["id"] = f"{state}-{i}"
-            entry["image"] = f"img/dishes/{entry['id']}.jpg"
-            
+            entry["image"] = f"img/dishes/{entry['id']}.jpg"            
             n1 = _norm_title(dish.get("recipe_name", ""))
             
             match = None

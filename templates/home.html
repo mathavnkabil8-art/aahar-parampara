@@ -30,6 +30,13 @@
     <a href="{{ url_for('around_you') }}" class="btn-ghost" style="font-size: 0.9rem; padding: 0.6rem 1.2rem;">📍 Heritage Around You</a>
     <a href="{{ url_for('explore_all') }}" class="btn-primary" style="font-size: 0.9rem; padding: 0.6rem 1.2rem;">Explore All Foods</a>
   </div>
+  
+  <div style="margin-top: 3.5rem;">
+    <p class="explore-subtitle" style="font-size: 1.8rem; margin-bottom: 0.8rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Ready to discover your heritage?</p>
+    <p style="text-align:center; color: var(--text-soft); font-size: 1.1rem; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+      Let fate decide and <a href="{{ url_for('random_food') }}" class="random-link">discover a random dish</a>.
+    </p>
+  </div>
 </div>
 
 <!-- Cinematic Heritage Section -->
@@ -158,14 +165,6 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 
 <hr class="divider">
-
-<!-- Innovative Explore CTA -->
-<div class="explore-cta-section">
-  <p class="explore-subtitle">Ready to discover your heritage?</p>
-  <p style="text-align:center; margin-top: 1rem; color: var(--text-soft); font-size: 1.1rem;">
-    Let fate decide and <a href="{{ url_for('random_food') }}" class="random-link">discover a random dish</a>.
-  </p>
-</div>
 
 <p class="footer-note">Aahar-Parampara — Smart India Hackathon 2026</p>
 <script>

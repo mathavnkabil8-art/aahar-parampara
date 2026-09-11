@@ -6,20 +6,26 @@
 <div class="topbar" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: rgba(10, 15, 26, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(212,175,55,0.15); position: sticky; top: 0; z-index: 1000;">
   <div class="brand" style="font-size: 1.5rem; font-weight: bold; color: var(--accent-gold);">Aahar-Parampara</div>
   <div class="nav-links" style="display: flex; gap: 1.5rem; font-size: 0.9rem;">
-    <a href="{{ url_for('home') }}" style="color: #fff; text-decoration: none; transition: color 0.3s;">Home</a>
-    <a href="{{ url_for('explore_all') }}" style="color: #fff; text-decoration: none; transition: color 0.3s;">Explore All</a>
-    <a href="{{ url_for('around_you') }}" style="color: #fff; text-decoration: none; transition: color 0.3s;">Around You</a>
-    <a href="{{ url_for('random_food') }}" style="color: #fff; text-decoration: none; transition: color 0.3s;">Random</a>
+    <a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;">Home</a>
+    <a href="#heritage" style="color: #fff; text-decoration: none; transition: color 0.3s;">Heritage Map</a>
+    <a href="#disappearing" style="color: #fff; text-decoration: none; transition: color 0.3s;">Fading Traditions</a>
+    <a href="#gallery" style="color: #fff; text-decoration: none; transition: color 0.3s;">Archive</a>
   </div>
-  <div style="font-size:.85rem; color:var(--text-soft); display: flex; align-items: center; gap: 1rem;">
-    Welcome, {{ user_name }}
-    {% if current_user.is_authenticated %}
-    <a href="{{ url_for('wishlist') }}" style="color: var(--accent-gold-pale); text-decoration: none;">Wishlist</a>
-    <a href="{{ url_for('history') }}" style="color: var(--accent-gold-pale); text-decoration: none;">History</a>
-    <a href="{{ url_for('logout') }}" style="color: var(--accent-gold-pale); text-decoration: none;">Logout</a>
-    {% else %}
-    <a href="{{ url_for('login') }}" style="color: var(--accent-gold-pale); text-decoration: none;">Login</a>
-    {% endif %}
+  
+  <div style="position: relative;">
+    <div style="font-size:1.5rem; color:var(--text-soft); cursor: pointer; padding: 0.5rem;" onclick="document.getElementById('user-menu').style.display = document.getElementById('user-menu').style.display === 'none' ? 'flex' : 'none';">
+      ☰
+    </div>
+    <div id="user-menu" style="display: none; position: absolute; right: 0; top: 100%; background: rgba(10, 15, 26, 0.95); padding: 1rem; border-radius: 8px; border: 1px solid rgba(212,175,55,0.3); flex-direction: column; gap: 0.8rem; margin-top: 0.5rem; min-width: 150px; text-align: left; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+      <span style="color: var(--text-soft); font-size: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; margin-bottom: 0.2rem;">Welcome, {{ user_name }}</span>
+      {% if current_user.is_authenticated %}
+      <a href="{{ url_for('wishlist') }}" style="color: var(--accent-gold-pale); text-decoration: none;">Wishlist</a>
+      <a href="{{ url_for('history') }}" style="color: var(--accent-gold-pale); text-decoration: none;">History</a>
+      <a href="{{ url_for('logout') }}" style="color: #FF3B30; text-decoration: none; margin-top: 0.5rem;">Logout</a>
+      {% else %}
+      <a href="{{ url_for('login') }}" style="color: var(--accent-gold-pale); text-decoration: none;">Login</a>
+      {% endif %}
+    </div>
   </div>
 </div>
 
@@ -32,15 +38,15 @@
   </div>
   
   <div style="margin-top: 3.5rem;">
-    <p class="explore-subtitle" style="font-size: 1.8rem; margin-bottom: 0.8rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Ready to discover your heritage?</p>
-    <p style="text-align:center; color: var(--text-soft); font-size: 1.1rem; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
-      Let fate decide and <a href="{{ url_for('random_food') }}" class="random-link">discover a random dish</a>.
-    </p>
+    <p class="explore-subtitle" style="font-size: 1.8rem; margin-bottom: 1.2rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Ready to discover your heritage?</p>
+    <div style="text-align:center;">
+      <a href="{{ url_for('random_food') }}" class="btn-ghost" style="font-size: 0.9rem; padding: 0.5rem 1.2rem; border-color: var(--accent-gold-pale); color: var(--accent-gold-pale);">🎲 Discover a Random Dish</a>
+    </div>
   </div>
 </div>
 
 <!-- Cinematic Heritage Section -->
-<section class="heritage-cinematic">
+<section class="heritage-cinematic" id="heritage" style="scroll-margin-top: 80px;">
   <div class="cinematic-header scroll-anim">
     <span class="eyebrow">Where Food Becomes Heritage</span>
     <h2>Across India, food evolved with the land, the seasons and the people who preserved its knowledge.</h2>
@@ -89,7 +95,7 @@
 
   
 
-  <div class="fading-heritage scroll-anim">
+  <div class="fading-heritage scroll-anim" id="disappearing" style="scroll-margin-top: 80px;">
     <h3 class="fading-title">WHY ARE THESE FOODS DISAPPEARING?</h3>
     <div class="fading-grid">
       <div class="f-card">
@@ -140,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <!-- Featured Foods Gallery -->
-<div class="gallery-section">
+<div class="gallery-section" id="gallery" style="scroll-margin-top: 80px;">
   <div class="gallery-heading">
     <h2>Glimpses from the Archive</h2>
     <span class="gallery-hint">Scroll to explore →</span>

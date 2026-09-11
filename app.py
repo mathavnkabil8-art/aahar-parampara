@@ -23,6 +23,16 @@ if not db_url:
 app.config['SQLALCHEMY_DATABASE_URI'] = db_url
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+# Automatically handle Aiven's strict SSL requirement on Vercel
+if "aivencloud" in db_url:
+    app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
+        'connect_args': {
+            'ssl': {
+                'ca': '/etc/ssl/certs/ca-certificates.crt'
+            }
+        }
+    }
+
 db.init_app(app)
 with app.app_context():
     db.create_all()

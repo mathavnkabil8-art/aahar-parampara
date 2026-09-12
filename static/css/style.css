@@ -1319,3 +1319,4 @@ button, .btn-primary, .btn-ghost { word-wrap: break-word; white-space: normal; t
   .archive-grid, .narrative-grid {
     grid-template-columns: 1fr !important;
 html { scroll-behavior: smooth; }
+@

@@ -1,5 +1,5 @@
 """
-engine.py — Aahar-Parampara reverse-engine
+engine.py — Lost Rasoi reverse-engine
 Loads the heritage food dataset and matches user inputs
 (ingredients on hand + season/weather + health goal) against it.
 """

@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block body_class %}bg-ancient-food{% endblock %}
-{% block title %}{{ dish.recipe_name }} — Aahar-Parampara{% endblock %}
+{% block title %}{{ dish.recipe_name }} — Lost Rasoi{% endblock %}
 {% block content %}
 <div class="topbar">
-  <div class="brand">Aahar-Parampara</div>
+  <div class="brand">Lost Rasoi</div>
   <a href="javascript:void(0)" onclick="goBack()" class="btn-ghost" style="font-size:.8rem; padding:.5rem 1rem;">← Back</a>
 </div>
 
@@ -12,11 +12,10 @@
   <div style="text-align: center; margin-bottom: 2rem;">
     <span class="eyebrow">{{ dish.state }} · {{ dish.era_confidence }}</span>
     <h1 style="font-size:2.5rem; margin:.4rem 0 0.5rem; color: #fff; text-shadow: 0 0 20px rgba(212,175,55,0.3);">{{ dish.recipe_name }}</h1>
-     <div style="text-align:center; margin-bottom:2rem;">
+      <div style="text-align:center; margin-bottom:2rem;">
     <img src="{{ url_for('static', filename=dish.image) }}" alt="{{ dish.recipe_name }}"
          style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.5); border:1px solid rgba(212,175,55,0.25);"
          onerror="this.style.display='none'">
-  </div>
   </div>
 
   <div style="text-align: center; margin-bottom: 1.5rem;">
@@ -24,6 +23,12 @@
       {% for ing in dish.input_ingredients %}<span class="tag">{{ ing }}</span>{% endfor %}
     </div>
     
+    {% if current_user.is_authenticated %}
+    <form method="POST" action="{{ url_for('wishlist_add', dish_id=dish.id) }}" style="margin-bottom: 2rem;">
+      <button type="submit" class="btn-ghost" style="font-size: 0.9rem; padding: 0.5rem 1rem;">&#10084; Add to Wishlist</button>
+    </form>
+    {% endif %}
+
     <style>
     @keyframes pulse-glow {
       0% { box-shadow: 0 0 5px rgba(212,175,55,0.1); }
@@ -299,7 +304,7 @@
 </div>
 
 <div class="floating-heritage-guide glass-panel visible" id="stickyGuide">
-  <div class="guide-title">✦ AAHAR-PARAMPARA</div>
+  <div class="guide-title">✦ LOST RASOI</div>
   <p>Every traditional food carries more than a recipe — it carries a story.</p>
   <ul>
     <li>🜲 Discover its heritage</li>

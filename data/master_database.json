@@ -1,7 +1,8 @@
 {
-  "project_name": "Aahar-Parampara",
+  "project_name": "Lost Rasoi",
   "note": "target_health_metrics reflect traditional/folk belief, not clinical fact. source_status is community-documented and pending verification for all entries.",
-  "master_dataset": {
+  "master_dataset": 
+  {
     "Mizoram": [
       {
         "recipe_name": "Rawtu / Saktu",

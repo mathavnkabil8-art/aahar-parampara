@@ -22,7 +22,15 @@ OPENAI_KEY = os.getenv("OPENAI_API_KEY")
 ai_client = OpenAI(api_key=OPENAI_KEY) if OPENAI_KEY else None
 
 UPLOAD_DIR = Path(__file__).parent / "uploads"
-UPLOAD_DIR.mkdir(exist_ok=True)
+try:
+    UPLOAD_DIR.mkdir(exist_ok=True)
+except OSError:
+    # Vercel read-only filesystem fallback
+    UPLOAD_DIR = Path("/tmp/uploads")
+    try:
+        UPLOAD_DIR.mkdir(exist_ok=True)
+    except OSError:
+        pass
 RATINGS_PATH = Path(__file__).parent / "data" / "ratings.json"
 HEALTH_PATH = Path(__file__).parent / "data" / "ingredient_health.json"
 
@@ -61,6 +69,10 @@ def guest():
     session["user_name"] = "Guest"
     return redirect(url_for("home"))
 
+@app.route("/logout")
+def logout():
+    session.pop("user_name", None)
+    return redirect(url_for("login"))
 
 # ---------- HOMEPAGE ----------
 @app.route("/home")

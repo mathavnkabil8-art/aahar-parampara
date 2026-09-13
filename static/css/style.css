@@ -454,7 +454,7 @@ button, .btn {
 }
 .rotulus-closed:hover { box-shadow: 0 6px 25px rgba(212,175,55,0.15), inset 0 0 35px rgba(212,175,55,0.12); }
 .rotulus-closed::before, .rotulus-closed::after {
-  content: "âšœ"; position: absolute; color: var(--scroll-gold-dim); font-size: 1.2rem;
+  content: "\269C"; position: absolute; color: var(--scroll-gold-dim); font-size: 1.2rem;
 }
 .rotulus-closed::before { left: 15px; } .rotulus-closed::after { right: 15px; }
 

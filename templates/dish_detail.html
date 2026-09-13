@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block body_class %}bg-ancient-food{% endblock %}
-{% block title %}{{ dish.recipe_name }} — Lost Rasoi{% endblock %}
+{% block title %}{{ dish.recipe_name }} — Aahar-Parampara{% endblock %}
 {% block content %}
 <div class="topbar">
-  <div class="brand">Lost Rasoi</div>
+  <div class="brand">Aahar-Parampara</div>
   <a href="javascript:void(0)" onclick="goBack()" class="btn-ghost" style="font-size:.8rem; padding:.5rem 1rem;">← Back</a>
 </div>
 
@@ -22,7 +22,7 @@
     <div class="tag-row" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 1.5rem;">
       {% for ing in dish.input_ingredients %}<span class="tag">{{ ing }}</span>{% endfor %}
     </div>
-
+    
     <style>
     @keyframes pulse-glow {
       0% { box-shadow: 0 0 5px rgba(212,175,55,0.1); }
@@ -189,8 +189,9 @@
   </div>
 </div>
 
-<!-- STEP 3: PREPARATION REVEAL -->
-<div id="prep-section" style="display: none; opacity: 0; max-width: 800px; margin: 0 auto; padding-bottom: 5rem; transition: opacity 1.5s ease-in;">
+</div>
+  <!-- STEP 3: PREPARATION REVEAL -->
+<div id="prep-section" style="display: none; opacity: 0; max-width: 800px; margin: 4rem auto 0 auto; padding-bottom: 5rem; transition: opacity 0.8s ease-in-out;">
   
   <div style="text-align: center; margin-bottom: 3rem;">
     <h2 style="font-family: 'Rozha One', serif; font-size: 2.5rem; color: var(--primary-saffron); text-shadow: 0 0 30px rgba(212,175,55,0.4);">Traditional Preparation</h2>
@@ -298,7 +299,7 @@
 </div>
 
 <div class="floating-heritage-guide glass-panel visible" id="stickyGuide">
-  <div class="guide-title">✦ LOST RASOI</div>
+  <div class="guide-title">✦ AAHAR-PARAMPARA</div>
   <p>Every traditional food carries more than a recipe — it carries a story.</p>
   <ul>
     <li>🜲 Discover its heritage</li>
@@ -316,7 +317,7 @@
   pointer-events: none; opacity: 0; z-index: 9999; transition: opacity 1s ease;
 }
 </style>
-<div id="gold-flash"></div>
+<div id="gold-flash">
 
 <script>
 function goBack() {
@@ -428,75 +429,46 @@ function openRotulus() {
   }, 800);
 }
 
-function revealPreparation() {
-  // Step 1: Cinematic Gold Flash
-  const flash = document.getElementById('gold-flash');
-  flash.style.opacity = '1';
-  
-  setTimeout(() => {
-    // Step 2: Hide Discovery & Heritage (Rotulus)
-    document.getElementById('discovery-container').style.display = 'none';
-    
-    // Step 3: Show Prep Section
-    const prep = document.getElementById('prep-section');
-    prep.style.display = 'block';
-    
-    // Scroll to top instantly before revealing
-    window.scrollTo(0, 0);
-    
-    // Step 4: Fade in Prep Section and fade out flash
-    setTimeout(() => {
-      prep.style.opacity = '1';
-      flash.style.opacity = '0';
-      
-      // Step 5: Animate prep blocks one by one
-      const blocks = document.querySelectorAll('.prep-block');
-      blocks.forEach((block, index) => {
-        block.style.opacity = '0';
-        block.style.transform = 'translateY(30px)';
-        block.style.transition = 'all 0.6s ease';
-        
-        setTimeout(() => {
-          block.style.opacity = '1';
-          block.style.transform = 'translateY(0)';
-        }, 300 + (index * 150));
-      });
-      
-    }, 100);
-    
-  }, 1000); // Wait for flash to peak
-}
 
-function closePreparation() {
-  const flash = document.getElementById('gold-flash');
-  flash.style.opacity = '1';
-  
-  setTimeout(() => {
-    document.getElementById('prep-section').style.display = 'none';
-    document.getElementById('discovery-container').style.display = 'block';
-    window.scrollTo(0, 0);
+  function revealPreparation() {
+    const flash = document.getElementById('gold-flash');
+    if (flash) flash.style.opacity = '1';
     
     setTimeout(() => {
-      flash.style.opacity = '0';
-    }, 100);
-  }, 800);
-}
-
-// Support direct link to prep section via random flow "Ready to cook"
-document.addEventListener('DOMContentLoaded', () => {
-  if (window.location.hash === '#prep-section') {
-    document.getElementById('discovery-container').style.display = 'none';
-    const stickyGuide = document.getElementById('stickyGuide');
-    if(stickyGuide) stickyGuide.style.display = 'none';
-    
-    const prep = document.getElementById('prep-section');
-    prep.style.display = 'block';
-    prep.style.opacity = '1';
-    document.querySelectorAll('.prep-block').forEach(block => {
-      block.style.opacity = '1';
-      block.style.transform = 'none';
-    });
+      document.getElementById('discovery-container').style.display = 'none';
+      const stickyGuide = document.getElementById('stickyGuide');
+      if (stickyGuide) stickyGuide.style.display = 'none';
+      
+      const prep = document.getElementById('prep-section');
+      prep.style.display = 'block';
+      window.scrollTo(0, 0);
+      
+      setTimeout(() => {
+        prep.style.opacity = '1';
+        if (flash) flash.style.opacity = '0';
+      }, 50);
+    }, 800);
   }
-});
+
+  function hidePreparation() {
+    const flash = document.getElementById('gold-flash');
+    if (flash) flash.style.opacity = '1';
+    
+    setTimeout(() => {
+      const prep = document.getElementById('prep-section');
+      prep.style.opacity = '0';
+      prep.style.display = 'none';
+      
+      document.getElementById('discovery-container').style.display = 'block';
+      const stickyGuide = document.getElementById('stickyGuide');
+      if (stickyGuide) stickyGuide.style.display = 'block';
+      
+      window.scrollTo({ top: document.getElementById('dishScroll').offsetTop - 50, behavior: 'smooth' });
+      
+      setTimeout(() => {
+        if (flash) flash.style.opacity = '0';
+      }, 50);
+    }, 800);
+  }
 </script>
 {% endblock %}

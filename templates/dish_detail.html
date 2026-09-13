@@ -22,12 +22,6 @@
     <div class="tag-row" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 1.5rem;">
       {% for ing in dish.input_ingredients %}<span class="tag">{{ ing }}</span>{% endfor %}
     </div>
-    
-    {% if current_user.is_authenticated %}
-    <form method="POST" action="{{ url_for('wishlist_add', dish_id=dish.id) }}" style="margin-bottom: 2rem;">
-      <button type="submit" class="btn-ghost" style="font-size: 0.9rem; padding: 0.5rem 1rem;">&#10084; Add to Wishlist</button>
-    </form>
-    {% endif %}
 
     <style>
     @keyframes pulse-glow {
